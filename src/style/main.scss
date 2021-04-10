@@ -1,0 +1,17 @@
+// Подключение CSS переменных
+@import "settings/variables";
+
+// Подключение CSS библиотек
+@import "../../node_modules/aos/dist/aos";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Свой CSS для bootstrap
+@import "generic/bootstrap-custom";
+
+// Подключение шрифтов
+@import "base/fonts";
+
+// Подключение своих SCSS файлов
+
+// Медиа запросы CSS
+@import "generic/media";
