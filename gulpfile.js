@@ -15,12 +15,12 @@ var autoprefixerList = [
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
   build: {
-    html: 'build/',
-    js: 'build/js/',
-    css: 'build/css/',
-    img: 'build/img/',
-    fonts: 'build/fonts/',
-    libs: 'build/libs/'
+    html: 'docs/',
+    js: 'docs/js/',
+    css: 'docs/css/',
+    img: 'docs/img/',
+    fonts: 'docs/fonts/',
+    libs: 'docs/libs/'
   },
   src: {
     html: 'src/*.html',
@@ -36,16 +36,16 @@ var path = {
     css: 'src/style/**/*.scss',
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*',
-    css_build: 'build/css/*.css',
-    js_build: 'build/js/*.js'
+    css_build: 'docs/css/*.css',
+    js_build: 'docs/js/*.js'
   },
-  clean: './build/*'
+  clean: './docs/*'
 };
 
 /* настройки сервера */
 var config = {
   server: {
-    baseDir: './build'
+    baseDir: './docs'
   },
   notify: false,
   version: {
