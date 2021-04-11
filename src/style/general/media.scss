@@ -208,6 +208,18 @@
         }
     }
 
+    .emailSentModal {
+
+        .modal-content {
+            padding: 100px 80px 24px;
+        }
+
+        .modal-dialog {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
 
 }
 
@@ -400,6 +412,18 @@
             color: inherit;
             margin-top: 0;
             padding: 0;
+        }
+    }
+
+    .emailSentModal {
+
+        .modal-content {
+            padding: 80px 24px 24px;
+        }
+
+        &__title p {
+            font-size: 32px;
+            line-height: 37px;
         }
     }
 
@@ -732,6 +756,11 @@
 
     }
 
+    .emailSentModal__title p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
 
 }
 
@@ -983,6 +1012,25 @@
             height: 311px;
         }
 
+    }
+
+    .emailSentModal {
+
+        button.close {
+            top: 12px;
+            right: 16px;
+            width: 26px;
+            height: 26px;
+        }
+
+        .modal-content {
+            padding: 64px 20px 24px;
+        }
+
+        .modal-dialog {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
 }

@@ -15889,4 +15889,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
+
+  // При клике по форме открыть модальное окно. В дальнейшем переделать так чтобы окно открывалось после успешной отправки письма
+  $("#submitApplication").click(function() {
+    //открыть модальное окно с id="myModal"
+    $("#emailSentModal").modal('show');
+  });
+
+  // Открыть боковое модальное окно
+  const topbarBack = document.getElementById('topbarBack');
+  const sideModalCloseBtn = document.getElementById('sideModalCloseBtn');
+  let sideModal = null;
+
+  function hideSideMenu() {
+    topbarBack.classList.remove('topbar__back--active');
+    body.className = '';
+    sideModal.classList.remove('sideModal__wrap--open')
+  }
+
+  function showSideModal(modal) {
+    topbarBack.classList.toggle('topbar__back--active')
+    body.classList.toggle('sideModalActive')
+    modal.classList.toggle('sideModal__wrap--open')
+  }
+
+  // Закрыть бокавую модалку при нажатии на пустую область
+  topbarBack.addEventListener('click', hideSideMenu)
+  // Закрыть бокавую модалку при нажатии на кнопку
+  sideModalCloseBtn.addEventListener('click', hideSideMenu)
+
+  // Елементы у которых есть модалки
+  const sideModalItems = document.querySelectorAll('[data-sidemodal]')
+
+  sideModalItems.forEach(item => {
+    item.addEventListener('click', e => {
+      sideModal = document.getElementById(item.dataset.sidemodal);
+      showSideModal(sideModal)
+    })
+  })
+
 });

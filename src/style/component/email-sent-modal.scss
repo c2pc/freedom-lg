@@ -1,0 +1,76 @@
+.emailSentModal {
+
+    p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .modal-dialog {
+        max-width: 856px;
+        position: relative;
+    }
+
+    button.close {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        background-color: $Main;
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+        width: 32px;
+        height: 32px;
+        line-height: 0;
+        border-radius: 50%;
+        transition: background-color .1s;
+        z-index: 10;
+
+        &:hover, &:focus, &:active {
+            background-color: #8D8D8D;
+        }
+    }
+
+    .modal-content {
+        padding: 100px 160px 24px;
+        border-radius: 16px;
+        border: none;
+    }
+
+    &__title {
+
+        p {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+
+    &__phone {
+        margin-top: 24px;
+
+        a {
+            font-weight: 700;
+        }
+    }
+
+    &_btn {
+        margin-top: 40px;
+        text-align: center;
+
+        button {
+            width: 162px;
+            height: 56px;
+            font-weight: 500;
+        }
+    }
+
+    &__desc {
+        margin-top: 60px;
+
+        p, a {
+            font-size: 12px;
+            line-height: 16px;
+            color: rgba(36, 38, 36, .6);
+        }
+    }
+}

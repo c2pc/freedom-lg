@@ -134,3 +134,37 @@ button:disabled,
 button[disabled]{
     background-color: $GrayBg;
 }
+
+.sideModalActive {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 100;
+    }
+}
+
+.topbar__back {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background: transparent;
+    border: none;
+}
+
+.topbar__back.topbar__back--active {
+    display: block;
+}
