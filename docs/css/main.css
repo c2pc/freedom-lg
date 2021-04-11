@@ -8937,6 +8937,80 @@ strong {
       .transactions__arrow .sliderArrow__btn.swiper-button-disabled svg path {
         fill: #ffffff; }
 
+.analytics .swiper-slide {
+  width: 374px;
+  min-height: 388px; }
+
+.analytics__item:not(.analytics__images):hover .analytics__desc_title p {
+  text-decoration: underline; }
+
+.analytics__images .analytics__desc {
+  background-color: #F7F7F7;
+  border-radius: 16px 16px 0 0; }
+
+.analytics__images .analytics__item_image {
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 16px 16px; }
+
+.analytics__images:hover .analytics__desc {
+  background-color: #EEEDED; }
+
+.analytics__desc {
+  padding: 32px 24px; }
+  .analytics__desc p {
+    margin-bottom: 0; }
+  .analytics__desc_name p {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase; }
+  .analytics__desc_title {
+    margin-top: 16px; }
+    .analytics__desc_title p {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.01em; }
+  .analytics__desc_date {
+    margin-top: 24px; }
+    .analytics__desc_date p {
+      opacity: 0.6; }
+
+.team {
+  margin-bottom: 500px; }
+  .team__group {
+    margin: 0 24px 24px 32px;
+    width: 100%; }
+  .team p {
+    color: #ffffff;
+    margin-bottom: 0; }
+  .team__items {
+    margin: 8px -20px 0 -20px; }
+    .team__items .team__item {
+      padding-left: 20px;
+      padding-right: 20px; }
+  .team__item {
+    margin-top: 40px; }
+    .team__item_name p {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.01em; }
+    .team__item_vn {
+      height: 400px;
+      border-radius: 16px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important; }
+    .team__item_role {
+      margin-top: 8px; }
+
 .freedom__header {
   padding-top: 14px;
   padding-bottom: 16px; }
@@ -9192,7 +9266,9 @@ strong {
         content: url("../img/icons/arrow.svg");
         position: absolute;
         right: 0;
-        top: -1px; } }
+        top: -1px; }
+  .swiper-slide.team__item {
+    width: 374px; } }
 
 @media screen and (max-width: 440px) {
   .header .navbar-brand img {
@@ -9258,21 +9334,45 @@ strong {
       line-height: 28px; }
     .sectorBlock__item_image {
       height: 178px; }
-  .transactions__item_value p {
-    font-size: 16px;
-    line-height: 20px; }
-  .transactions__item_vn {
-    min-height: 100px;
-    padding: 20px 15px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-  .transactions__slider_title p {
-    font-size: 28px;
-    line-height: 40px; }
-  .transactions__items {
-    margin-top: 6px; }
-  .transactions__slider_desc_vn p {
-    margin-bottom: 0; } }
+  .transactions {
+    margin-top: 64px;
+    padding: 48px 0; }
+    .transactions__item_value p {
+      font-size: 16px;
+      line-height: 20px; }
+    .transactions__item_vn {
+      min-height: 100px;
+      padding: 20px 15px;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+    .transactions__slider_title p {
+      font-size: 28px;
+      line-height: 40px; }
+    .transactions__items {
+      margin-top: 6px; }
+    .transactions__slider_desc_vn p {
+      margin-bottom: 0; }
+  .analytics .swiper-slide {
+    min-height: 311px; }
+  .analytics__desc {
+    padding: 20px 24px; }
+    .analytics__desc_title p {
+      font-size: 20px;
+      line-height: 28px; }
+  .analytics__images .analytics__item_image {
+    height: 144px; }
+  .analytics .swiper-slide {
+    width: 268px; }
+  .swiper-slide.team__item {
+    width: 300px; }
+  .team__item_vn {
+    height: 360px; }
+  .mt160 {
+    margin-top: 64px; }
+  .team__item {
+    margin-top: 24px; }
+  .block-title {
+    text-align: center; } }
 
 @media screen and (max-width: 400px) {
   .serviceBlock__title h2 {
@@ -9332,7 +9432,16 @@ strong {
     min-width: 32px;
     height: 32px; }
     .sliderArrow__btn svg {
-      height: 12px; } }
+      height: 12px; }
+  .analytics__desc_name p {
+    font-size: 11px;
+    line-height: 12px; }
+  .analytics__desc_title p {
+    font-size: 16px;
+    line-height: 20px; }
+  .analytics__desc_date p {
+    font-size: 12px;
+    line-height: 16px; } }
 
 @media screen and (max-width: 360px) {
   .header .navbar-brand img {
@@ -9350,7 +9459,20 @@ strong {
     line-height: 16px; }
   .aboutUs__item_title p {
     font-size: 16px;
-    line-height: 20px; } }
+    line-height: 20px; }
+  .swiper-slide.team__item {
+    width: 268px; }
+  .team__item_vn {
+    height: 316px; }
+  .team__item_name p {
+    font-size: 16px;
+    line-height: 20px; }
+  .team__item_role p {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 16px; }
+  .team__group {
+    margin: 24px; } }
 
 @media screen and (max-width: 350px) {
   .mainBanner h1 {

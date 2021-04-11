@@ -404,6 +404,10 @@
         }
     }
 
+    .swiper-slide.team__item {
+        width: 374px;
+    }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -539,6 +543,8 @@
     }
 
     .transactions {
+        margin-top: 64px;
+        padding: 48px 0;
 
         &__item {
 
@@ -570,6 +576,51 @@
             }
         }
     }
+
+    .analytics {
+
+        .swiper-slide {
+            min-height: 311px;
+        }
+
+        &__desc {
+            padding: 20px 24px;
+
+            &_title p {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .analytics__images .analytics__item_image {
+        height: 144px;
+    }
+
+    .analytics .swiper-slide {
+        width: 268px;
+    }
+
+    .swiper-slide.team__item {
+        width: 300px;
+    }
+
+    .team__item_vn {
+        height: 360px;
+    }
+
+    .mt160 {
+        margin-top: 64px;
+    }
+
+    .team__item {
+        margin-top: 24px;
+    }
+
+    .block-title {
+        text-align: center;
+    }
+
 
 }
 
@@ -693,6 +744,25 @@
         }
     }
 
+    .analytics__desc {
+
+        &_name p {
+            font-size: 11px;
+            line-height: 12px;
+        }
+
+        &_title p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &_date p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+
 
 }
 
@@ -742,6 +812,33 @@
         }
 
     }
+
+    .swiper-slide.team__item {
+        width: 268px;
+    }
+
+    .team__item {
+
+        &_vn {
+            height: 316px;
+        }
+
+        &_name p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &_role p {
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .team__group {
+        margin: 24px;
+    }
+
 }
 
 @media screen and (max-width: 350px) {

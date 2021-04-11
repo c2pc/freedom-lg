@@ -15854,4 +15854,39 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   })
 
+  // слайдер - аналитики
+  new Swiper('.analytics__slider', {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.analytics__slider_next',
+      prevEl: '.analytics__slider_prev',
+    },
+    breakpoints: {
+      500: {
+        spaceBetween: 40,
+      },
+
+      320: {
+        spaceBetween: 24,
+      },
+    }
+  })
+
+  // слайдер - команда (моб)
+  new Swiper('.team__mobile_slider', {
+    slidesPerView: 'auto',
+    grabCursor: true,
+    breakpoints: {
+      500: {
+        spaceBetween: 40,
+      },
+
+      320: {
+        spaceBetween: 24,
+      },
+    }
+  })
+
 });
