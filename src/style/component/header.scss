@@ -1,0 +1,81 @@
+.header {
+
+    &__services {
+
+        &_lang {
+            margin-right: 22px;
+
+            &_item {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                transition: background-color .2s;
+
+                &:not(:first-child) {
+                    margin-left: 9px;
+                }
+
+                &.active, &:hover {
+                    background-color: $Secondary;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_btn {
+
+            button {
+                font-size: 14px;
+                line-height: 18px;
+                width: 160px;
+                height: 40px;
+            }
+
+        }
+
+    }
+
+    .navbar-brand {
+
+        @media screen and (max-width: 1309px) {
+            margin-right: 30px;
+        }
+
+        @media screen and (min-width: 1310px) {
+            margin-right: 178px;
+        }
+
+        img {
+            width: 174px;
+        }
+    }
+
+    .toggler-icon {
+        width: 32px;
+        height: 32px;
+        display: block;
+        border-radius: 50%;
+        border: 2px solid $Main;
+        transition: background-color .2s;
+    }
+
+    button[aria-expanded="true"] {
+        .toggler-icon {
+            background: $Main url("../img/icons/close.svg") no-repeat center center / auto;
+        }
+    }
+
+    button[aria-expanded="false"] {
+        .toggler-icon {
+            background: url("../img/icons/toggler.svg") no-repeat center center / auto;
+        }
+    }
+}

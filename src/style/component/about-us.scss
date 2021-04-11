@@ -1,0 +1,98 @@
+.aboutUs {
+    $thisAboutUs: &;
+
+    margin-top: 160px;
+
+    &__course {
+        margin-left: 16px;
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 4px;
+        padding: 8px;
+
+        &_title {
+            font-weight: 700;
+        }
+
+        &_value {
+            font-weight: 500;
+            position: relative;
+            padding-left: 16px;
+
+            &::before {
+                content: url("../img/icons/polygon-green.svg");
+                display: inline-block;
+                position: absolute;
+                width: 10px;
+                left: 3px;
+                top: -4px;
+            }
+        }
+    }
+
+    &__course_up {
+        background-color: $TagBgGreen;
+
+        #{$thisAboutUs}__course_value {
+            color: $Green;
+        }
+    }
+
+    &__course_down {
+        background-color: $TagBgRed;
+
+        #{$thisAboutUs}__course_value::before {
+            content: url("../img/icons/polygon.svg");
+            top: -3px;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 992px) {
+        &__items {
+
+            & > div {
+
+                &:nth-child(n+4) {
+                    margin-top: 64px;
+                }
+
+                &:nth-child(3n + 3) {
+                    #{$thisAboutUs}__item {
+                        float: right;
+                    }
+                }
+
+                &:nth-child(3n + 2) {
+                    #{$thisAboutUs}__item {
+                        margin-left: 34px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    &__item {
+        max-width: 312px;
+
+        &_title {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+
+        &_desc {
+            margin-top: 16px;
+        }
+    }
+}

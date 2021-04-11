@@ -1,17 +1,26 @@
 // Подключение CSS переменных
-@import "settings/variables";
+@import "base/variables";
 
 // Подключение CSS библиотек
 @import "../../node_modules/aos/dist/aos";
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Свой CSS для bootstrap
-@import "generic/bootstrap-custom";
+@import "general/bootstrap-custom";
 
 // Подключение шрифтов
 @import "base/fonts";
 
 // Подключение своих SCSS файлов
+@import "base/default";
+@import "component/header";
+@import "component/course";
+@import "component/main-banner";
+@import "component/about-us";
+@import "component/service-block";
+@import "component/sector-block";
+@import "component/transactions";
+@import "general/general";
 
 // Медиа запросы CSS
-@import "generic/media";
+@import "general/media";

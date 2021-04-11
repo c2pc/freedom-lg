@@ -1,0 +1,70 @@
+.freedom {
+
+    &__header {
+        padding-top: 14px;
+        padding-bottom: 16px;
+    }
+
+    &__btn {
+        background-color: $Primary;
+        font-weight: 500;
+        color: #ffffff;
+        border-radius: 82px;
+        transition: background-color .2s;
+
+        &:hover, &:focus, &:active, &:focus:active {
+            background-color: $PrimaryBold;
+        }
+    }
+}
+
+.menuActive {
+    overflow: hidden;
+
+    .freedom__header {
+        min-height: 100vh;
+    }
+}
+
+.block-title {
+    h2 {
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 64px;
+        margin-bottom: 0;
+    }
+}
+
+.sliderArrow {
+
+    &__group {
+        display: flex;
+    }
+
+    &__btn {
+        min-width: 48px;
+        height: 48px;
+        background-color: $Primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color .2s;
+
+        &:last-child {
+            margin-left: 16px;
+        }
+
+        &:hover {
+            background-color: $PrimaryBold;
+        }
+
+        &.swiper-button-disabled {
+            background-color: $GrayBg;
+        }
+    }
+}
+
+.mt160 {
+    margin-top: 160px;
+}

@@ -1,0 +1,754 @@
+@media screen and (min-width: 768px) {
+    .header {
+
+        .nav-item:not(:first-child) {
+            margin-left: 24px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+    .header {
+
+        .navbar-brand {
+            margin-right: 10px;
+        }
+
+        .nav-item:not(:first-child) {
+            margin-left: 8px;
+        }
+
+        &__services {
+
+            &_btn button {
+                font-size: 12px;
+                width: 130px;
+                height: 36px;
+            }
+
+            &_lang {
+                margin-right: 10px;
+            }
+
+        }
+
+        .nav-link {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 830px) and (min-width: 768px) {
+
+    .header {
+
+        .nav-item:not(:first-child) {
+            margin-left: 0;
+        }
+
+        &__services_lang_item {
+            width: 35px;
+            height: 35px;
+            font-size: 10px;
+        }
+
+        .navbar-brand {
+            margin-right: 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .serviceBlock {
+
+        &__item {
+
+            &_group {
+                padding: 40px 15px 64px 24px;
+            }
+
+            &_title p {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            &_desc_vn p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    .slider-left-padding {
+        padding-left: calc(50% - 640px);
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .transactions {
+
+        &__slider {
+
+            &_title p {
+                font-size: 34px;
+                line-height: 42px;
+            }
+
+            &_desc {
+                padding: 39px 25px;
+            }
+
+            &_image {
+                flex: 1;
+                height: auto;
+            }
+        }
+
+        &__item_value p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .serviceBlock {
+
+        &__title h2 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        &__desc {
+            align-items: flex-start;
+        }
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .aboutUs {
+
+        &__item {
+            max-width: 100%;
+        }
+
+        &__items {
+
+            & > div {
+
+                &:nth-child(n+3) {
+                    margin-top: 64px;
+                }
+
+            }
+
+        }
+    }
+
+    .transactions {
+
+        &__slider {
+
+            &_title {
+                margin-top: 20px;
+            }
+
+            &_desc {
+                padding: 30px 25px;
+            }
+
+            &_services {
+                bottom: 6px;
+                right: 470px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+
+        &__services {
+
+            &_social {
+                margin-top: 40px;
+
+                a:not(:first-child) {
+                    margin-left: 13px;
+                }
+
+                img {
+                    max-width: 24px;
+                }
+            }
+
+            &_phone {
+                margin-bottom: 5px;
+
+                a {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.01em;
+                }
+            }
+
+            &_address, &_email {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_email a {
+                text-decoration: underline;
+            }
+
+            &_mobile {
+                max-width: 290px;
+            }
+        }
+
+        .nav-link {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.01em;
+            padding: 0;
+        }
+
+        .nav-item {
+
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+
+        .navbar-collapse.show {
+            padding-top: 54px;
+            height: calc(100vh - 51px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__services_mobile {
+            padding: 25px 0;
+        }
+
+    }
+
+    .course {
+        border-top: 1.5px solid rgba(224, 224,224, .6);
+    }
+
+    .mainBanner {
+
+        &__wrapper {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        &__inner {
+            margin-top: 0;
+        }
+
+        &__btn {
+
+            button {
+                background-color: $Primary;
+                color: #ffffff;
+                border-radius: 82px;
+                height: 62px;
+                width: 400px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .serviceBlock {
+
+        &__title {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    .sectorBlock__title {
+
+        h2 {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+
+    .transactions {
+
+        &__slider {
+
+            &_item {
+                flex-direction: column-reverse;
+            }
+
+            &_image {
+                flex: auto;
+                height: 190px;
+                width: 100%;
+                border-radius: 16px 16px 0 0;
+            }
+
+            &_desc {
+                padding: 30px 25px 105px;
+            }
+
+            &_services {
+                bottom: 24px;
+                right: 24px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .mainBanner {
+        min-height: 500px;
+
+        &__wrapper {
+            min-height: 500px;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 48px;
+        }
+
+        span {
+            background-color: transparent;
+            color: inherit;
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .aboutUs {
+        margin-top: 64px;
+
+        &__item {
+            display: flex;
+            align-items: flex-start;
+
+            &_title {
+                min-width: 120px;
+
+                p {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+
+            &_desc {
+                margin-top: 0;
+                margin-left: 25px;
+            }
+        }
+
+        &__items > div:nth-child(n+2) {
+            margin-top: 40px;
+        }
+
+        &__course {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+    }
+
+    .serviceBlock {
+
+        &__item {
+
+            &_detail {
+                margin-top: 10px;
+
+                button {
+                    color: $Primary;
+                    position: relative;
+                    padding-right: 18px;
+
+                    &::after {
+                        content: url("../img/icons/arrow.svg");
+                        position: absolute;
+                        right: 0;
+                        top: -1px;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    .header {
+
+        .navbar-brand img {
+            width: 133px;
+        }
+    }
+
+    .course__item:not(:first-child) {
+        margin-left: 24px;
+    }
+
+    .mainBanner {
+        min-height: 484px;
+
+        &__wrapper {
+            min-height: 484px;
+        }
+
+        &__btn {
+
+            button {
+                height: 52px;
+                width: 328px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .aboutUs {
+        padding: 0 16px;
+
+        &__item {
+
+            &_desc {
+                margin-left: 10px;
+
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            &_title {
+                min-width: 90px;
+
+                p {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &__course {
+            font-size: 12px;
+            padding: 2.5px 2px;
+        }
+
+        &__items > div:nth-child(n+2) {
+            margin-top: 24px;
+        }
+
+    }
+
+    .serviceBlock {
+        margin-top: 64px;
+
+        &__title h2 {
+            font-size: 28px;
+            line-height: 40px;
+            margin-bottom: 0;
+        }
+
+        &__items {
+            margin-top: 0;
+
+            .row {
+                margin-left: -15px;
+                margin-right: -15px;
+
+                & > div {
+                    margin-top: 24px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+
+        &__item_group {
+            padding: 24px 24px 64px 24px;
+        }
+
+    }
+
+    .block-title {
+
+        h2 {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
+
+    .sectorBlock {
+        margin-top: 64px;
+
+        &__title {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__slider_wrapper {
+            margin-top: 24px;
+        }
+
+        .swiper-slide {
+            width: 280px;
+        }
+
+        &__item {
+
+            &_desc p {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            &_image {
+                height: 178px;
+            }
+        }
+    }
+
+    .transactions {
+
+        &__item {
+
+            &_value p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &_vn {
+                min-height: 100px;
+                padding: 20px 15px;
+                justify-content: space-around;
+            }
+        }
+
+        &__slider_title p {
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        &__items {
+            margin-top: 6px;
+        }
+
+        &__slider_desc_vn {
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .serviceBlock {
+
+        &__title h2 {
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.01em;
+        }
+
+        &__item {
+            min-height: 300px;
+
+            &_image {
+                height: 144px;
+            }
+
+            &_title p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            &_desc_vn p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            &_number {
+                min-width: 32px;
+                height: 32px;
+                margin-left: 10px;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: -0.01em;
+            }
+
+            &_detail {
+
+                button {
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding-right: 16px;
+
+                    &::after {
+                        top: 0;
+                    }
+                }
+
+            }
+
+            &_desc_vn {
+                margin-top: 8px;
+            }
+        }
+
+    }
+
+    .block-title {
+
+        h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+
+    .sectorBlock {
+
+        &__item_desc {
+            min-height: 100px;
+            padding: 16px 24px 24px;
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        .swiper-slide {
+            min-height: 278px;
+        }
+
+    }
+
+    .transactions {
+
+        &__slider {
+
+            &_image {
+                height: 96px;
+            }
+
+            &_desc {
+                padding: 24px 24px 80px;
+
+                span {
+                    font-size: 11px;
+                    line-height: 12px;
+                }
+            }
+
+            &_title p {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        &__item_vn {
+            min-height: 72px;
+            padding: 10px 15px;
+        }
+    }
+
+    .sliderArrow__btn {
+        min-width: 32px;
+        height: 32px;
+
+        svg {
+            height: 12px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .header {
+
+        .navbar-brand img {
+            width: 133px;
+        }
+
+        &__services_mobile {
+            max-width: 242px;
+        }
+
+        &__services {
+
+            &_address, &_email {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    .mainBanner {
+        h1 {
+            font-size: 38px;
+            line-height: 48px;
+        }
+    }
+
+    .aboutUs {
+
+        &__item {
+
+            &_desc p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            &_title {
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .mainBanner {
+        h1 {
+            font-size: 33px;
+            line-height: 40px;
+        }
+    }
+}

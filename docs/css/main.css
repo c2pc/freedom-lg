@@ -1,4 +1,3 @@
-@charset "UTF-8";
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms; }
 
@@ -746,7 +745,7 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #55C983;
+  --green: #28a745;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -754,7 +753,7 @@
   --gray-dark: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;
-  --success: #55C983;
+  --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
@@ -2119,19 +2118,19 @@ pre {
 .table-success,
 .table-success > th,
 .table-success > td {
-  background-color: #cff0dc; }
+  background-color: #c3e6cb; }
 
 .table-success th,
 .table-success td,
 .table-success thead th,
 .table-success tbody + tbody {
-  border-color: #a7e3bf; }
+  border-color: #8fd19e; }
 
 .table-hover .table-success:hover {
-  background-color: #bceace; }
+  background-color: #b1dfbb; }
   .table-hover .table-success:hover > td,
   .table-hover .table-success:hover > th {
-    background-color: #bceace; }
+    background-color: #b1dfbb; }
 
 .table-info,
 .table-info > th,
@@ -2467,7 +2466,7 @@ textarea.form-control {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 80%;
-  color: #55C983; }
+  color: #28a745; }
 
 .valid-tooltip {
   position: absolute;
@@ -2480,8 +2479,8 @@ textarea.form-control {
   margin-top: .1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: #212529;
-  background-color: rgba(85, 201, 131, 0.9);
+  color: #fff;
+  background-color: rgba(40, 167, 69, 0.9);
   border-radius: 0.25rem; }
   .form-row > .col > .valid-tooltip,
   .form-row > [class*="col-"] > .valid-tooltip {
@@ -2494,30 +2493,30 @@ textarea.form-control {
   display: block; }
 
 .was-validated .form-control:valid, .form-control.is-valid {
-  border-color: #55C983;
+  border-color: #28a745;
   padding-right: calc(1.5em + 0.75rem);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2355C983' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem); }
   .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
-    border-color: #55C983;
-    box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.25); }
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem); }
 
 .was-validated .custom-select:valid, .custom-select.is-valid {
-  border-color: #55C983;
+  border-color: #28a745;
   padding-right: calc(0.75em + 2.3125rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat, #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2355C983' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat; }
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right 0.75rem center/8px 10px no-repeat, #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) no-repeat; }
   .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
-    border-color: #55C983;
-    box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.25); }
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
-  color: #55C983; }
+  color: #28a745; }
 
 .was-validated .form-check-input:valid ~ .valid-feedback,
 .was-validated .form-check-input:valid ~ .valid-tooltip, .form-check-input.is-valid ~ .valid-feedback,
@@ -2525,26 +2524,26 @@ textarea.form-control {
   display: block; }
 
 .was-validated .custom-control-input:valid ~ .custom-control-label, .custom-control-input.is-valid ~ .custom-control-label {
-  color: #55C983; }
+  color: #28a745; }
   .was-validated .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before {
-    border-color: #55C983; }
+    border-color: #28a745; }
 
 .was-validated .custom-control-input:valid:checked ~ .custom-control-label::before, .custom-control-input.is-valid:checked ~ .custom-control-label::before {
-  border-color: #7cd59f;
-  background-color: #7cd59f; }
+  border-color: #34ce57;
+  background-color: #34ce57; }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.25); }
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
 .was-validated .custom-control-input:valid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-valid:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: #55C983; }
+  border-color: #28a745; }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
-  border-color: #55C983; }
+  border-color: #28a745; }
 
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label {
-  border-color: #55C983;
-  box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.25); }
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
 
 .invalid-feedback {
   display: none;
@@ -2778,30 +2777,30 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
 
 .btn-success {
-  color: #212529;
-  background-color: #55C983;
-  border-color: #55C983; }
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745; }
   .btn-success:hover {
     color: #fff;
-    background-color: #3cbc6f;
-    border-color: #39b269; }
+    background-color: #218838;
+    border-color: #1e7e34; }
   .btn-success:focus, .btn-success.focus {
     color: #fff;
-    background-color: #3cbc6f;
-    border-color: #39b269;
-    box-shadow: 0 0 0 0.2rem rgba(77, 176, 118, 0.5); }
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5); }
   .btn-success.disabled, .btn-success:disabled {
-    color: #212529;
-    background-color: #55C983;
-    border-color: #55C983; }
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745; }
   .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
   .show > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #39b269;
-    border-color: #36a963; }
+    background-color: #1e7e34;
+    border-color: #1c7430; }
     .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
     .show > .btn-success.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(77, 176, 118, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5); }
 
 .btn-info {
   color: #fff;
@@ -2976,25 +2975,25 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
 .btn-outline-success {
-  color: #55C983;
-  border-color: #55C983; }
+  color: #28a745;
+  border-color: #28a745; }
   .btn-outline-success:hover {
-    color: #212529;
-    background-color: #55C983;
-    border-color: #55C983; }
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745; }
   .btn-outline-success:focus, .btn-outline-success.focus {
-    box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); }
   .btn-outline-success.disabled, .btn-outline-success:disabled {
-    color: #55C983;
+    color: #28a745;
     background-color: transparent; }
   .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
   .show > .btn-outline-success.dropdown-toggle {
-    color: #212529;
-    background-color: #55C983;
-    border-color: #55C983; }
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745; }
     .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-success.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); }
 
 .btn-outline-info {
   color: #17a2b8;
@@ -4685,14 +4684,14 @@ input[type="button"].btn-block {
     box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
 .badge-success {
-  color: #212529;
-  background-color: #55C983; }
+  color: #fff;
+  background-color: #28a745; }
   a.badge-success:hover, a.badge-success:focus {
-    color: #212529;
-    background-color: #39b269; }
+    color: #fff;
+    background-color: #1e7e34; }
   a.badge-success:focus, a.badge-success.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(85, 201, 131, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); }
 
 .badge-info {
   color: #fff;
@@ -4800,13 +4799,13 @@ input[type="button"].btn-block {
     color: #202326; }
 
 .alert-success {
-  color: #2c6944;
-  background-color: #ddf4e6;
-  border-color: #cff0dc; }
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb; }
   .alert-success hr {
-    border-top-color: #bceace; }
+    border-top-color: #b1dfbb; }
   .alert-success .alert-link {
-    color: #1d452d; }
+    color: #0b2e13; }
 
 .alert-info {
   color: #0c5460;
@@ -5087,15 +5086,15 @@ input[type="button"].btn-block {
     border-color: #383d41; }
 
 .list-group-item-success {
-  color: #2c6944;
-  background-color: #cff0dc; }
+  color: #155724;
+  background-color: #c3e6cb; }
   .list-group-item-success.list-group-item-action:hover, .list-group-item-success.list-group-item-action:focus {
-    color: #2c6944;
-    background-color: #bceace; }
+    color: #155724;
+    background-color: #b1dfbb; }
   .list-group-item-success.list-group-item-action.active {
     color: #fff;
-    background-color: #2c6944;
-    border-color: #2c6944; }
+    background-color: #155724;
+    border-color: #155724; }
 
 .list-group-item-info {
   color: #0c5460;
@@ -5855,12 +5854,12 @@ button.bg-secondary:focus {
   background-color: #545b62 !important; }
 
 .bg-success {
-  background-color: #55C983 !important; }
+  background-color: #28a745 !important; }
 
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #39b269 !important; }
+  background-color: #1e7e34 !important; }
 
 .bg-info {
   background-color: #17a2b8 !important; }
@@ -5945,7 +5944,7 @@ button.bg-dark:focus {
   border-color: #6c757d !important; }
 
 .border-success {
-  border-color: #55C983 !important; }
+  border-color: #28a745 !important; }
 
 .border-info {
   border-color: #17a2b8 !important; }
@@ -8377,10 +8376,10 @@ a.text-secondary:hover, a.text-secondary:focus {
   color: #494f54 !important; }
 
 .text-success {
-  color: #55C983 !important; }
+  color: #28a745 !important; }
 
 a.text-success:hover, a.text-success:focus {
-  color: #339f5e !important; }
+  color: #19692c !important; }
 
 .text-info {
   color: #17a2b8 !important; }
@@ -8505,10 +8504,17 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.f-container {
+  max-width: 1310px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
 @font-face {
   font-family: "GTAmericaLCG";
   src: url("../../fonts/GTAmericaLCG-Rg.otf") format("opentype");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
@@ -8526,1442 +8532,827 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-display: swap; }
 
-@media screen and (max-width: 1500px) {
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: right 85%, 125% 133px, left top;
-    background-size: auto, 800px, auto; }
-  .investments-platform-advantage .advantages-content {
-    max-width: 80%; } }
+* {
+  box-sizing: border-box;
+  font-family: "GTAmericaLCG", sans-serif !important;
+  outline: none !important;
+  -webkit-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important; }
 
-@media screen and (max-width: 1460px) {
-  .news-container .container-fluid.right-margin-none, .news-container .right-margin-none.container-sm, .news-container .right-margin-none.container-md, .news-container .right-margin-none.container-lg, .news-container .right-margin-none.container-xl {
-    padding-left: 30px;
-    padding-right: 30px; }
-  .investments-platform-advantage {
-    background-size: 49%, 46%; }
-  .investments-platform-advantage .advantages-content {
-    max-width: 90%; } }
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242624; }
 
-@media screen and (max-width: 1400px) {
-  .banner-container .banner-content .header-h1 {
-    font-size: 48px;
-    line-height: 60px; }
-  .banner-container .banner-content .header-h1-gradient {
-    font-size: 48px;
-    line-height: 60px; }
-  .about-container .about-grid {
-    padding-top: 0; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: right 85%, 124% 133px, left top;
-    background-size: auto, 700px, auto; }
-  .terms-container .project-container .project-content .project-card {
-    height: 100%; } }
+img {
+  width: 100%; }
 
-@media screen and (max-width: 1280px) {
-  .button-pa {
-    font-size: 16px;
-    width: 200px; }
-  .banner-container {
-    min-height: 850px; }
-    .banner-container .banner-content .form-text span {
-      display: contents; }
-    .banner-container .banner-content .header-h1 {
-      font-size: 36px;
-      line-height: 42px; }
-    .banner-container .banner-content .header-h1-gradient {
-      font-size: 36px;
-      line-height: 42px; }
-    .banner-container .banner-content .title {
-      font-size: 24px;
-      line-height: 24px; }
-    .banner-container .banner-content .text {
-      font-size: 16px; }
-  .about-container {
-    min-height: 100vh; }
-    .about-container .about-grid {
-      padding-top: 0; }
-    .about-container img {
-      max-width: 100%; }
-  .platform-advantage {
-    min-height: 100vh; }
-  .how-it-works {
-    min-height: 580px; }
-  .info {
-    min-height: 900px;
-    background: linear-gradient(288.38deg, #D0E0FE -15.25%, rgba(229, 236, 248, 0) 109.43%); }
-  .action-container {
-    min-height: auto;
-    margin-top: 80px;
-    padding-top: 90px;
-    padding-bottom: 90px; }
-  .news-container {
-    min-height: auto;
-    margin-top: 80px;
-    margin-bottom: 80px; }
-  .buttons .btn {
-    padding: 2px 30px;
-    margin-right: 20px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 54px;
-    color: #FFFFFF;
-    border-radius: 5px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-image: url(../img/index/nout.png), url(../img/index/nout-back.png);
-    background-position: right 8%, right top;
-    background-size: 50%, 57%; } }
+button {
+  border: none;
+  background: inherit;
+  margin: 0;
+  padding: 0; }
 
-@media screen and (max-width: 1255px) {
-  .investments-platform-advantage {
-    min-height: auto;
-    margin-top: 80px;
-    margin-bottom: 20px; }
-    .investments-platform-advantage .faq-img {
-      width: 100px;
-      height: 100px;
-      margin-right: 15px; }
-      .investments-platform-advantage .faq-img img {
-        width: 42px; }
-    .investments-platform-advantage .advantages-content .advantage .advantage-text .card-title {
-      font-size: 24px;
-      line-height: 22px;
-      margin-bottom: 15px; }
-    .investments-platform-advantage .advantages-content .advantage .advantage-text .card-text {
-      font-size: 16px;
-      line-height: 24px; }
-  .investments-platform-advantage .advantages-content {
-    margin-top: 80px;
-    padding-right: 40px; }
-    .investments-platform-advantage .advantages-content .advantage {
-      margin-bottom: 60px; } }
+a {
+  color: #242624; }
+  a:hover {
+    color: #242624;
+    text-decoration: none; }
 
-@media screen and (max-width: 1200px) and (min-width: 992px) {
-  .footer .title {
-    font-size: 18px; }
-  .footer .text {
-    font-size: 14px;
-    line-height: 16px; } }
+b,
+strong {
+  font-weight: 700; }
 
-@media screen and (max-width: 1199px) {
-  .tags-container {
-    padding-left: 20px; } }
-
-@media screen and (max-width: 1180px) {
-  .how-it-works .card-number {
-    padding: 15px 10px; }
-  .platform-advantage .card .card-body h5 {
-    font-size: 16px; }
-  .platform-advantage .btn {
-    padding: 20px; }
-  .info .info-container {
-    margin-top: 30px; }
-  .info .questions-container a {
-    font-size: 16px;
-    margin: 0; }
-  .faq-card-title {
-    font-size: 22px; }
-  .news-container .news-card .news-title .white-text {
-    font-size: 22px;
-    line-height: 28px; } }
-
-@media screen and (max-width: 1150px) {
-  .active-projects .project-container .project-card .card-body .project-content .project-title {
-    font-size: 20px; }
-  .active-projects .project-container .project-card .card-body .project-content .project-security {
-    font-size: 16px; }
-  .active-projects .project-container .project-card .card-body .project-props .props-count {
-    font-size: 15px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 {
-    background-position-x: -170px; } }
-
-@media screen and (max-width: 1030px) {
-  .how-it-works {
-    height: auto; }
-    .how-it-works .cards {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-      -ms-flex-pack: center;
-          justify-content: center; }
-      .how-it-works .cards .col-card {
-        margin: 25px 0 25px 0;
-        max-width: 100%;
-        width: 48%;
-        position: relative; }
-        .how-it-works .cards .col-card:nth-child(odd) {
-          margin-right: 25px; }
-        .how-it-works .cards .col-card:last-child {
-          margin-right: 0; }
-        .how-it-works .cards .col-card .card-number {
-          height: 100%;
-          padding: 15px; }
-    .how-it-works .title {
-      margin-top: 30px; }
-    .how-it-works .title, .how-it-works .text {
-      text-align: left;
-      padding: 0; }
-    .how-it-works .number {
-      margin: 0;
-      position: absolute;
-      top: -30px;
-      left: 15px; }
-  .how-it-works {
-    margin-bottom: 80px; }
-  .navbar-expand-lg.top-menu .nav-link {
-    padding-right: 10px;
-    padding-left: 15px; }
-  .about-container .about-content .container-title {
-    font-size: 24px;
-    line-height: 38px; }
-  .banner-container {
-    min-height: 100%;
-    padding-top: 168px; }
-  .project-props .amount {
-    min-width: 98px; }
-  .action-container {
-    background-position-x: calc(100% - 50px); }
-  .container-fluid.investments .investments-banner, .investments.container-sm .investments-banner, .investments.container-md .investments-banner, .investments.container-lg .investments-banner, .investments.container-xl .investments-banner, .investments.container-sm .investments-banner, .investments.container-md .investments-banner, .investments.container-lg .investments-banner, .investments.container-xl .investments-banner {
-    min-height: auto; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 103% 104%, 138% 111px, left top;
-    background-size: 250px, 704px, auto; }
-  .investments-banner.banner-container .form-text {
-    max-width: 48%; }
-  .terms-container .project-container .project-content .card-body {
-    font-size: 18px;
-    line-height: 24px;
-    padding: 35px 70px 35px 20px; } }
-
-@media screen and (width: 1024px) {
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 8%, right top, left 100%;
-    background-image: url(../img/index/nout.png), url(../img/index/nout-back.png), url(../img/index/about-back.png);
-    background-repeat: no-repeat;
-    background-size: 50%, 57%, 50%; }
-  .investments-platform-advantage .advantages-content {
-    padding-right: 15px; } }
-
-@media screen and (max-width: 992px) {
-  .button-pa {
-    font-size: 16px; }
-  .container {
-    padding: 0 10px; }
-  .navbar-brand {
-    margin-right: 0; }
-  .how-it-works {
-    min-height: 600px; }
-    .how-it-works .col-card {
-      margin-left: 15px; }
-    .how-it-works .title {
-      font-size: 18px;
-      margin-top: 20px;
-      padding: 0; }
-    .how-it-works .card-number {
-      padding: 20px 10px; }
-  .buttons .btn {
-    padding: 0;
-    width: 160px;
-    font-size: 16px; }
-  .banner-container {
-    min-height: auto; }
-    .banner-container .banner-content .title {
-      font-size: 22px;
-      line-height: 24px; }
-    .banner-container .banner-content .text {
-      font-size: 16px; }
-    .banner-container .banner-content .buttons .btn-green span {
-      display: none; }
-  .about-container {
-    min-height: 100%;
-    margin-top: 60px; }
-    .about-container .about-content .container-title {
-      font-size: 28px;
-      line-height: 1.3; }
-    .about-container .about-content .text {
-      font-size: 16px;
-      line-height: 1.8;
-      margin-top: 35px; }
-  .platform-advantage .text {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-top: 35px; }
-  .active-projects .container-title {
-    font-size: 36px;
-    line-height: 1.3; }
-  .action-container .container-title {
-    font-size: 36px;
-    line-height: 60px; }
-  .action-container .text {
-    font-size: 18px;
-    line-height: 36px; }
-  .action-container .btn {
-    font-size: 18px;
-    line-height: 40px;
-    width: 200px; }
-  .navbar-expand-lg.top-menu .nav-link {
-    padding-right: 13px;
-    padding-left: 22px;
-    font-size: 17px;
-    letter-spacing: 0.3px; }
-  .news-container .container-fluid.right-margin-none, .news-container .right-margin-none.container-sm, .news-container .right-margin-none.container-md, .news-container .right-margin-none.container-lg, .news-container .right-margin-none.container-xl {
-    padding-left: 10px; }
-  .banner-container {
-    -ms-flex-align: start;
-        align-items: start;
-    padding-top: 120px;
-    padding-left: 0;
-    padding-right: 0; }
-    .banner-container .banner-content .form-text {
-      max-width: 85%; }
-  .investments-banner.banner-container .form-text {
-    max-width: 47%; } }
-
-@media screen and (max-width: 991px) {
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    height: 100%;
-    background-image: url(../img/index/nout.png), url(../img/index/nout-back.png);
-    background-position: right 13%, right 10%;
-    background-repeat: no-repeat;
-    background-size: 53%, 54%; }
-  .top-menu {
-    padding: 12px 15px !important;
-    background-color: #fff !important; }
-  .navbar-toggler-container {
+.header__services_lang {
+  margin-right: 22px; }
+  .header__services_lang_item {
+    width: 40px;
+    height: 40px;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    width: 100%; }
-  .navbar-toggler__user {
+    -ms-flex-pack: center;
+        justify-content: center;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: background-color .2s; }
+    .header__services_lang_item:not(:first-child) {
+      margin-left: 9px; }
+    .header__services_lang_item.active, .header__services_lang_item:hover {
+      background-color: #F7F7F7;
+      cursor: pointer; }
+
+.header__services_btn button {
+  font-size: 14px;
+  line-height: 18px;
+  width: 160px;
+  height: 40px; }
+
+@media screen and (max-width: 1309px) {
+  .header .navbar-brand {
+    margin-right: 30px; } }
+
+@media screen and (min-width: 1310px) {
+  .header .navbar-brand {
+    margin-right: 178px; } }
+
+.header .navbar-brand img {
+  width: 174px; }
+
+.header .toggler-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #242624;
+  transition: background-color .2s; }
+
+.header button[aria-expanded="true"] .toggler-icon {
+  background: #242624 url("../img/icons/close.svg") no-repeat center center/auto; }
+
+.header button[aria-expanded="false"] .toggler-icon {
+  background: url("../img/icons/toggler.svg") no-repeat center center/auto; }
+
+.course {
+  height: 52px;
+  background-color: #f5f7f5;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: hidden; }
+  .course__item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-align: center;
+        align-items: center;
+    font-size: 12px;
+    line-height: 20px; }
+    .course__item:not(:first-child) {
+      margin-left: 40px; }
+    .course__item_title {
+      font-weight: 700; }
+    .course__item_value {
+      font-weight: 500;
+      border-radius: 2px;
+      padding: 2.5px 2px;
+      position: relative; }
+      .course__item_value:first-child {
+        padding-left: 15px; }
+        .course__item_value:first-child::before {
+          content: url("../img/icons/polygon.svg");
+          display: inline-block;
+          position: absolute;
+          width: 10px;
+          left: 3px; }
+      .course__item_value:not(:first-child) {
+        margin-left: 8px; }
+    .course__item_group {
+      margin-left: 8px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+  .course__down .course__item_value {
+    background-color: #F7CFCF; }
+  .course__up .course__item_value {
+    background-color: #E1EDD8; }
+  .course__up .course__item_value:first-child::before {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 1px; }
+
+.mainBanner {
+  min-height: 646px;
+  background: url("../img/main-banner.jpg") no-repeat center center/cover; }
+  .mainBanner__inner {
+    max-width: 650px;
+    margin-top: -64px; }
+  .mainBanner h1 {
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 110%;
+    margin-bottom: 0; }
+  .mainBanner span {
+    background-color: #2D7D2F;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-top: 4px;
+    display: inline-block;
+    padding: 0 10px; }
+  .mainBanner p {
+    margin-bottom: 0;
+    margin-top: 21px; }
+  .mainBanner__wrapper {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-        align-items: center; }
-    .navbar-toggler__user a {
-      height: 54px; }
-  .navbar-brand img {
-    height: 48px; }
-  .navbar-toggler-user {
-    width: 55px;
-    height: 100%;
-    border-radius: 5px; }
-    .navbar-toggler-user img {
-      width: 22px; }
-  .navbar-toggler-icon {
-    width: 30px;
-    height: 30px; }
-  .navbar-toggler {
-    border-radius: 5px;
-    margin-right: 10px;
-    height: 54px;
-    padding: 0;
-    width: 55px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 {
-    background-position-x: unset; } }
+        align-items: center;
+    min-height: 646px; }
 
-@media screen and (max-width: 970px) {
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 103% 104%, 161% 100px, left top;
-    background-size: 206px, 690px, auto; } }
-
-@media screen and (max-width: 911px) {
-  .investments-platform-advantage .container-title {
-    font-size: 30px;
-    line-height: 39px; }
-  .investments-platform-advantage .advantages-content {
-    padding-right: 10px; } }
-
-@media screen and (max-width: 900px) {
-  .faq-card-title {
-    margin-top: 15px;
-    margin-bottom: 0;
-    font-size: 18px;
-    line-height: 36px; }
-  .info .questions-container a {
+.aboutUs {
+  margin-top: 160px; }
+  .aboutUs__course {
+    margin-left: 16px;
     font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 15px; }
-  .info .info-container {
-    padding: 0 20px; }
-  .col-md-4.col-sm-12.info-content {
-    padding: 0 10px; }
-  .container-fluid.investments .investments-banner .col-card, .investments.container-sm .investments-banner .col-card, .investments.container-md .investments-banner .col-card, .investments.container-lg .investments-banner .col-card, .investments.container-xl .investments-banner .col-card {
-    min-width: auto;
-    margin-right: 30px;
-    width: 31%; }
-    .container-fluid.investments .investments-banner .col-card:last-child, .investments.container-sm .investments-banner .col-card:last-child, .investments.container-md .investments-banner .col-card:last-child, .investments.container-lg .investments-banner .col-card:last-child, .investments.container-xl .investments-banner .col-card:last-child {
-      margin-right: 0; }
-  .container-fluid.investments .investments-banner .card-title, .investments.container-sm .investments-banner .card-title, .investments.container-md .investments-banner .card-title, .investments.container-lg .investments-banner .card-title, .investments.container-xl .investments-banner .card-title {
-    padding: 0; }
-  .container-fluid.investments .investments-banner .card-number, .investments.container-sm .investments-banner .card-number, .investments.container-md .investments-banner .card-number, .investments.container-lg .investments-banner .card-number, .investments.container-xl .investments-banner .card-number {
-    min-height: auto;
-    height: 100%; }
-  .container-fluid.investments .investments-banner .cards, .investments.container-sm .investments-banner .cards, .investments.container-md .investments-banner .cards, .investments.container-lg .investments-banner .cards, .investments.container-xl .investments-banner .cards {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: stretch;
-        align-items: stretch; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 102% 85%, 144% 100px, left top;
-    background-size: 150px, 600px, auto; }
-  .container.investments-banner.banner-container .header-h1 {
-    font-size: 30px;
-    line-height: 40px; } }
-
-@media screen and (max-width: 850px) {
-  .active-projects .project-container .project-card .card-body .project-content {
-    padding: 10px 20px 15px; }
-    .active-projects .project-container .project-card .card-body .project-content .project-title {
-      font-size: 16px;
-      line-height: 21px; }
-  .active-projects .project-container .col-sm-4.project-content {
-    padding: 8px; } }
-
-@media screen and (max-width: 805px) {
-  .banner-container .banner-content .header-h1, .banner-container .banner-content .header-h1-gradient {
-    font-size: 32px; }
-  .banner-container .banner-content .form-text {
-    margin-top: 30px;
-    font-size: 18px;
-    line-height: 30px; }
-  .banner-container .banner-content .statistic {
-    margin-top: 60px; }
-  .buttons {
-    margin-top: 50px; }
-  .investments-platform-advantage .faq-img {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-    border-radius: 5px; }
-  .investments-platform-advantage .advantages-content {
-    margin-top: 50px; }
-    .investments-platform-advantage .advantages-content .advantage .advantage-text .card-title {
-      font-size: 18px;
-      line-height: 18px;
-      margin-bottom: 10px; }
-    .investments-platform-advantage .advantages-content .advantage .advantage-text .card-text {
-      font-size: 14px;
-      line-height: 22px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 {
-    background-position-x: -170px; } }
-
-@media screen and (max-width: 768px) {
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 13%, right 10%, left 125%; }
-  .platform-advantage .card-container {
-    padding-left: 20px; }
-  .platform-advantage .card-content {
-    padding: 7px; }
-  .action-container .text {
-    margin: 30px 0 30px; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 102% 85%, 129% 100px, left top;
-    background-size: 150px, 500px, auto; }
-  .container-fluid.investments .investments-banner .card-title, .investments.container-sm .investments-banner .card-title, .investments.container-md .investments-banner .card-title, .investments.container-lg .investments-banner .card-title, .investments.container-xl .investments-banner .card-title {
-    font-size: 18px; }
-  .investments-platform-advantage .container-title {
-    font-size: 27px; }
-  .investments-platform-advantage .advantages-content .advantage {
-    margin-bottom: 50px; }
-  .investments-platform-advantage-mob {
-    display: none; }
-  .faq {
-    background: url(../img/index/faq.png) no-repeat top right;
-    background-size: 100%; }
-  .active-news-list {
-    margin-top: 5px;
-    margin-bottom: 35px; }
-  .container.news {
-    margin-top: 90px; } }
-
-@media screen and (max-width: 767px) {
-  .active-projects {
-    background: #f1f5fd;
-    margin-bottom: 0; }
-    .active-projects .project-container.desktop-block {
-      display: none; }
-    .active-projects .project-container.mobile-block {
-      display: block; }
-    .active-projects .project-container .buttons {
-      display: none; }
-    .active-projects .project-container .project-content {
-      width: 272px; }
-    .active-projects .project-container .project-card {
-      border-radius: 16px;
-      margin-bottom: 80px; }
-      .active-projects .project-container .project-card .card-body .project-props > div {
-        border-right: none; }
-      .active-projects .project-container .project-card .card-body .project-props .props-count {
-        font-size: 14px; }
-  .about-container {
-    min-height: auto;
-    padding-top: 120px;
-    padding-bottom: 120px; }
-    .about-container .about-content {
-      min-height: auto; }
-      .about-container .about-content .who-we-more {
-        display: block; }
-      .about-container .about-content .text {
-        display: none; }
-      .about-container .about-content .container-title {
-        font-size: 24px; }
-    .about-container .about-grid img {
-      display: none; }
-  .platform-advantage .text,
-  .platform-advantage .desktop-block {
-    display: none; }
-  .platform-advantage .mobile-block {
-    display: block; }
-  .platform-advantage .card-container {
-    padding-left: 15px;
-    padding-right: 15px !important;
-    margin-top: 40px;
-    margin-bottom: 60px; }
-    .platform-advantage .card-container .card-content {
-      width: 278px;
-      height: 140px; }
-      .platform-advantage .card-container .card-content:nth-child(2), .platform-advantage .card-container .card-content:nth-child(4) {
-        margin-top: 0; }
-  .platform-advantage .card {
-    box-shadow: none;
-    height: inherit;
-    margin: 0; }
-  .platform-advantage .btn-group {
-    width: 100%; }
-    .platform-advantage .btn-group a {
-      width: 50%; }
-      .platform-advantage .btn-group a .btn {
-        width: 100%;
-        font-size: 18px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    height: 100%;
-    background-image: url(../img/index/nout.png), url(../img/index/mobile-banner-circle.png);
-    background-position: right 30%, right 18%;
-    background-repeat: no-repeat;
-    background-size: 37%, 32%; }
-  .banner-container {
-    -ms-flex-align: start;
-        align-items: start;
-    padding-top: 120px;
-    padding-left: 0;
-    padding-right: 0; }
-    .banner-container .banner-content .form-text {
-      max-width: 72%; }
-  .banner-container .banner-content .stat {
-    -ms-flex: unset;
-        flex: unset;
-    margin-right: 40px; }
-  .platform-advantage {
-    min-height: unset;
-    background: linear-gradient(1.13deg, rgba(229, 236, 248, 0) 4.02%, rgba(229, 236, 248, 0.62) 97.21%);
-    padding-top: 80px; }
-    .platform-advantage p {
-      text-align: center; }
-  .advantage-slider-card {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    padding: 15px; }
-  .platform-advantage .card .card-img-top {
-    width: 50px;
-    height: 50px;
-    margin-top: 0; }
-  .platform-advantage .card .card-body {
-    padding: 0 0 0 10px;
-    text-align: left; }
-    .platform-advantage .card .card-body h5 {
+    line-height: 20px;
+    border-radius: 4px;
+    padding: 8px; }
+    .aboutUs__course_title {
+      font-weight: 700; }
+    .aboutUs__course_value {
       font-weight: 500;
-      font-size: 18px;
-      line-height: 25px;
-      margin: 0; }
-  .questions-container.collapse:not(.show) {
-    display: none; }
-  .info {
-    min-height: auto; }
-    .info .info-content-block {
-      padding-top: 80px;
-      width: 100%; }
-  .info-title__info-link {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: baseline;
-        align-items: baseline; }
-  .info-title-link {
-    color: #58BF91;
-    font-weight: bold;
-    font-size: 22px; }
-  .faq-img__card-title {
-    display: -ms-flexbox;
-    display: flex; }
-  .faq-card-title {
-    margin-top: 17px;
-    margin-left: 25px;
-    font-size: 22px; }
-  .faq-panel {
-    position: relative; }
-  .faq-card-show-hide::after {
-    content: "Показать";
-    bottom: 15px;
-    position: absolute;
-    margin-left: 123px;
-    color: #58BF91;
-    text-decoration: underline;
-    font-weight: bold; }
-  .faq-panel[aria-expanded="true"] .faq-card-show-hide::after {
-    content: "Скрыть";
-    margin-left: 0;
-    bottom: 0; }
-  .col-md-4.col-sm-12.info-content {
-    margin-bottom: 20px; }
-  .info .questions-container a:last-child {
-    margin-bottom: 30px; }
-  .active-projects {
-    min-height: auto;
-    padding-top: 80px; }
-  .info .info-container {
-    margin-bottom: 70px; }
-  .info .questions-container a {
-    font-size: 16px; }
-  .news-container .swiper__arrow-container {
-    display: none; }
-  .container.investments-banner.banner-container .banner-content .form-text {
-    max-width: 46%; }
-  .terms-container .project-container .project-content {
-    padding-top: 25px;
-    margin-bottom: 20px; }
-    .terms-container .project-container .project-content .project-card {
-      min-height: 130px; }
-    .terms-container .project-container .project-content .card-body {
-      font-size: 23px;
-      line-height: 32px;
-      padding: 35px 70px 35px 20px;
-      text-align: center;
+      position: relative;
+      padding-left: 16px; }
+      .aboutUs__course_value::before {
+        content: url("../img/icons/polygon-green.svg");
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        left: 3px;
+        top: -4px; }
+  .aboutUs__course_up {
+    background-color: #E1EDD8; }
+    .aboutUs__course_up .aboutUs__course_value {
+      color: #0C5C0E; }
+  .aboutUs__course_down {
+    background-color: #F7CFCF; }
+    .aboutUs__course_down .aboutUs__course_value::before {
+      content: url("../img/icons/polygon.svg");
+      top: -3px; }
+  .aboutUs p {
+    margin-bottom: 0; }
+  @media screen and (min-width: 992px) {
+    .aboutUs__items > div:nth-child(n+4) {
+      margin-top: 64px; }
+    .aboutUs__items > div:nth-child(3n + 3) .aboutUs__item {
+      float: right; }
+    .aboutUs__items > div:nth-child(3n + 2) .aboutUs__item {
+      margin-left: 34px; } }
+  .aboutUs__item {
+    max-width: 312px; }
+    .aboutUs__item_title {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
-          align-items: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .terms-container {
-    min-height: auto;
-    margin-top: 80px;
-    margin-bottom: 60px; }
-    .terms-container .project-container {
-      margin-top: 20px; }
-  .investments-platform-advantage .advantages-content {
-    display: none; }
-  .advantage-title-block {
+          align-items: center; }
+      .aboutUs__item_title p {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px; }
+    .aboutUs__item_desc {
+      margin-top: 16px; }
+
+.serviceBlock {
+  margin-top: 160px; }
+  .serviceBlock__desc {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: end;
+        align-items: flex-end; }
+    .serviceBlock__desc > div {
+      -ms-flex: 1;
+          flex: 1; }
+    .serviceBlock__desc_vn {
+      max-width: 551px;
+      margin-left: 84px; }
+  .serviceBlock__title {
+    max-width: 596px; }
+    .serviceBlock__title h2 {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 64px; }
+  .serviceBlock__item {
+    background-color: #F7F7F7;
+    border-radius: 16px;
+    position: relative;
+    min-height: 438px;
+    transition: background-color .2s; }
+    .serviceBlock__item:hover {
+      background-color: #EEEDED;
+      cursor: pointer; }
+    .serviceBlock__item p {
+      margin-bottom: 0; }
+    .serviceBlock__item_group {
+      display: -ms-flexbox;
+      display: flex;
+      padding: 40px 38px 64px 32px; }
+    .serviceBlock__item_number {
+      min-width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      background-color: #ffffff;
+      font-weight: 700;
+      margin-left: 15px; }
+    .serviceBlock__item_title p {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.01em; }
+    .serviceBlock__item_image {
+      width: 100%;
+      height: 182px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 0 0 16px 16px;
+      position: absolute;
+      bottom: 0; }
+    .serviceBlock__item_desc_vn {
+      margin-top: 15px; }
+  .serviceBlock__items {
+    margin-top: 36px; }
+    .serviceBlock__items .row {
+      margin-left: -20px;
+      margin-right: -20px; }
+      .serviceBlock__items .row > div {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 40px; }
+
+.sectorBlock {
+  margin-top: 160px; }
+  .sectorBlock__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
-  .investments-platform-advantage .faq-img {
-    -ms-flex-negative: 0;
-        flex-shrink: 0; }
-  .advantage-title-block .card-title {
-    color: #29367E;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 0; }
-  .advantage-text .card-text {
-    color: #5E6487;
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 13px; }
-  .investments-platform-advantage-mob {
-    display: block;
-    margin-top: 40px; }
-  .investments-platform-advantage {
-    margin-bottom: 80px;
-    min-height: 800px;
-    -ms-flex-align: start;
-        align-items: start;
-    background-size: 75%, 67%;
-    background-position: right bottom; } }
-
-@media screen and (max-width: 675px) {
-  .how-it-works .cards {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-top: 0; }
-    .how-it-works .cards .col-card {
-      width: 100%; }
-  .container-desc {
-    color: #5ABB97; }
-  .how-it-works {
-    background: none; }
-  .platform-advantage .container-desc {
-    color: #508AD8; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 102% 85%, 154% 100px, left top;
-    background-size: 150px, 450px, auto; }
-  .container-fluid.investments .investments-banner .col-card, .investments.container-sm .investments-banner .col-card, .investments.container-md .investments-banner .col-card, .investments.container-lg .investments-banner .col-card, .investments.container-xl .investments-banner .col-card {
-    margin-right: 15px;
-    width: 32%; }
-  .container-fluid.investments .investments-banner .card-number, .investments.container-sm .investments-banner .card-number, .investments.container-md .investments-banner .card-number, .investments.container-lg .investments-banner .card-number, .investments.container-xl .investments-banner .card-number {
-    padding: 26px 18px 26px; }
-  .advantage-title-block .card-title {
-    font-size: 18px;
-    line-height: 26px; }
-  .advantage-text .card-text {
-    font-size: 15px;
-    line-height: 21px;
-    margin-top: 10px; }
-  .investments-platform-advantage-mob {
-    margin-top: 30px; }
-  .investments-platform-advantage {
-    min-height: 700px; } }
-
-@media screen and (max-width: 650px) {
-  .banner-container .banner-content .stat {
-    margin-right: 25px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 27%, right 17%;
-    background-size: 37%, 33%; }
-  .action-container .container-title {
-    font-size: 26px;
-    line-height: 30px; }
-  .action-container .text {
-    line-height: 27px; }
-  .action-container .btn {
-    font-size: 16px;
-    line-height: 30px;
-    width: 155px; }
-  .container-fluid.investments .investments-banner .cards, .investments.container-sm .investments-banner .cards, .investments.container-md .investments-banner .cards, .investments.container-lg .investments-banner .cards, .investments.container-xl .investments-banner .cards {
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .container-fluid.investments .investments-banner .col-card, .investments.container-sm .investments-banner .col-card, .investments.container-md .investments-banner .col-card, .investments.container-lg .investments-banner .col-card, .investments.container-xl .investments-banner .col-card {
+  .sectorBlock .swiper-slide {
+    width: 356px;
+    min-height: 392px; }
+  .sectorBlock__item_image {
+    height: 232px;
     width: 100%;
-    position: relative;
-    margin: 25px 0 25px 0; }
-    .container-fluid.investments .investments-banner .col-card p, .investments.container-sm .investments-banner .col-card p, .investments.container-md .investments-banner .col-card p, .investments.container-lg .investments-banner .col-card p, .investments.container-xl .investments-banner .col-card p {
-      text-align: left; }
-  .container-fluid.investments .investments-banner .card-title, .investments.container-sm .investments-banner .card-title, .investments.container-md .investments-banner .card-title, .investments.container-lg .investments-banner .card-title, .investments.container-xl .investments-banner .card-title {
-    margin-top: 20px; }
-  .container-fluid.investments .investments-banner .number, .investments.container-sm .investments-banner .number, .investments.container-md .investments-banner .number, .investments.container-lg .investments-banner .number, .investments.container-xl .investments-banner .number {
-    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px 16px 0 0; }
+  .sectorBlock__item_desc {
+    background-color: #F7F7F7;
+    padding: 24px;
+    min-height: 160px;
+    border-radius: 0 0 16px 16px; }
+    .sectorBlock__item_desc p {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+      margin-bottom: 0; }
+  .sectorBlock__slider_wrapper {
+    margin-top: 64px; }
+
+.transactions {
+  background-color: #F4F6F5;
+  padding: 120px 0; }
+  .transactions__slider_services {
     position: absolute;
-    top: -30px;
-    left: 15px; } }
-
-@media screen and (max-width: 644px) {
-  .active-news-list .news-list-content .news-list-card.news-list-0 {
-    background-position-x: -280px; } }
-
-@media screen and (max-width: 600px) {
-  .advantage-title-block .card-title {
-    font-size: 20px;
-    line-height: 32px; }
-  .advantage-text .card-text {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 15px; }
-  .investments-platform-advantage {
-    min-height: 650px; } }
-
-@media screen and (max-width: 675px) and (min-width: 576px) {
-  .footer .title {
-    font-size: 18px; }
-  .footer .text {
-    font-size: 16px;
-    line-height: 18px; } }
-
-@media screen and (max-width: 575px) {
-  .footer .panel-title {
-    position: relative; }
-  .footer .panel-title::after {
-    content: url("../img/down_arrow.svg");
-    color: #333;
-    top: -2px;
-    position: absolute;
-    margin-left: 8px; }
-  .footer .panel-title[aria-expanded="true"]::after {
-    content: url("../img/up_arrow.svg"); }
-  .footer .collapse:not(.show) {
-    display: none; }
-  .footer .blocks {
-    margin-bottom: 45px; }
-  .footer .license {
-    font-size: 15px;
-    margin-bottom: 5px; }
-  .action-container {
-    background-position-x: calc(100% + 100px);
-    padding-top: 70px;
-    padding-bottom: 80px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 {
-    background-position-x: center;
-    height: 330px;
-    padding: 25px 20px 10px 20px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 .card-body .news-list-footer .news-list-title {
-    font-size: 20px;
-    line-height: 26px; }
-  .active-news-list .news-list-content .news-list-card .card-body .news-list-footer .news-list-desc {
-    margin-bottom: 20px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 .card-body .news-list-footer .news-list-desc {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 22px;
-    color: rgba(255, 255, 255, 0.83); }
-  .active-news-list .news-list-content .news-list-card .card-body .news-list-footer .news-list-tags .news-list-tag {
-    font-size: 16px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0:before {
-    height: 330px; } }
-
-@media screen and (max-width: 565px) {
-  .banner-container .banner-content .statistic {
-    margin-top: 20px; }
-    .banner-container .banner-content .statistic .stat:not(:last-child) {
-      display: none; }
-  .buttons__statistics {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse; }
-  .buttons {
-    margin-top: 30px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 32%, right 25%;
-    background-size: 42%, 34%; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 179% 100px;
-    background-size: 415px;
-    background-image: url(../img/investment/invest-banner-circle.png); }
-  .container.investments-banner.banner-container .header-h1 {
-    font-size: 22px;
-    line-height: 35px; } }
-
-@media screen and (max-width: 500px) {
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-size: 315px;
-    background-position: 144% 100px; } }
-
-@media screen and (max-width: 480px) {
-  .how-it-works .title {
-    margin: 15px 0; }
-  .how-it-works .number {
-    width: 45px;
-    height: 45px;
-    font-size: 24px;
-    top: -22px; }
-  .how-it-works .cards {
-    margin-top: 10px; }
-    .how-it-works .cards .col-card {
-      margin: 25px 0 8px 0; }
-  .container-title, .active-projects .container-title {
-    font-size: 24px;
-    line-height: 34px; }
-  .container-desc {
-    font-size: 16px;
-    color: #335FD1; }
-  .navbar-brand {
-    padding: 0; }
-    .navbar-brand img {
-      height: 38px; }
-  .navbar-toggler {
-    padding: 0;
-    height: 48px;
-    width: 49px; }
-  .navbar-toggler-user {
-    width: 49px; }
-  .navbar-toggler__user a {
-    height: 48px; }
-  .navbar-expand-lg.top-menu .nav-link {
-    padding-left: 0; }
-  .navbar-toggler-icon {
-    width: 29px;
-    height: 29px; }
-  .navbar-toggler-user img {
-    width: 21px; }
-  .footer .title {
-    font-size: 18px; }
-  .banner-container {
-    padding-top: 90px; }
-    .banner-container .banner-content .form-text {
-      max-width: 67%; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-image: url(../img/index/nout-mob.svg), url(../img/index/mobile-banner-circle.png);
-    background-position: right 20%, right 25%;
-    background-size: 54%, 36%; }
-  .active-projects {
-    background: none; }
-    .active-projects .project-container .project-card {
-      margin-bottom: 50px;
-      box-shadow: 10px 12px 20px rgba(97, 110, 122, 0.15); }
-  .info-title-link {
-    font-size: 18px; }
-  .action-container {
-    background-position-x: calc(100% + 75px);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-top: 60px; }
-    .action-container .btn {
-      display: none; }
-    .action-container .text {
-      margin: 30px 0 10px; }
-  .news-container .news-card {
-    height: 255px;
-    width: 255px;
-    padding: 20px; }
-  .news-container .news-card:before {
-    width: 100%;
-    height: 255px; }
-  .news-container .swiper-slide {
-    width: 255px; }
-  .news-container .news-title .white-text {
-    font-size: 18px;
-    line-height: 1.3px; }
-  .news-container {
-    margin-top: 40px;
-    margin-bottom: 20px; }
-    .news-container .container-title {
-      font-size: 24px;
-      line-height: 34px; }
-  .container-fluid.investments .investments-banner .number, .investments.container-sm .investments-banner .number, .investments.container-md .investments-banner .number, .investments.container-lg .investments-banner .number, .investments.container-xl .investments-banner .number {
-    width: 45px;
-    height: 45px;
-    font-size: 24px;
-    top: -22px; }
-  .container-fluid.investments .investments-banner .card-title, .investments.container-sm .investments-banner .card-title, .investments.container-md .investments-banner .card-title, .investments.container-lg .investments-banner .card-title, .investments.container-xl .investments-banner .card-title {
-    margin-top: 10px; }
-  .container-fluid.investments .investments-banner .col-card, .investments.container-sm .investments-banner .col-card, .investments.container-md .investments-banner .col-card, .investments.container-lg .investments-banner .col-card, .investments.container-xl .investments-banner .col-card {
-    margin: 25px 0 15px 0; }
-  .terms-container p {
-    text-align: center; }
-  .investments-platform-advantage {
-    min-height: 600px;
-    background-size: 79%, 72%; }
-  .faq {
-    padding-top: 30px;
-    padding-bottom: 70px;
-    background: linear-gradient(284.51deg, #D0E0FE -42.04%, rgba(229, 236, 248, 0) 130.95%); }
-  .faq .card .card-header button {
-    font-size: 20px;
-    line-height: 27px;
-    margin-bottom: 0; }
-  .faq .card .card-body {
-    font-size: 18px;
-    line-height: 28px; }
-  .faq .card.active {
-    border-radius: 15px; }
-  .faq .card {
-    padding: 20px; }
-  .faq .card .card-header .close-button {
-    width: 50px;
-    height: 50px; }
-    .faq .card .card-header .close-button svg {
-      width: 13px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0::before, .active-news-list .news-list-content .news-list-card::before {
-    height: -webkit-fill-available;
-    height: fill-available;
-    min-height: 330px; }
-  .active-news-list .news-list-content .news-list-card {
-    height: auto;
-    min-height: 330px; }
-    .active-news-list .news-list-content .news-list-card.news-list-0 {
-      height: auto; }
-  .page-title {
-    font-size: 30px;
-    line-height: 40px; } }
-
-@media screen and (max-width: 440px) {
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 18%, right 23%;
-    background-size: 57%, 37%; }
-  .banner-container .banner-content .header-h1, .banner-container .banner-content .banner-container .banner-content h1, .banner-container .banner-content .header-h1-gradient {
-    font-size: 28px;
-    line-height: 35px; }
-  .banner-container .banner-content .form-text {
-    margin-top: 25px;
-    font-size: 16px;
-    line-height: 23px; }
-  .banner-container .banner-content .title {
-    font-size: 20px;
-    line-height: 19px;
-    margin-bottom: 5px; }
-  .banner-container .banner-content .text {
-    font-size: 14px; }
-  .banner-container .banner-content .form-text {
-    max-width: 66%; }
-  .buttons {
-    margin-top: 50px;
+    bottom: 40px;
+    z-index: 999;
+    right: 592px; }
+  .transactions__slider_title {
+    margin-top: 36px; }
+    .transactions__slider_title p {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px; }
+  .transactions__slider_item {
+    min-height: 544px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-  .buttons a {
-    width: 48%; }
-  .buttons .btn {
-    width: 100%; }
-    .buttons .btn:last-child {
-      margin-right: 0; }
-  .terms-container .project-container .project-content .card-body {
-    font-size: 21px;
-    line-height: 27px;
-    padding: 30px; }
-  .terms-container .project-container .project-content {
-    background-position: 99% 6%;
-    background-size: 15%;
-    padding-top: 24px;
-    margin-bottom: 8px; }
-  .terms-container {
-    margin-top: 50px;
-    margin-bottom: 40px; }
-  .investments-platform-advantage .container-title {
-    font-size: 22px; }
-  .advantage-title-block .card-title {
-    line-height: 25px; }
-  .advantage-text .card-text {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 15px; }
-  .investments-platform-advantage {
-    background-size: 94%, 84%;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    min-height: 640px; } }
-
-@media screen and (max-width: 414px) {
-  .about-container .about-content .container-title {
-    font-size: 20px; }
-  .container-desc {
-    font-size: 14px; }
-  .about-container {
-    padding-top: 60px; }
-  .banner-container .banner-content .form-text {
-    font-size: 15px;
-    line-height: 22px;
-    max-width: 73%; }
-    .banner-container .banner-content .form-text span:last-child {
-      display: block; }
-  .buttons {
-    margin-top: 67px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-image: url(../img/index/nout-mob.svg), url(../img/index/mobile-banner-circle.png), url(../img/index/touch-center.png), url(../img/index/about-back.png);
+  .transactions__slider_image {
+    width: 544px;
+    height: 544px;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: right 21%, right 34%, right 74%, left 100%;
-    background-size: 67%, 43%, 44%, 47%; }
-  .about-container .about-grid {
-    padding: 0 !important; }
-  .about-content-link {
-    margin-top: 15px; }
-  .about-container {
-    padding-bottom: 60px; }
-  .container-desc {
-    color: #5ABB97; }
-  .platform-advantage {
-    padding-top: 50px; }
-    .platform-advantage .btn-group {
-      margin-top: 25px; }
-    .platform-advantage .btn-white {
-      border-radius: 0 5px 5px 0; }
-    .platform-advantage .btn-blue {
-      border-radius: 5px 0 0 5px; }
-    .platform-advantage .card-container {
-      margin-bottom: 30px; }
-    .platform-advantage .btn {
-      padding: 12px; }
-  .active-projects .project-container .project-content {
-    width: 330px; }
-    .active-projects .project-container .project-content .project-card .card-body .project-head {
-      height: 150px;
-      padding: 20px; }
-      .active-projects .project-container .project-content .project-card .card-body .project-head::before {
-        background: rgba(0, 0, 0, 0.3);
-        height: 150px; }
-  .container-title, .active-projects .container-title {
+    background-position: center;
+    border-radius: 0 16px 16px 0; }
+  .transactions__slider_container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    position: relative; }
+  .transactions__slider_desc {
+    padding: 39px 48px;
+    -ms-flex: 1;
+        flex: 1; }
+    .transactions__slider_desc span {
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase; }
+  .transactions__items {
+    margin-top: 20px;
+    margin-right: -9px;
+    margin-left: -9px; }
+    .transactions__items > div {
+      padding-right: 9px;
+      padding-left: 9px;
+      margin-top: 18px; }
+  .transactions__item_vn {
+    border: 1px solid #EFEFEF;
+    border-radius: 16px;
+    min-height: 117px;
+    padding: 14px 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .transactions__item_vn p {
+      margin-bottom: 0; }
+  .transactions__item_value p {
+    font-weight: 700; }
+  .transactions__item_desc p {
+    font-size: 12px;
+    line-height: 16px; }
+  .transactions__arrow .sliderArrow__btn {
+    background-color: #F7F7F7; }
+    .transactions__arrow .sliderArrow__btn:hover {
+      background-color: #E0E0E0; }
+    .transactions__arrow .sliderArrow__btn.swiper-button-disabled {
+      background-color: #EFEFEF; }
+      .transactions__arrow .sliderArrow__btn.swiper-button-disabled svg path {
+        fill: #ffffff; }
+
+.freedom__header {
+  padding-top: 14px;
+  padding-bottom: 16px; }
+
+.freedom__btn {
+  background-color: #2D7D2F;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 82px;
+  transition: background-color .2s; }
+  .freedom__btn:hover, .freedom__btn:focus, .freedom__btn:active, .freedom__btn:focus:active {
+    background-color: #114F13; }
+
+.menuActive {
+  overflow: hidden; }
+  .menuActive .freedom__header {
+    min-height: 100vh; }
+
+.block-title h2 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 64px;
+  margin-bottom: 0; }
+
+.sliderArrow__group {
+  display: -ms-flexbox;
+  display: flex; }
+
+.sliderArrow__btn {
+  min-width: 48px;
+  height: 48px;
+  background-color: #2D7D2F;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-radius: 50%;
+  transition: background-color .2s; }
+  .sliderArrow__btn:last-child {
+    margin-left: 16px; }
+  .sliderArrow__btn:hover {
+    background-color: #114F13; }
+  .sliderArrow__btn.swiper-button-disabled {
+    background-color: #EFEFEF; }
+
+.mt160 {
+  margin-top: 160px; }
+
+@media screen and (min-width: 768px) {
+  .header .nav-item:not(:first-child) {
+    margin-left: 24px; } }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .header .navbar-brand {
+    margin-right: 10px; }
+  .header .nav-item:not(:first-child) {
+    margin-left: 8px; }
+  .header__services_btn button {
+    font-size: 12px;
+    width: 130px;
+    height: 36px; }
+  .header__services_lang {
+    margin-right: 10px; }
+  .header .nav-link {
+    font-size: 14px;
+    line-height: 24px; } }
+
+@media screen and (max-width: 830px) and (min-width: 768px) {
+  .header .nav-item:not(:first-child) {
+    margin-left: 0; }
+  .header__services_lang_item {
+    width: 35px;
+    height: 35px;
+    font-size: 10px; }
+  .header .navbar-brand {
+    margin-right: 0; } }
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .serviceBlock__item_group {
+    padding: 40px 15px 64px 24px; }
+  .serviceBlock__item_title p {
     font-size: 22px;
-    line-height: 28px;
-    font-weight: 1000; }
-  .active-projects .project-container .project-card .card-body .project-content .project-number {
-    font-size: 14px; }
-  .active-projects .project-container .project-card .card-body .project-content .project-company {
-    font-size: 14px; }
-  .active-projects {
-    padding-top: 60px; }
-  .info .faq-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 5px; }
-  .faq-img-top {
-    width: 33px; }
-  .faq-card-title {
-    margin-top: 3px;
+    line-height: 28px; }
+  .serviceBlock__item_desc_vn p {
+    font-size: 14px;
+    line-height: 20px; } }
+
+@media screen and (min-width: 1310px) {
+  .slider-left-padding {
+    padding-left: calc(50% - 640px); } }
+
+@media screen and (max-width: 1240px) {
+  .transactions__slider_title p {
+    font-size: 34px;
+    line-height: 42px; }
+  .transactions__slider_desc {
+    padding: 39px 25px; }
+  .transactions__slider_image {
+    -ms-flex: 1;
+        flex: 1;
+    height: auto; }
+  .transactions__item_value p {
+    font-size: 14px;
+    line-height: 20px; } }
+
+@media screen and (max-width: 1200px) {
+  .serviceBlock__title h2 {
+    font-size: 36px;
+    line-height: 48px; }
+  .serviceBlock__desc {
+    -ms-flex-align: start;
+        align-items: flex-start; } }
+
+@media screen and (max-width: 991px) {
+  .aboutUs__item {
+    max-width: 100%; }
+  .aboutUs__items > div:nth-child(n+3) {
+    margin-top: 64px; }
+  .transactions__slider_title {
+    margin-top: 20px; }
+  .transactions__slider_desc {
+    padding: 30px 25px; }
+  .transactions__slider_services {
+    bottom: 6px;
+    right: 470px; } }
+
+@media screen and (max-width: 767px) {
+  .header__services_social {
+    margin-top: 40px; }
+    .header__services_social a:not(:first-child) {
+      margin-left: 13px; }
+    .header__services_social img {
+      max-width: 24px; }
+  .header__services_phone {
+    margin-bottom: 5px; }
+    .header__services_phone a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.01em; }
+  .header__services_address, .header__services_email {
+    font-size: 14px;
+    line-height: 20px; }
+  .header__services_email a {
+    text-decoration: underline; }
+  .header__services_mobile {
+    max-width: 290px; }
+  .header .nav-link {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    padding: 0; }
+  .header .nav-item:not(:first-child) {
+    margin-top: 16px; }
+  .header .navbar-collapse.show {
+    padding-top: 54px;
+    height: calc(100vh - 51px);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .header__services_mobile {
+    padding: 25px 0; }
+  .course {
+    border-top: 1.5px solid rgba(224, 224, 224, 0.6); }
+  .mainBanner__wrapper {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+  .mainBanner__inner {
+    margin-top: 0; }
+  .mainBanner__btn button {
+    background-color: #2D7D2F;
+    color: #ffffff;
+    border-radius: 82px;
+    height: 62px;
+    width: 400px;
     font-size: 20px;
-    margin-left: 20px; }
-  .faq-card-show-hide::after {
-    bottom: 4px;
-    margin-left: 80px; }
-  .info .questions-container a {
-    line-height: 22px;
-    margin-bottom: 10px; }
-    .info .questions-container a:last-child {
-      margin-bottom: 20px; }
-  .info .info-content-block {
-    padding-top: 60px; }
-  .info .info-container {
-    margin-bottom: 40px; }
-  .action-container .container-title {
-    font-size: 22px; }
-  .action-container .text {
-    margin: 10px 0 0; }
-  .news-container .container-title {
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 1000; }
-  .news-container .news-card .news-title .white-text {
-    font-size: 20px;
-    line-height: 24px; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-image: url(../img/investment/investments-banner-mob.png);
-    background-size: auto;
-    background-position: 100% 150px; }
-  .container.investments-banner.banner-container .banner-content .form-text {
-    max-width: 62%; }
-  .container.investments-banner.banner-container .header-h1 {
+    font-weight: 500; }
+  .serviceBlock__title {
+    max-width: 100%;
+    text-align: center; }
+  .sectorBlock__title h2 {
+    font-size: 36px;
+    line-height: 48px; }
+  .transactions__slider_item {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+  .transactions__slider_image {
+    -ms-flex: auto;
+        flex: auto;
+    height: 190px;
+    width: 100%;
+    border-radius: 16px 16px 0 0; }
+  .transactions__slider_desc {
+    padding: 30px 25px 105px; }
+  .transactions__slider_services {
+    bottom: 24px;
+    right: 24px; } }
+
+@media screen and (max-width: 620px) {
+  .mainBanner {
+    min-height: 500px; }
+    .mainBanner__wrapper {
+      min-height: 500px; }
+    .mainBanner h1 {
+      font-size: 38px;
+      line-height: 48px; }
+    .mainBanner span {
+      background-color: transparent;
+      color: inherit;
+      margin-top: 0;
+      padding: 0; } }
+
+@media screen and (max-width: 575px) {
+  .aboutUs {
+    margin-top: 64px; }
+    .aboutUs__item {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .aboutUs__item_title {
+        min-width: 120px; }
+        .aboutUs__item_title p {
+          font-size: 24px;
+          line-height: 28px; }
+      .aboutUs__item_desc {
+        margin-top: 0;
+        margin-left: 25px; }
+    .aboutUs__items > div:nth-child(n+2) {
+      margin-top: 40px; }
+    .aboutUs__course {
+      margin-left: 0;
+      margin-top: 8px; }
+  .serviceBlock__item_detail {
+    margin-top: 10px; }
+    .serviceBlock__item_detail button {
+      color: #2D7D2F;
+      position: relative;
+      padding-right: 18px; }
+      .serviceBlock__item_detail button::after {
+        content: url("../img/icons/arrow.svg");
+        position: absolute;
+        right: 0;
+        top: -1px; } }
+
+@media screen and (max-width: 440px) {
+  .header .navbar-brand img {
+    width: 133px; }
+  .course__item:not(:first-child) {
+    margin-left: 24px; }
+  .mainBanner {
+    min-height: 484px; }
+    .mainBanner__wrapper {
+      min-height: 484px; }
+    .mainBanner__btn button {
+      height: 52px;
+      width: 328px;
+      font-size: 16px; }
+  .aboutUs {
+    padding: 0 16px; }
+    .aboutUs__item_desc {
+      margin-left: 10px; }
+      .aboutUs__item_desc p {
+        font-size: 14px;
+        line-height: 22px; }
+    .aboutUs__item_title {
+      min-width: 90px; }
+      .aboutUs__item_title p {
+        font-size: 18px;
+        line-height: 24px; }
+    .aboutUs__course {
+      font-size: 12px;
+      padding: 2.5px 2px; }
+    .aboutUs__items > div:nth-child(n+2) {
+      margin-top: 24px; }
+  .serviceBlock {
+    margin-top: 64px; }
+    .serviceBlock__title h2 {
+      font-size: 28px;
+      line-height: 40px;
+      margin-bottom: 0; }
+    .serviceBlock__items {
+      margin-top: 0; }
+      .serviceBlock__items .row {
+        margin-left: -15px;
+        margin-right: -15px; }
+        .serviceBlock__items .row > div {
+          margin-top: 24px;
+          padding-right: 15px;
+          padding-left: 15px; }
+    .serviceBlock__item_group {
+      padding: 24px 24px 64px 24px; }
+  .block-title h2 {
     font-size: 28px;
     line-height: 40px; }
-  .container.investments-banner.banner-container .banner-content .form-text {
-    font-size: 18px;
-    line-height: 25px;
-    max-width: 74%; }
-  .investments-banner .buttons a {
-    width: 100%; }
-    .investments-banner .buttons a .btn {
-      font-size: 20px; }
-  .banner-container .banner-content .buttons .btn-green span {
-    display: inline-block; }
-  .investments-platform-advantage {
-    min-height: 620px; } }
-
-@media screen and (max-width: 390px) {
-  .banner-container .banner-content .form-text {
-    max-width: 77%; }
-  .investments-platform-advantage {
-    min-height: 590px; } }
-
-@media screen and (max-width: 375px) {
-  .active-projects .project-container .project-content {
-    width: 300px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 23%, right 33%, right 72%, left 100%;
-    background-size: 69%, 44%, 49%, 52%; }
-  .buttons {
-    margin-top: 80px; }
-  .banner-container .banner-content .header-h1, .banner-container .banner-content .banner-container .banner-content h1, .banner-container .banner-content .header-h1-gradient {
-    font-size: 26px;
-    line-height: 33px; }
-  .banner-container .banner-content .form-text {
-    font-size: 15px;
-    line-height: 22px; }
-  .banner-container .banner-content .title {
-    font-size: 19px; }
-  .banner-container .banner-content .text {
-    font-size: 13px; }
-  .banner-container .banner-content .form-text {
-    max-width: 80%; }
-  .banner-container {
-    padding-top: 82px; }
-  .buttons .btn {
-    line-height: 48px; }
-  .banner-container .banner-content .header-h1, .banner-container .banner-content .banner-container .banner-content h1, .banner-container .banner-content .header-h1-gradient {
-    font-size: 24px;
-    line-height: 32px; }
-  .container-title {
-    font-size: 20px;
-    line-height: 24px; }
-  .platform-advantage .btn-group a .btn {
-    font-size: 16px; }
-  .container-title, .active-projects .container-title {
-    font-size: 20px;
-    line-height: 22px; }
-  .action-container {
-    margin-top: 40px;
-    padding-top: 70px; }
-  .container.investments-banner.banner-container .header-h1 {
-    font-size: 26px;
-    line-height: 38px; }
-  .container.investments-banner.banner-container .banner-content .form-text {
-    font-size: 16px;
-    line-height: 23px;
-    max-width: 75%; }
-  .investments-banner .buttons a .btn {
-    font-size: 18px; }
-  .faq .info-container {
-    margin-top: 25px; }
-  .faq .card {
-    padding: 15px;
-    border-radius: 10px; }
-  .faq .card .card-header button {
-    font-size: 16px;
-    line-height: 22px; }
-  .faq .card .card-body {
-    font-size: 16px;
-    line-height: 24px; }
-  .faq {
-    padding-top: 15px;
-    padding-bottom: 40px; } }
-
-@media screen and (max-width: 340px) {
-  .active-projects .project-container .project-content {
-    width: 270px; }
-    .active-projects .project-container .project-content .project-card .card-body .project-head {
-      height: 130px;
-      padding: 15px; }
-      .active-projects .project-container .project-content .project-card .card-body .project-head::before {
-        background: rgba(0, 0, 0, 0.3);
-        height: 130px; }
-  .active-projects .project-container .project-card .card-body .project-content .project-number {
-    font-size: 14px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 23%, right 34%, right 72%, left 100%;
-    background-size: 79%, 51%, 49%, 57%; }
-  .container-desc {
-    font-size: 12px; }
-  .container-title {
-    font-size: 20px;
-    line-height: 24px; }
-  .how-it-works .number {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
-    line-height: 25px;
-    top: -18px;
-    left: 13px; }
-  .how-it-works .cards {
-    margin-top: 15px; }
-    .how-it-works .cards .col-card {
-      margin: 20px 0 8px 0; }
-      .how-it-works .cards .col-card .card-number {
-        padding: 13px; }
-  .how-it-works .title {
-    margin: 12px 0 5px; }
-  .how-it-works .text {
-    font-size: 14px;
-    line-height: 18px; }
-  .how-it-works .container {
-    padding-left: 0;
-    padding-right: 0; }
-  .navbar-brand img {
-    height: 30px; }
-  .navbar-toggler {
-    height: 38px;
-    width: 39px; }
-  .navbar-toggler-icon {
-    width: 20px;
-    height: 20px; }
-  .navbar-toggler-user {
-    width: 39px; }
-  .navbar-toggler__user a {
-    height: 38px; }
-  .navbar-toggler__user img {
-    width: 16px; }
-  .navbar-expand-lg.top-menu .nav-link {
-    padding-bottom: 0; }
-  .banner-container .banner-content .header-h1, .banner-container .banner-content .banner-container .banner-content h1, .banner-container .banner-content .header-h1-gradient {
-    font-size: 24px;
-    line-height: 32px; }
-  .banner-container .banner-content .form-text {
-    font-size: 15px;
-    line-height: 22px; }
-  .banner-container .banner-content .title {
-    font-size: 18px;
-    line-height: 45px;
-    margin-bottom: 0; }
-  .banner-container .banner-content .text {
-    font-size: 12px;
-    line-height: 16px;
-    max-width: 150px; }
-  .banner-container .banner-content .form-text {
-    max-width: 80%;
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 15px; }
-  .banner-container {
-    padding-top: 82px; }
-  .buttons .btn {
-    line-height: 48px; }
-  
-  .container-fluid,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl {
-    padding-right: 10px !important;
-    padding-left: 10px !important; }
-  .row {
-    margin-right: -10px !important;
-    margin-left: -10px !important; }
-  .top-menu {
-    padding: 12px 10px !important; }
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
-    padding-right: 10px !important;
-    padding-left: 10px !important; }
-  .buttons {
-    margin-top: 70px; }
-  .platform-advantage .container {
-    padding: 0; }
-  .platform-advantage .btn-group a .btn {
-    font-size: 16px;
-    line-height: 30px; }
-  .platform-advantage .btn-group {
-    margin-top: 20px; }
-  .platform-advantage .card-container {
-    padding: 0 10px !important; }
-  .faq-card-title {
-    margin-top: 0;
-    font-size: 18px;
-    margin-left: 15px; }
-  .faq-card-show-hide::after {
-    font-size: 14px;
-    bottom: 9px;
-    margin-left: 76px; }
-  .info .questions-container a {
-    font-size: 14px; }
-  .action-container {
-    padding-top: 90px;
-    padding-bottom: 95px; }
-    .action-container .text {
-      font-size: 14px;
-      line-height: 18px;
-      margin: 0; }
-    .action-container .container-title {
+  .sectorBlock {
+    margin-top: 64px; }
+    .sectorBlock__title {
+      width: 100%;
+      text-align: center; }
+    .sectorBlock__slider_wrapper {
+      margin-top: 24px; }
+    .sectorBlock .swiper-slide {
+      width: 280px; }
+    .sectorBlock__item_desc p {
       font-size: 20px;
-      line-height: 55px; }
-  .news-container .container-title {
-    font-size: 20px;
-    line-height: 24px; }
-  .news-container .news-card .news-title .white-text {
-    font-size: 18px; }
-  .platform-advantage .card-container .card-content, .active-projects .project-container.mobile-block {
-    padding: 0; }
-  .info-content-block .col-md-12, .news-container .col-md-12 {
-    padding: 0 !important; }
-  .news-container .container-fluid.right-margin-none, .news-container .right-margin-none.container-sm, .news-container .right-margin-none.container-md, .news-container .right-margin-none.container-lg, .news-container .right-margin-none.container-xl {
-    padding: 0 !important; }
-  .container.investments-banner.banner-container .header-h1 {
+      line-height: 28px; }
+    .sectorBlock__item_image {
+      height: 178px; }
+  .transactions__item_value p {
+    font-size: 16px;
+    line-height: 20px; }
+  .transactions__item_vn {
+    min-height: 100px;
+    padding: 20px 15px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .transactions__slider_title p {
+    font-size: 28px;
+    line-height: 40px; }
+  .transactions__items {
+    margin-top: 6px; }
+  .transactions__slider_desc_vn p {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 400px) {
+  .serviceBlock__title h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em; }
+  .serviceBlock__item {
+    min-height: 300px; }
+    .serviceBlock__item_image {
+      height: 144px; }
+    .serviceBlock__item_title p {
+      font-size: 16px;
+      line-height: 20px; }
+    .serviceBlock__item_desc_vn p {
+      font-size: 12px;
+      line-height: 16px; }
+    .serviceBlock__item_number {
+      min-width: 32px;
+      height: 32px;
+      margin-left: 10px;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.01em; }
+    .serviceBlock__item_detail button {
+      font-size: 12px;
+      line-height: 16px;
+      padding-right: 16px; }
+      .serviceBlock__item_detail button::after {
+        top: 0; }
+    .serviceBlock__item_desc_vn {
+      margin-top: 8px; }
+  .block-title h2 {
     font-size: 24px;
     line-height: 32px; }
-  .container.investments-banner.banner-container .banner-content .form-text {
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 75%; }
-  .investments-banner .buttons a .btn {
-    font-size: 14px; }
-  .container-fluid.investments, .investments.container-sm, .investments.container-md, .investments.container-lg, .investments.container-xl {
-    background-position: 100% 130px; }
-  .container-fluid.investments .investments-banner .banner-content .form-text, .investments.container-sm .investments-banner .banner-content .form-text, .investments.container-md .investments-banner .banner-content .form-text, .investments.container-lg .investments-banner .banner-content .form-text, .investments.container-xl .investments-banner .banner-content .form-text {
-    margin-top: 15px; }
-  .container-fluid.investments .investments-banner .banner-content .buttons, .investments.container-sm .investments-banner .banner-content .buttons, .investments.container-md .investments-banner .banner-content .buttons, .investments.container-lg .investments-banner .banner-content .buttons, .investments.container-xl .investments-banner .banner-content .buttons {
-    margin-top: 35px; }
-  .container-fluid.investments .investments-banner .number, .investments.container-sm .investments-banner .number, .investments.container-md .investments-banner .number, .investments.container-lg .investments-banner .number, .investments.container-xl .investments-banner .number {
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
-    line-height: 25px;
-    top: -18px;
-    left: 13px; }
-  .container-fluid.investments .investments-banner .card-title, .investments.container-sm .investments-banner .card-title, .investments.container-md .investments-banner .card-title, .investments.container-lg .investments-banner .card-title, .investments.container-xl .investments-banner .card-title {
-    margin: 12px 0 5px; }
-  .container-fluid.investments .investments-banner .card-text, .investments.container-sm .investments-banner .card-text, .investments.container-md .investments-banner .card-text, .investments.container-lg .investments-banner .card-text, .investments.container-xl .investments-banner .card-text {
-    font-size: 14px;
-    line-height: 18px; }
-  .container-fluid.investments .investments-banner .col-card, .investments.container-sm .investments-banner .col-card, .investments.container-md .investments-banner .col-card, .investments.container-lg .investments-banner .col-card, .investments.container-xl .investments-banner .col-card {
-    margin: 20px 0 8px 0; }
-  .terms-container .project-container .project-content {
-    margin-bottom: 0;
-    margin-top: 0;
-    background-position: 99% 12%; }
-    .terms-container .project-container .project-content .card-body {
-      padding: 26px 40px;
+  .sectorBlock__item_desc {
+    min-height: 100px;
+    padding: 16px 24px 24px; }
+    .sectorBlock__item_desc p {
       font-size: 16px;
-      line-height: 22px; }
-    .terms-container .project-container .project-content .project-card {
-      min-height: 115px; }
-  .terms-container .project-container {
-    margin-top: 5px; }
-  .investments-platform-advantage .container-title {
-    font-size: 20px;
-    line-height: 24px; }
-  .investments-platform-advantage .faq-img {
-    width: 48px;
-    height: 48px; }
-  .investments-platform-advantage .faq-img img {
-    width: 25px; }
-  .advantage-title-block .card-title {
-    font-size: 18px;
-    line-height: 24px; }
-  .advantage-text .card-text {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 18px; }
-  .investments-platform-advantage {
-    min-height: 490px; }
-  .faq .card .card-header button {
-    font-size: 14px;
-    line-height: 18px; }
-  .faq .card .card-header .close-button {
-    width: 33px;
-    height: 33px; }
-  .faq .card .card-header .close-button svg {
-    width: 8px; }
-  .faq .card {
-    padding: 13px;
-    border-radius: 4px;
-    margin-bottom: 15px; }
-  .faq .card .card-body {
-    font-size: 14px;
-    line-height: 18px; }
-  .terms-container .col-md-12, .investments-platform-advantage .container, .info-content-block .col-md-10, .news-list-container .col-12, .news-list-footer .col-12 {
-    padding: 0 !important; }
-  .active-news-list .news-list-content .news-list-card {
-    padding: 20px 13px 25px 13px; }
-    .active-news-list .news-list-content .news-list-card .news-list-0 {
-      padding: 20px 13px 10px 13px; }
-    .active-news-list .news-list-content .news-list-card .card-body .news-list-head .news-list-date {
-      font-size: 16px;
-      line-height: 24px; }
-    .active-news-list .news-list-content .news-list-card .card-body .news-list-footer .news-list-title {
-      font-size: 18px;
-      line-height: 24px; }
-    .active-news-list .news-list-content .news-list-card .card-body .news-list-footer .news-list-desc {
-      font-size: 14px;
-      line-height: 18px; }
-    .active-news-list .news-list-content .news-list-card .card-body .news-list-footer .news-list-tags .news-list-tag {
-      font-size: 12px;
-      padding: 8px 15px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 .card-body .news-list-footer .news-list-desc {
-    font-size: 18px;
-    line-height: 24px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 .card-body .news-list-footer .news-list-desc {
-    font-size: 14px;
-    line-height: 18px; }
-  .active-news-list .news-list-content .news-list-card.news-list-0 .card-body .news-list-footer .news-list-tags .news-list-tag {
-    font-size: 12px;
-    padding: 8px 15px; }
-  .active-news-list .news-list-content {
-    margin-bottom: 15px; }
-  .page-title {
+      line-height: 20px; }
+  .sectorBlock .swiper-slide {
+    min-height: 278px; }
+  .transactions__slider_image {
+    height: 96px; }
+  .transactions__slider_desc {
+    padding: 24px 24px 80px; }
+    .transactions__slider_desc span {
+      font-size: 11px;
+      line-height: 12px; }
+  .transactions__slider_title p {
     font-size: 24px;
-    line-height: 32px; } }
+    line-height: 32px; }
+  .transactions__item_vn {
+    min-height: 72px;
+    padding: 10px 15px; }
+  .sliderArrow__btn {
+    min-width: 32px;
+    height: 32px; }
+    .sliderArrow__btn svg {
+      height: 12px; } }
 
-@media screen and (max-width: 320px) {
-  .active-projects .project-container .project-content {
-    width: 273px; }
-  .container-fluid.index, .index.container-sm, .index.container-md, .index.container-lg, .index.container-xl {
-    background-position: right 27%, right 37%, right 71%, left 100%;
-    background-size: 76%, 48%, 49%, 56%; }
-  .about-container {
-    margin-top: 35px; }
-    .about-container .about-content .container-title {
-      font-size: 18px;
-      line-height: 24px; }
-  .platform-advantage .btn {
-    padding: 8px 12px; } }
+@media screen and (max-width: 360px) {
+  .header .navbar-brand img {
+    width: 133px; }
+  .header__services_mobile {
+    max-width: 242px; }
+  .header__services_address, .header__services_email {
+    font-size: 12px;
+    line-height: 16px; }
+  .mainBanner h1 {
+    font-size: 38px;
+    line-height: 48px; }
+  .aboutUs__item_desc p {
+    font-size: 12px;
+    line-height: 16px; }
+  .aboutUs__item_title p {
+    font-size: 16px;
+    line-height: 20px; } }
+
+@media screen and (max-width: 350px) {
+  .mainBanner h1 {
+    font-size: 33px;
+    line-height: 40px; } }

@@ -1,0 +1,120 @@
+.transactions {
+    background-color: $BlockBg;
+    padding: 120px 0;
+
+    &__slider {
+
+        &_services {
+            position: absolute;
+            bottom: 40px;
+            z-index: 999;
+            right: 592px;
+        }
+
+        &_title {
+            margin-top: 36px;
+
+            p {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+
+        &_item {
+            min-height: 544px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_image {
+            width: 544px;
+            height: 544px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 0 16px 16px 0;
+        }
+
+        &_container {
+            background-color: #ffffff;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        &_desc {
+            padding: 39px 48px;
+            flex: 1;
+
+            span {
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__items {
+        margin-top: 20px;
+        margin-right: -9px;
+        margin-left: -9px;
+
+        & > div {
+            padding-right: 9px;
+            padding-left: 9px;
+            margin-top: 18px;
+        }
+    }
+
+    &__item_vn {
+        border: 1px solid $GrayBg;
+        border-radius: 16px;
+        min-height: 117px;
+        padding: 14px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+
+        &_value {
+
+            p {
+                font-weight: 700;
+            }
+        }
+
+        &_desc {
+
+            p {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    &__arrow {
+        .sliderArrow__btn {
+            background-color: $Secondary;
+
+            &:hover {
+                background-color: $Stroke;
+            }
+
+            &.swiper-button-disabled {
+                background-color: $GrayBg;
+
+                svg path {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+
+}

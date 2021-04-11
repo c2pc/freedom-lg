@@ -1,0 +1,45 @@
+.sectorBlock {
+    margin-top: 160px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        width: 356px;
+        min-height: 392px;
+    }
+
+    &__item {
+
+        &_image {
+            height: 232px;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 16px 16px 0 0;
+        }
+
+        &_desc {
+            background-color: $Secondary;
+            padding: 24px;
+            min-height: 160px;
+            border-radius: 0 0 16px 16px;
+
+            p {
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: -0.01em;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__slider_wrapper {
+        margin-top: 64px;
+    }
+}

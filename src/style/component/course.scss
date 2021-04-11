@@ -1,0 +1,73 @@
+.course {
+    $thisCourse: &;
+
+    height: 52px;
+    background-color: $LightGreen;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+
+    &__item {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 12px;
+        line-height: 20px;
+
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
+
+        &_title {
+            font-weight: 700;
+        }
+
+        &_value {
+            font-weight: 500;
+            border-radius: 2px;
+            padding: 2.5px 2px;
+            position: relative;
+
+
+            &:first-child {
+                padding-left: 15px;
+
+                &::before {
+                    content: url("../img/icons/polygon.svg");
+                    display: inline-block;
+                    position: absolute;
+                    width: 10px;
+                    left: 3px;
+                }
+            }
+
+            &:not(:first-child) {
+                margin-left: 8px;
+            }
+        }
+
+        &_group {
+            margin-left: 8px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__down {
+        #{$thisCourse}__item_value {
+            background-color: $TagBgRed;
+        }
+    }
+
+    &__up {
+        #{$thisCourse}__item_value {
+            background-color: $TagBgGreen;
+        }
+
+        #{$thisCourse}__item_value:first-child::before {
+            transform: rotate(180deg);
+            top: 1px;
+        }
+    }
+}

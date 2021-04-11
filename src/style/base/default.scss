@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: 'GTAmericaLCG', sans-serif!important;
+    outline: none!important;
+    user-select: none!important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $Main;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    background: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $Main;
+
+    &:hover {
+        color: $Main;
+        text-decoration: none;
+    }
+}
+
+b, strong {
+    font-weight: 700;
+}
