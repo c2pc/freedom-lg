@@ -1,0 +1,43 @@
+.footer {
+    background-color: $FooterBg;
+    border-top: 2px solid rgba(224, 224, 224, .2);
+
+    a {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__wrapper {
+        min-height: 108px;
+        align-items: center;
+    }
+
+    &__made_in img {
+        max-width: 22px;
+        margin-right: 7px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, .5);
+
+        a {
+            color: rgba(255, 255, 255, .5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &__logo_group, &__links {
+        a:not(:first-child) {
+            margin-left: 40px;
+        }
+    }
+}

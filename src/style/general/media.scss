@@ -40,6 +40,14 @@
         }
 
     }
+
+    .footer {
+        &__logo_group, &__links {
+            a:not(:first-child) {
+                margin-left: 15px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 830px) and (min-width: 768px) {
@@ -193,6 +201,14 @@
         margin-top: 80px;
     }
 
+    .footer {
+
+        &__made_in {
+            margin-right: 15px;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -336,6 +352,30 @@
                 bottom: 24px;
                 right: 24px;
             }
+        }
+    }
+
+    .footer {
+        padding: 24px 0;
+
+        &__links {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+
+            a:not(:first-child) {
+                margin-left: 0;
+                margin-top: 16px;
+            }
+        }
+
+        &__info {
+            margin-top: 40px;
+            flex-direction: column;
+        }
+
+        &__copyright {
+            margin-top: 16px;
         }
     }
 
