@@ -31,19 +31,19 @@
                 <div class="collapse navbar-collapse" id="headerNavbar">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Услуги</a>
+                      <a class="nav-link" href="#serviceBlock"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Услуги</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Секторы</a>
+                      <a class="nav-link" href="#sectorBlock"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Секторы</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Сделки</a>
+                      <a class="nav-link" href="#transactions"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Сделки</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Команда</a>
+                      <a class="nav-link" href="#team"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Команда</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Контакты</a>
+                      <a class="nav-link" href="#contacts"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Контакты</a>
                     </li>
                   </ul>
                   <div class="header__services d-md-flex d-none align-items-center">
@@ -52,7 +52,7 @@
                       <span class="header__services_lang_item">En</span>
                     </div>
                     <div class="header__services_btn">
-                      <button class="freedom__btn">Оставить заявку</button>
+                      <a href="#formBlock"><button class="freedom__btn">Оставить заявку</button></a>
                     </div>
                   </div>
                   <div class="header__services_mobile d-md-none d-sm-block">
@@ -251,7 +251,7 @@
                 </div>
               </div>
             </div>
-            <div class="serviceBlock">
+            <div class="serviceBlock"  id="serviceBlock">
               <div class="f-container">
                 <div class="serviceBlock__desc">
                   <div class="serviceBlock__title">
@@ -403,7 +403,7 @@
                 </div>
               </div>
             </div>
-            <div class="sectorBlock">
+            <div class="sectorBlock" id="sectorBlock">
               <div class="f-container">
                 <div class="sectorBlock__header">
                   <div class="sectorBlock__title block-title">
@@ -513,7 +513,7 @@
                 </div>
               </div>
             </div>
-            <div class="transactions mt160">
+            <div class="transactions mt160" id="transactions">
               <div class="f-container">
                 <div class="transactions__slider_container">
                   <div class="swiper-container transactions__slider">
@@ -723,7 +723,7 @@
                 <div class="swiper-container analytics__slider">
                   <div class="swiper-wrapper">
             
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
                       <div class="analytics__item analytics__images"> <!-- Если у новости есть картинка, то добавить класс "analytics__images"-->
                         <div class="analytics__desc">
                           <div class="analytics__desc_name">
@@ -740,7 +740,7 @@
                       </div>
                     </div>
             
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
                       <div class="analytics__item">
                         <div class="analytics__desc">
                           <div class="analytics__desc_name">
@@ -757,7 +757,7 @@
                       </div>
                     </div>
             
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
                       <div class="analytics__item">
                         <div class="analytics__desc">
                           <div class="analytics__desc_name">
@@ -774,7 +774,7 @@
                       </div>
                     </div>
             
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
                       <div class="analytics__item">
                         <div class="analytics__desc">
                           <div class="analytics__desc_name">
@@ -794,13 +794,13 @@
                 </div>
               </div>
             </div>
-            <div class="team mt160">
+            <div class="team mt160" id="team">
               <div class="f-container">
                 <div class="team__title block-title">
                   <h2>Команда</h2>
                 </div>
                 <div class="team__items row d-none d-sm-flex">
-                  <div class="team__item col-md-6 col-lg-4">
+                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team1.jpg');"
@@ -815,7 +815,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team__item col-md-6 col-lg-4">
+                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team2.jpg');"
@@ -830,7 +830,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team__item col-md-6 col-lg-4">
+                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team3.jpg');"
@@ -845,7 +845,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team__item col-md-6 col-lg-4">
+                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team4.jpg');"
@@ -860,7 +860,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team__item col-md-6 col-lg-4">
+                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team5.jpg');"
@@ -875,7 +875,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="team__item col-md-6 col-lg-4">
+                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team6.jpg');"
@@ -891,10 +891,11 @@
                     </div>
                   </div>
                 </div>
+            
                 <div class="team__mob d-block d-sm-none">
                   <div class="swiper-container team__mobile_slider">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide team__item">
+                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team1.jpg');"
@@ -909,7 +910,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item">
+                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team2.jpg');"
@@ -924,7 +925,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item">
+                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team3.jpg');"
@@ -939,7 +940,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item">
+                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team4.jpg');"
@@ -954,7 +955,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item">
+                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team5.jpg');"
@@ -969,7 +970,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item">
+                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
                     <div
                         class="team__item_vn"
                         style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team6.jpg');"
@@ -989,7 +990,7 @@
                 </div>
               </div>
             </div>
-            <div class="formBlock mt160">
+            <div class="formBlock mt160" id="formBlock">
               <div class="f-container">
                 <div class="formBlock_wrapper row">
                   <div class="col-lg-6">
@@ -1076,7 +1077,7 @@
                 </div>
               </div>
             </div>
-            <div class="contacts">
+            <div class="contacts" id="contacts">
               <div class="f-container">
                 <div class="contacts__wrapper row">
                   <div class="col-lg-6">
@@ -1166,19 +1167,19 @@
                 <p>Мы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятий</p>
                 <div class="specializations">
                   <div class="specializations__item">
-                    <img src="img/icons/search.svg" alt="Специализация">
+                    <img src="img/icons/search.svg" alt="search">
                     <p>Специализация</p>
                   </div>
                   <div class="specializations__item">
-                    <img src="img/icons/global.svg" alt="Специализация">
+                    <img src="img/icons/global.svg" alt="global">
                     <p>Специализация</p>
                   </div>
                   <div class="specializations__item">
-                    <img src="img/icons/global.svg" alt="Специализация">
+                    <img src="img/icons/global.svg" alt="global">
                     <p>Специализация</p>
                   </div>
                   <div class="specializations__item">
-                    <img src="img/icons/global.svg" alt="Специализация">
+                    <img src="img/icons/global.svg" alt="global">
                     <p>Специализация</p>
                   </div>
                 </div>
@@ -1221,6 +1222,66 @@
                   В число факторов, указывающих на рост - меньшая коррекция активов в данном секторе при более длительном инвестиционном  горизонте.  Стабильность  сектора  также  обеспечена  высоким  темпом  урбанизации  и  роста  населения в Азиатских странах, к тому же открывающих свои рынки новым видам продуктов. Наконец, доступ-ность финансирования
                   и падающие ставки кредитования поддержат развитие сектора.
                   Анализ активности сделок M&A в данном секторе показал, что в период 2013-2019гг. четыре ведущих игрока на рынке  выступили  покупателями  в  более  чем  60  сделках,  общая  раскрытая  стоимость  сделок  составила  $8,6  млрд (без учета сделок с не раскрываемыми результатами).</p>
+              </div>
+            </div>
+            <div class="sideModal sideModal__wrap" id="teamSideModal">
+              <div class="sideModal__title-wrap">
+                <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
+                  <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
+                    <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
+                  </svg>
+                </button>
+                <div class="sideModal__type">
+                  <span>Команда</span>
+                </div>
+              </div>
+              <div class="sideModal__content">
+                <div class="sideModal__title teamDetail__title">
+                  <h3>Тимур Турлов</h3>
+                  <a href="/" target="_blank">
+                    <img src="img/icons/mail.svg" alt="mail">
+                  </a>
+                </div>
+                <div class="sideModal__image" style="background-image: url('img/team_detail.jpg')"></div>
+                <h4>Генеральный директор, глава инвестиционного комитета компании</h4>
+                <p>Основатель компании. Более 14 лет работает в сфере международных инвестиций, эксперт по фондовому рынку США. Специализируется в сферах портфельного управления активами и разработки опционных стратегий с ограниченным риском, ведет авторские семинары по актуальным инвестиционным идеям. </p>
+                <div class="teamDetail__link_group">
+                  <a href="/">Статьи</a>
+                  <a href="/">Публикации</a>
+                  <a href="/">Выступления</a>
+                </div>
+              </div>
+            </div>
+            <div class="sideModal sideModal__wrap" id="analyticsSideModal">
+              <div class="sideModal__title-wrap">
+                <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
+                  <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
+                    <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
+                  </svg>
+                </button>
+                <div class="sideModal__type">
+                  <span>Аналитика</span>
+                </div>
+              </div>
+              <div class="sideModal__content">
+                <div class="sideModal__title">
+                  <h3>Рынок США: Обзор и пррогноз Рынок США: обзор и прогноз на 20 января. Инвесторы приветствуют Джо Байдена</h3>
+                </div>
+                <div class="analyticsDetail">
+                  <div class="analyticsDetail__sector">
+                    <p>Название сектора</p>
+                  </div>
+                  <div class="analyticsDetail__date">
+                    <p>26 января</p>
+                  </div>
+                </div>
+                <p>Глобальная (нестабильность экономических отношений США и Китая, санкции против России) и региональная (напряженная  обстановка  в  странах  арабского  мира)  политическая  и  экономическая  нестабильность  вносят  неопределённость  для  потенциальных  инвесторов  в  сектор,  ранее  инвестирующих  в  отдельные  компании  отдельных сегментов – выращивание, переработка и  т.д.</p>
+                <p>В краткосрочной и долгосрочной перспективе стоит ожидать ужесточения регуляций, связанных с экологично-стью компаний в секторе. Для компаний, ориентированных на глобальные рынки необходимо учитывать этот долгосрочный фактор.</p>
+                <div class="teamDetail__link_group">
+                  <a href="/">Скачать PDF</a>
+                </div>
               </div>
             </div>
             <button class="topbar__back" id="topbarBack" type="button"></button>

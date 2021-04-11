@@ -3,12 +3,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // При открытии моб. меню добавить CSS класс к body
   const headerNavbarToggler = document.getElementById('headerNavbarToggler');
   const body = document.querySelector('body');
+  const navLinks = document.querySelectorAll('.nav-link');
 
   if(headerNavbarToggler && body) {
     headerNavbarToggler.addEventListener('click', () => {
       body.classList.toggle('menuActive')
     })
   }
+
+  if(navLinks) {
+    navLinks.forEach(item => {
+      item.addEventListener('click', () => {
+        body.classList.remove('menuActive')
+      })
+    })
+  }
+
 
   // слайдер - приоритетеные сектора
   new Swiper('.sectorBlock__slider', {
@@ -119,5 +129,21 @@ document.addEventListener("DOMContentLoaded", () => {
       showSideModal(sideModal)
     })
   })
+
+  // Плавный скролл по якорю
+  $('a').on('click', function(e) {
+    // prevent default anchor click behavior
+    e.preventDefault();
+    // store hash
+    var hash = this.hash;
+
+    if ($(hash).length) {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500, function() {
+        // Do something fun if you want!
+      });
+    }
+  });
 
 });
