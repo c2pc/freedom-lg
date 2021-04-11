@@ -175,6 +175,18 @@
         }
     }
 
+    .formBlock {
+
+        &__desc {
+            max-width: 100%;
+        }
+
+        &__form {
+            max-width: 100%;
+            margin-top: 60px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -621,6 +633,15 @@
         text-align: center;
     }
 
+    .formBlock {
+        background-color: #F4F6F5;
+        padding: 48px 0;
+
+        &__form {
+            padding: 24px;
+        }
+    }
+
 
 }
 
@@ -837,6 +858,13 @@
 
     .team__group {
         margin: 24px;
+    }
+
+    .formBlock__field_error_message {
+        font-size: 10px;
+        line-height: 14px;
+        margin-top: 6px;
+        margin-left: 0;
     }
 
 }

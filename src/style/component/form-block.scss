@@ -1,0 +1,145 @@
+.formBlock {
+    background-color: $BlockBg;
+    padding: 120px 0;
+
+    h2, p {
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+    }
+
+    &__desc_items {
+        margin-top: 40px;
+    }
+
+    &__desc_item {
+        position: relative;
+        padding-left: 40px;
+        margin-top: 23px;
+
+        span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 11px;
+            width: 15px;
+            top: 9px;
+            left: 4px;
+            display: block;
+            background: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6.33333L5.66667 10L14.6667 2' stroke='%23242624' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat center center / cover;
+        }
+    }
+
+    &__desc {
+        max-width: 506px;
+    }
+
+    &__field {
+        $thisField: &;
+
+        background: $Secondary;
+        padding: 0 8px;
+        margin-top: 16px;
+        border-radius: 4px;
+        width: 100%;
+        position: relative;
+
+        &_error {
+
+            & + #{$thisField}_error_message {
+                display: block;
+            }
+
+            input {
+                border-color: $Error!important;
+            }
+        }
+
+        &_error_message {
+            display: none;
+            color: $Error;
+            font-size: 12px;
+            line-height: 16px;
+            margin-left: 8px;
+            margin-top: 8px;
+            transition: opacity .2s;
+        }
+
+        input {
+            border-radius: 0;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+            height: 52px;
+            padding: 0 10px;
+            border-bottom: 2px solid $Stroke;
+            background-color: transparent;
+            width: 100%;
+
+            &::-webkit-input-placeholder {color: rgba(36, 38, 36, .4);}
+            &::-moz-placeholder {color: rgba(36, 38, 36, .4);}
+            &:-moz-placeholder {color: rgba(36, 38, 36, .4);}
+            &:-ms-input-placeholder {color: rgba(36, 38, 36, .4);}
+        }
+
+        &_group {
+            width: 100%;
+            position: relative;
+        }
+    }
+
+    &__form {
+        max-width: 616px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        padding: 24px 40px 40px;
+        float: right;
+
+        label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &_group {
+            display: flex;
+            margin-left: -8px;
+            margin-right: -8px;
+
+            & > div {
+                margin-left: 8px;
+                margin-right: 8px;
+
+            }
+        }
+
+        button {
+            width: 180px;
+            height: 56px;
+            background-color: $Primary;
+            border-radius: 82px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-top: 32px;
+        }
+    }
+
+    &__label_group {
+        margin-top: 40px;
+
+        .checkbox:not(:first-child) {
+            margin-top: 16px;
+        }
+    }
+
+}
+
