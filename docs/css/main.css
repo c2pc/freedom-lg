@@ -9132,6 +9132,45 @@ strong {
     .formBlock__label_group .checkbox:not(:first-child) {
       margin-top: 16px; }
 
+.contacts {
+  padding: 100px 0 120px;
+  background-color: #3D3D3D;
+  color: #ffffff; }
+  .contacts iframe {
+    border-radius: 15px;
+    width: 100%; }
+  .contacts a {
+    color: #ffffff; }
+  .contacts__desc {
+    max-width: 446px; }
+  .contacts__map {
+    width: 100%;
+    max-width: 616px;
+    max-height: 616px;
+    float: right; }
+  .contacts__phone {
+    margin-top: 64px; }
+    .contacts__phone a {
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      letter-spacing: -0.01em; }
+  .contacts__address {
+    margin-top: 24px; }
+    .contacts__address p {
+      margin-bottom: 0; }
+  .contacts__eamil {
+    margin-top: 40px; }
+    .contacts__eamil a {
+      text-decoration: underline; }
+  .contacts__social {
+    margin-top: 64px; }
+    .contacts__social a:not(:first-child) {
+      margin-left: 20px; }
+    .contacts__social img {
+      width: 40px;
+      height: 40px; }
+
 .freedom__header {
   padding-top: 14px;
   padding-bottom: 16px; }
@@ -9343,7 +9382,11 @@ button[disabled] {
     max-width: 100%; }
   .formBlock__form {
     max-width: 100%;
-    margin-top: 60px; } }
+    margin-top: 60px; }
+  .contacts__map {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 80px; } }
 
 @media screen and (max-width: 767px) {
   .header__services_social {
@@ -9583,7 +9626,30 @@ button[disabled] {
     background-color: #F4F6F5;
     padding: 48px 0; }
     .formBlock__form {
-      padding: 24px; } }
+      padding: 24px; }
+  .contacts {
+    padding: 48px 0 52px; }
+    .contacts__title {
+      text-align: left; }
+    .contacts__phone a {
+      font-size: 20px;
+      line-height: 22px; }
+    .contacts__phone {
+      margin-top: 40px; }
+    .contacts__address {
+      margin-top: 8px; }
+    .contacts__social {
+      margin-top: 24px; }
+      .contacts__social img {
+        width: 30px;
+        height: 30px; }
+      .contacts__social a:not(:first-child) {
+        margin-left: 14px; }
+    .contacts .contacts__map {
+      margin-top: 40px;
+      height: 400px; }
+      .contacts .contacts__map iframe {
+        height: 100%; } }
 
 @media screen and (max-width: 400px) {
   .serviceBlock__title h2 {
@@ -9688,7 +9754,19 @@ button[disabled] {
     font-size: 10px;
     line-height: 14px;
     margin-top: 6px;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .contacts__phone a {
+    font-size: 16px;
+    line-height: 20px; }
+  .contacts__address {
+    line-height: 20px; }
+  .contacts__social img {
+    width: 24px;
+    height: 24px; }
+  .contacts__social a:not(:first-child) {
+    margin-left: 10px; }
+  .contacts .contacts__map {
+    height: 311px; } }
 
 @media screen and (max-width: 350px) {
   .mainBanner h1 {
