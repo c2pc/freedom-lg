@@ -3,6 +3,17 @@
     min-height: 646px;
     background: url("../img/main-banner.jpg") no-repeat center center / cover;
 
+    &::before {
+        background: rgba(0, 0, 0, .05);
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 0;
+    }
+
     &__inner {
         max-width: 650px;
         margin-top: -64px;
@@ -33,5 +44,7 @@
         display: flex;
         align-items: center;
         min-height: 646px;
+        z-index: 1;
+        position: relative;
     }
 }

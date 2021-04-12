@@ -429,6 +429,10 @@
         padding: 30px 25px 130px;
     }
 
+    .serviceBlock__item_image, .sectorBlock__item_image, .analytics__images .analytics__item_image, .team__item_vn {
+        background-size: cover!important;
+    }
+
 }
 
 @media screen and (max-width: 718px) {

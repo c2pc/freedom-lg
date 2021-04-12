@@ -8679,6 +8679,15 @@ strong {
   position: relative;
   min-height: 646px;
   background: url("../img/main-banner.jpg") no-repeat center center/cover; }
+  .mainBanner::before {
+    background: rgba(0, 0, 0, 0.05);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0; }
   .mainBanner__inner {
     max-width: 650px;
     margin-top: -64px; }
@@ -8702,7 +8711,9 @@ strong {
     display: flex;
     -ms-flex-align: center;
         align-items: center;
-    min-height: 646px; }
+    min-height: 646px;
+    z-index: 1;
+    position: relative; }
 
 .aboutUs {
   margin-top: 160px; }
@@ -9889,7 +9900,9 @@ button[disabled] {
     left: 25px;
     bottom: 35px; }
   .transactions__slider_desc {
-    padding: 30px 25px 130px; } }
+    padding: 30px 25px 130px; }
+  .serviceBlock__item_image, .sectorBlock__item_image, .analytics__images .analytics__item_image, .team__item_vn {
+    background-size: cover !important; } }
 
 @media screen and (max-width: 718px) {
   .sideModal__wrap {
