@@ -409,6 +409,10 @@
     .sideModal__close-btn svg path {
         fill: #ffffff;
     }
+
+    .sideModal__md_close {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 620px) {
