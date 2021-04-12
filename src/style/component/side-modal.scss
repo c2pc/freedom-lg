@@ -220,3 +220,29 @@
         margin-left: 16px;
     }
 }
+
+.sideModal__md_close {
+    position: fixed;
+    line-height: 1px;
+    width: 48px;
+    height: 48px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    top: 16px;
+    right: -50px;
+    z-index: 105;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: .2s;
+    }
+
+    svg path {
+        fill: $Main;
+    }
+}
+
+.sideModalActive .sideModal__md_close {
+    right: 734px;
+    transition: right .2s ease-out;
+}

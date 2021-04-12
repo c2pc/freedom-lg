@@ -9442,6 +9442,27 @@ strong {
     color: rgba(0, 0, 0, 0.5);
     margin-left: 16px; }
 
+.sideModal__md_close {
+  position: fixed;
+  line-height: 1px;
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  top: 16px;
+  right: -50px;
+  z-index: 105; }
+  .sideModal__md_close:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    transition: .2s; }
+  .sideModal__md_close svg path {
+    fill: #242624; }
+
+.sideModalActive .sideModal__md_close {
+  right: 734px;
+  transition: right .2s ease-out; }
+
 .freedom__header {
   padding-top: 14px;
   padding-bottom: 16px; }

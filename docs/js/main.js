@@ -15909,6 +15909,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Открыть боковое модальное окно
   const topbarBack = document.getElementById('topbarBack');
   const sideModalCloseBtn = document.getElementById('sideModalCloseBtn');
+  const sideModalMdClose = document.getElementById('sideModalMdClose');
   let sideModal = null;
 
   function hideSideMenu() {
@@ -15927,6 +15928,7 @@ document.addEventListener("DOMContentLoaded", () => {
   topbarBack.addEventListener('click', hideSideMenu)
   // Закрыть бокавую модалку при нажатии на кнопку
   sideModalCloseBtn.addEventListener('click', hideSideMenu)
+  sideModalMdClose.addEventListener('click', hideSideMenu)
 
   // Елементы у которых есть модалки
   const sideModalItems = document.querySelectorAll('[data-sidemodal]')
