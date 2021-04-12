@@ -37,10 +37,11 @@
             border-radius: 16px;
             display: flex;
             align-items: flex-end;
-            background-size: cover!important;
             background-repeat: no-repeat!important;
             background-position: center!important;
             position: relative;
+            background-size: 100%!important;
+            transition: background-size 1s;
 
             &::before {
                 content: "";
@@ -59,6 +60,10 @@
             &:hover::before {
                 opacity: 1;
                 cursor: pointer;
+            }
+
+            &:hover {
+                background-size: 110%!important;
             }
         }
 

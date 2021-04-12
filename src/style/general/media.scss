@@ -396,7 +396,7 @@
 @media screen and (max-width: 718px) {
     .sideModal__wrap {
         width: 100%;
-        padding: 64px 16px;
+        padding: 70px 16px 64px 16px;
     }
 
     .sideModal__wrap--open .sideModal__close-btn {
@@ -412,6 +412,17 @@
 
     .sideModal__md_close {
         display: none;
+    }
+
+    .sideModal__mob_logo img {
+        width: 200px;
+        position: absolute;
+        top: -47px;
+        display: block;
+    }
+
+    .sideModal__title-wrap {
+        padding-top: 60px;
     }
 }
 
@@ -785,6 +796,11 @@
 
     .sideModal {
 
+        &__mob_logo img {
+            width: 170px;
+            top: -42px;
+        }
+
         &__title {
             margin-top: 24px;
 
@@ -1094,6 +1110,16 @@
 
     .sideModal {
 
+        &__mob_logo img {
+            width: 132px;
+            top: -46px;
+        }
+
+        &__title-wrap {
+            padding-top: 40px;
+        }
+
+
         &__close-btn {
             width: 32px;
             height: 33px;
@@ -1128,6 +1154,7 @@
             line-height: 20px;
         }
     }
+
 
 }
 

@@ -8784,6 +8784,8 @@ strong {
     .serviceBlock__item:hover {
       background-color: #EEEDED;
       cursor: pointer; }
+      .serviceBlock__item:hover .serviceBlock__item_image {
+        background-size: 110%; }
     .serviceBlock__item p {
       margin-bottom: 0; }
     .serviceBlock__item_group {
@@ -8811,7 +8813,8 @@ strong {
     .serviceBlock__item_image {
       width: 100%;
       height: 182px;
-      background-size: cover;
+      background-size: 100%;
+      transition: background-size 1s;
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 0 0 16px 16px;
@@ -8843,13 +8846,17 @@ strong {
     min-height: 392px; }
   .sectorBlock__item:hover .sectorBlock__item_desc {
     background-color: #EEEDED; }
+  .sectorBlock__item:hover .sectorBlock__item_image {
+    background-color: #EEEDED;
+    background-size: 110%; }
   .sectorBlock__item_image {
     height: 232px;
     width: 100%;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 16px 16px 0 0; }
+    border-radius: 16px 16px 0 0;
+    transition: background-size 1s; }
   .sectorBlock__item_desc {
     background-color: #F7F7F7;
     padding: 24px;
@@ -8953,11 +8960,15 @@ strong {
 .analytics__images .analytics__item_image {
   height: 180px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  transition: background-size 1s;
   border-radius: 0 0 16px 16px; }
 
 .analytics__images:hover .analytics__desc {
   background-color: #EEEDED; }
+
+.analytics__images:hover .analytics__item_image {
+  background-size: 110%; }
 
 .analytics__desc {
   padding: 32px 24px; }
@@ -9010,10 +9021,11 @@ strong {
     display: flex;
     -ms-flex-align: end;
         align-items: flex-end;
-    background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    position: relative; }
+    position: relative;
+    background-size: 100% !important;
+    transition: background-size 1s; }
     .team__item_vn::before {
       content: "";
       position: absolute;
@@ -9029,6 +9041,8 @@ strong {
     .team__item_vn:hover::before {
       opacity: 1;
       cursor: pointer; }
+    .team__item_vn:hover {
+      background-size: 110% !important; }
   .team__item_role {
     margin-top: 8px; }
 
@@ -9463,6 +9477,9 @@ strong {
   right: 734px;
   transition: right .2s ease-out; }
 
+.sideModal__mob_logo img {
+  display: none; }
+
 .freedom__header {
   padding-top: 14px;
   padding-bottom: 16px; }
@@ -9820,7 +9837,7 @@ button[disabled] {
 @media screen and (max-width: 718px) {
   .sideModal__wrap {
     width: 100%;
-    padding: 64px 16px; }
+    padding: 70px 16px 64px 16px; }
   .sideModal__wrap--open .sideModal__close-btn {
     top: -48px;
     left: auto;
@@ -9829,7 +9846,14 @@ button[disabled] {
   .sideModal__close-btn svg path {
     fill: #ffffff; }
   .sideModal__md_close {
-    display: none; } }
+    display: none; }
+  .sideModal__mob_logo img {
+    width: 200px;
+    position: absolute;
+    top: -47px;
+    display: block; }
+  .sideModal__title-wrap {
+    padding-top: 60px; } }
 
 @media screen and (max-width: 620px) {
   .mainBanner {
@@ -10019,6 +10043,9 @@ button[disabled] {
   .emailSentModal__title p {
     font-size: 22px;
     line-height: 28px; }
+  .sideModal__mob_logo img {
+    width: 170px;
+    top: -42px; }
   .sideModal__title {
     margin-top: 24px; }
     .sideModal__title h3 {
@@ -10166,6 +10193,11 @@ button[disabled] {
   .emailSentModal .modal-dialog {
     padding-left: 0;
     padding-right: 0; }
+  .sideModal__mob_logo img {
+    width: 132px;
+    top: -46px; }
+  .sideModal__title-wrap {
+    padding-top: 40px; }
   .sideModal__close-btn {
     width: 32px;
     height: 33px; }

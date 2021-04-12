@@ -23,7 +23,8 @@
         #{$thisAnalytics}__item_image {
             height: 180px;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100%;
+            transition: background-size 1s;
             border-radius: 0 0 16px 16px;
         }
 
@@ -31,6 +32,10 @@
 
             #{$thisAnalytics}__desc {
                 background-color: $ServiceItemHover;
+            }
+
+            #{$thisAnalytics}__item_image {
+                background-size: 110%;
             }
         }
     }
