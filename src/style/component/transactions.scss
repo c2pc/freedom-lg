@@ -6,9 +6,12 @@
 
         &_services {
             position: absolute;
-            bottom: 40px;
+            bottom: 55px;
             z-index: 90;
-            right: 592px;
+            left: 48px;
+            display: flex;
+            align-items: center;
+            width: calc(100% - 640px);
         }
 
         &_title {
@@ -117,4 +120,19 @@
         }
     }
 
+}
+
+
+.transactions__pagination {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 269px;
+    height: 24px;
+}
+
+.transactions__arrow {
+    position: absolute;
+    right: 0;
 }

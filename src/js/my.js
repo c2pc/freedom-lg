@@ -41,11 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   // слайдер - сделки
-  new Swiper('.transactions__slider', {
+  const transactionsSlider = new Swiper('.transactions__slider', {
     speed: 500,
-    renderProgressbar: function (progressbarFillClass) {
-      return '<span className="' + progressbarFillClass + '"></span>';
-    },
     pagination: {
       el: '.transactions__slider_pagination',
       type: 'progressbar',
@@ -55,6 +52,18 @@ document.addEventListener("DOMContentLoaded", () => {
       prevEl: '.transactions__slider_prev',
     },
   })
+
+  transactionsSlider.on('slideChange', function () {
+    console.log('slider moved');
+    const activeslide = transactionsSlider.realIndex;
+    const totalslide = transactionsSlider.slides.length;
+    console.log(activeslide);
+    $(".activeslide").html(activeslide + 1);
+    $(".totalslide").html(totalslide);
+  });
+
+
+
 
   // слайдер - аналитики
   new Swiper('.analytics__slider', {

@@ -168,3 +168,19 @@ button[disabled]{
 .topbar__back.topbar__back--active {
     display: block;
 }
+
+.swiper-container-horizontal>.swiper-pagination-progressbar {
+    width: calc(100% - 46px)!important;
+    left: 22px!important;
+    top: 9px!important;
+    border-radius: 19px!important;
+}
+
+.swiper-pagination-progressbar {
+    background: rgba(224, 224, 224, .5)!important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: $Primary!important;
+    border-radius: 20px!important;
+}

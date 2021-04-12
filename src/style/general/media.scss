@@ -144,6 +144,25 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+
+    .transactions__slider_services {
+        width: calc(100% - 560px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .transactions__slider_services {
+        width: calc(100% - 510px);
+        left: 25px;
+    }
+
+    .transactions__pagination {
+        width: 150px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .aboutUs {
 
@@ -174,11 +193,6 @@
 
             &_desc {
                 padding: 30px 25px;
-            }
-
-            &_services {
-                bottom: 6px;
-                right: 470px;
             }
         }
     }
@@ -220,7 +234,21 @@
         }
     }
 
+    .transactions__slider_title p {
+        font-size: 22px;
+        line-height: 32px;
+    }
 
+    .transactions__slider_services {
+        bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .transactions__slider_services {
+        width: calc(100% - 450px);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -389,6 +417,16 @@
         &__copyright {
             margin-top: 16px;
         }
+    }
+
+    .transactions__slider_services {
+        width: calc(100% - 50px);
+        left: 25px;
+        bottom: 35px;
+    }
+
+    .transactions__slider_desc {
+        padding: 30px 25px 130px;
     }
 
 }
@@ -1153,6 +1191,10 @@
             font-size: 16px;
             line-height: 20px;
         }
+    }
+
+    .transactions__pagination {
+        width: 134px;
     }
 
 
