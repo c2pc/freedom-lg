@@ -393,6 +393,24 @@
 
 }
 
+@media screen and (max-width: 718px) {
+    .sideModal__wrap {
+        width: 100%;
+        padding: 64px 16px;
+    }
+
+    .sideModal__wrap--open .sideModal__close-btn {
+        top: -48px;
+        left: auto;
+        right: 0;
+        background: #242624;
+    }
+
+    .sideModal__close-btn svg path {
+        fill: #ffffff;
+    }
+}
+
 @media screen and (max-width: 620px) {
 
     .mainBanner {
@@ -761,6 +779,43 @@
         line-height: 28px;
     }
 
+    .sideModal {
+
+        &__title {
+            margin-top: 24px;
+
+            h3 {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+
+        &__image {
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .specializations {
+        flex-wrap: wrap;
+    }
+
+    .sideModal h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .excerption {
+        margin: 40px 0;
+        padding: 16px 24px;
+
+        p {
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+
+
 
 }
 
@@ -1030,6 +1085,43 @@
         .modal-dialog {
             padding-left: 0;
             padding-right: 0;
+        }
+    }
+
+    .sideModal {
+
+        &__close-btn {
+            width: 32px;
+            height: 33px;
+
+            svg {
+                width: 8px;
+            }
+        }
+
+        &__title h3 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        h4 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        ul li {
+            margin-top: 16px;
+            padding-left: 32px;
+        }
+    }
+
+    .excerption {
+        padding: 16px 24px;
+        border-width: 6px;
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
         }
     }
 

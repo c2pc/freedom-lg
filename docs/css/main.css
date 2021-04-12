@@ -9304,13 +9304,14 @@ strong {
   margin-bottom: 40px; }
 
 .specializations {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 48px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .specializations__item {
+    margin-top: 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -9384,7 +9385,8 @@ strong {
     font-size: 26px;
     line-height: 32px;
     letter-spacing: -0.01em;
-    color: #2D7D2F; }
+    color: #2D7D2F;
+    margin-bottom: 0; }
 
 .teamDetail__link_group {
   margin-top: 48px;
@@ -9794,6 +9796,18 @@ button[disabled] {
     .footer__copyright {
       margin-top: 16px; } }
 
+@media screen and (max-width: 718px) {
+  .sideModal__wrap {
+    width: 100%;
+    padding: 64px 16px; }
+  .sideModal__wrap--open .sideModal__close-btn {
+    top: -48px;
+    left: auto;
+    right: 0;
+    background: #242624; }
+  .sideModal__close-btn svg path {
+    fill: #ffffff; } }
+
 @media screen and (max-width: 620px) {
   .mainBanner {
     min-height: 500px; }
@@ -9981,7 +9995,27 @@ button[disabled] {
         height: 100%; }
   .emailSentModal__title p {
     font-size: 22px;
-    line-height: 28px; } }
+    line-height: 28px; }
+  .sideModal__title {
+    margin-top: 24px; }
+    .sideModal__title h3 {
+      font-size: 28px;
+      line-height: 40px; }
+  .sideModal__image {
+    margin-top: 16px;
+    margin-bottom: 24px; }
+  .specializations {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .sideModal h4 {
+    font-size: 20px;
+    line-height: 28px; }
+  .excerption {
+    margin: 40px 0;
+    padding: 16px 24px; }
+    .excerption p {
+      font-size: 20px;
+      line-height: 28px; } }
 
 @media screen and (max-width: 400px) {
   .serviceBlock__title h2 {
@@ -10108,7 +10142,27 @@ button[disabled] {
     padding: 64px 20px 24px; }
   .emailSentModal .modal-dialog {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .sideModal__close-btn {
+    width: 32px;
+    height: 33px; }
+    .sideModal__close-btn svg {
+      width: 8px; }
+  .sideModal__title h3 {
+    font-size: 24px;
+    line-height: 32px; }
+  .sideModal h4 {
+    font-size: 16px;
+    line-height: 20px; }
+  .sideModal ul li {
+    margin-top: 16px;
+    padding-left: 32px; }
+  .excerption {
+    padding: 16px 24px;
+    border-width: 6px; }
+    .excerption p {
+      font-size: 16px;
+      line-height: 20px; } }
 
 @media screen and (max-width: 350px) {
   .mainBanner h1 {
