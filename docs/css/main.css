@@ -9213,7 +9213,14 @@ strong {
     margin-top: 64px; }
     .contacts__social a:not(:first-child) {
       margin-left: 20px; }
-    .contacts__social img {
+    .contacts__social a:nth-child(1) svg:hover path {
+      fill: #828282;
+      stroke: #828282; }
+    .contacts__social a:nth-child(2) svg:hover path {
+      stroke: #828282; }
+      .contacts__social a:nth-child(2) svg:hover path:first-child {
+        fill: #828282; }
+    .contacts__social svg {
       width: 40px;
       height: 40px; }
 
@@ -10100,7 +10107,7 @@ button[disabled] {
       margin-top: 8px; }
     .contacts__social {
       margin-top: 24px; }
-      .contacts__social img {
+      .contacts__social svg {
         width: 30px;
         height: 30px; }
       .contacts__social a:not(:first-child) {

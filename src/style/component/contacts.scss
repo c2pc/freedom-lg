@@ -57,7 +57,28 @@
             margin-left: 20px;
         }
 
-        img {
+        a:nth-child(1) {
+            svg:hover {
+                path {
+                    fill: #828282;
+                    stroke: #828282;
+                }
+            }
+        }
+
+        a:nth-child(2) {
+            svg:hover {
+                path {
+                    stroke: #828282;
+
+                    &:first-child {
+                        fill: #828282;
+                    }
+                }
+            }
+        }
+
+        svg {
             width: 40px;
             height: 40px;
         }
