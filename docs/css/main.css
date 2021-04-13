@@ -10360,4 +10360,6 @@ button[disabled] {
 @media screen and (max-width: 350px) {
   .mainBanner h1 {
     font-size: 33px;
-    line-height: 40px; } }
+    line-height: 40px; }
+  .mainBanner__btn a, .mainBanner__btn button {
+    width: 100%; } }
