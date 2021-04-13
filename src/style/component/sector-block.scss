@@ -1,6 +1,10 @@
 .sectorBlock {
     margin-top: 160px;
 
+    .swiper-slide:hover {
+        cursor: pointer;
+    }
+
     &__header {
         display: flex;
         justify-content: space-between;

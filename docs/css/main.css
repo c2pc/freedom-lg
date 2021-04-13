@@ -8865,6 +8865,8 @@ strong {
 
 .sectorBlock {
   margin-top: 160px; }
+  .sectorBlock .swiper-slide:hover {
+    cursor: pointer; }
   .sectorBlock__header {
     display: -ms-flexbox;
     display: flex;

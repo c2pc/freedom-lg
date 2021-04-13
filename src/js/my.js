@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // слайдер - приоритетеные сектора
   new Swiper('.sectorBlock__slider', {
     slidesPerView: 'auto',
-    grabCursor: true,
     loop: true,
     navigation: {
       nextEl: '.sectorBlock__slider_next',
@@ -62,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // слайдер - аналитики
   new Swiper('.analytics__slider', {
     slidesPerView: 'auto',
-    grabCursor: true,
     loop: true,
     navigation: {
       nextEl: '.analytics__slider_next',
@@ -81,7 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // слайдер - команда (моб)
   new Swiper('.team__mobile_slider', {
     slidesPerView: 'auto',
-    grabCursor: true,
     loop: true,
     breakpoints: {
       500: {
