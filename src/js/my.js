@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // слайдер - приоритетеные сектора
   new Swiper('.sectorBlock__slider', {
     slidesPerView: 'auto',
-    spaceBetween: 40,
     grabCursor: true,
+    loop: true,
     navigation: {
       nextEl: '.sectorBlock__slider_next',
       prevEl: '.sectorBlock__slider_prev',
@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
       500: {
         spaceBetween: 40,
       },
-
       320: {
         spaceBetween: 24,
       },
@@ -43,6 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // слайдер - сделки
   const transactionsSlider = new Swiper('.transactions__slider', {
     speed: 500,
+    loop: true,
     pagination: {
       el: '.transactions__slider_pagination',
       type: 'progressbar',
@@ -53,23 +53,17 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   })
 
+  // слайдер - сделки - номер активного слайда и общее кол-во
   transactionsSlider.on('slideChange', function () {
-    console.log('slider moved');
-    const activeslide = transactionsSlider.realIndex;
-    const totalslide = transactionsSlider.slides.length;
-    console.log(activeslide);
-    $(".activeslide").html(activeslide + 1);
-    $(".totalslide").html(totalslide);
+    $(".activeslide").html(transactionsSlider.realIndex + 1);
+    $(".totalslide").html(transactionsSlider.slides.length - 2);
   });
-
-
-
 
   // слайдер - аналитики
   new Swiper('.analytics__slider', {
     slidesPerView: 'auto',
-    spaceBetween: 40,
     grabCursor: true,
+    loop: true,
     navigation: {
       nextEl: '.analytics__slider_next',
       prevEl: '.analytics__slider_prev',
@@ -78,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
       500: {
         spaceBetween: 40,
       },
-
       320: {
         spaceBetween: 24,
       },
@@ -89,11 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
   new Swiper('.team__mobile_slider', {
     slidesPerView: 'auto',
     grabCursor: true,
+    loop: true,
     breakpoints: {
       500: {
         spaceBetween: 40,
       },
-
       320: {
         spaceBetween: 24,
       },
@@ -101,60 +94,73 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
 
-  // При клике по форме открыть модальное окно. В дальнейшем переделать так чтобы окно открывалось после успешной отправки письма
-  $("#submitApplication").click(function() {
-    //открыть модальное окно с id="myModal"
+  // При клике по кнопке "отправить" открыть модальное окно (для примера). В дальнейшем переделать так чтобы окно открывалось после успешной отправки письма
+  $("#formSubmitBtn").click(function(e) {
+    e.preventDefault();
+    //открыть модальное окно с id="emailSentModal"
     $("#emailSentModal").modal('show');
+  });
+
+  // Плавный скролл по якорю
+  $('a').on('click', function(e) {
+    e.preventDefault();
+    const hash = this.hash;
+
+    if ($(hash).length) {
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 500);
+    }
   });
 
   // Открыть боковое модальное окно
   const topbarBack = document.getElementById('topbarBack');
-  const sideModalCloseBtn = document.querySelectorAll('.sideModal__close-btn');
-  const sideModalMdClose = document.getElementById('sideModalMdClose');
+  const sideModalCloseBtn = document.querySelectorAll('.sideModal__close-btn'); // кнопка закрыть  в мобильной версии
+  const sideModalMdClose = document.getElementById('sideModalMdClose'); // кнопка закрыть  в десктопной версии
   let sideModal = null;
 
+  // скрыть боковое модальное окно
   function hideSideMenu() {
     topbarBack.classList.remove('topbar__back--active');
     body.className = '';
     sideModal.classList.remove('sideModal__wrap--open')
   }
 
+  // показать боковое модальное окно
   function showSideModal(modal) {
     topbarBack.classList.toggle('topbar__back--active')
     body.classList.toggle('sideModalActive')
     modal.classList.toggle('sideModal__wrap--open')
   }
 
-  // Закрыть бокавую модалку при нажатии на пустую область
+  // Закрыть боковое модальное окно при нажатии на пустую область
   topbarBack.addEventListener('click', hideSideMenu)
-  // Закрыть бокавую модалку при нажатии на кнопку
-  sideModalCloseBtn.forEach(item => item.addEventListener('click', hideSideMenu))
-  sideModalMdClose.addEventListener('click', hideSideMenu)
+  // Закрыть боковое модальное окно при нажатии на кнопку "X"
+  sideModalCloseBtn.forEach(item => item.addEventListener('click', hideSideMenu)) // закрыть модальное окно в мобильной версии
+  sideModalMdClose.addEventListener('click', hideSideMenu) // // закрыть модальное окно в десктопной версии
 
-  // Елементы у которых есть модалки
+  // Елементы при клике по которым необходимо открыть боковое модальное окно. То есть елементы для которых задан дата атрибут "data-sidemodal"
   const sideModalItems = document.querySelectorAll('[data-sidemodal]')
 
+  // Получаем значение дата атрибута "data-sidemodal" (значением является id модального окна, которое необходимо показать)
+  // по значению дата атрибута "data-sidemodal" находим соответствующее модальное окно и запускаем
   sideModalItems.forEach(item => {
-    item.addEventListener('click', e => {
+    item.addEventListener('click', () => {
       sideModal = document.getElementById(item.dataset.sidemodal);
       showSideModal(sideModal)
     })
   })
 
-  // Плавный скролл по якорю
-  $('a').on('click', function(e) {
-    // prevent default anchor click behavior
-    e.preventDefault();
-    // store hash
-    var hash = this.hash;
+  // Форма "Свяжитесь с нами"
+  // Если не выбран первый checkbox сделать не активной кнопку "Отправить"
+  const privacyPolicy = document.getElementById('privacy-policy');
+  const formSubmitBtn = document.getElementById('formSubmitBtn');
 
-    if ($(hash).length) {
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 500, function() {
-        // Do something fun if you want!
-      });
-    }
-  });
+  if(privacyPolicy && formSubmitBtn) {
+    privacyPolicy.addEventListener('change', () => {
+      formSubmitBtn.disabled = !privacyPolicy.checked // Если не выбран первый checkbox делаем кнопку не активной
+    })
+  }
+
 
 });

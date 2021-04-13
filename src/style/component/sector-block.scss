@@ -19,21 +19,15 @@
             #{$thisItem}_desc {
                 background-color: $ServiceItemHover;
             }
-
-            #{$thisItem}_image {
-                background-color: $ServiceItemHover;
-                background-size: 110%;
-            }
         }
 
         &_image {
             height: 232px;
             width: 100%;
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 16px 16px 0 0;
-            transition: background-size 1s;
         }
 
         &_desc {

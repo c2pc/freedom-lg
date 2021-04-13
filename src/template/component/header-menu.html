@@ -8,27 +8,27 @@
     </button>
 
     <div class="collapse navbar-collapse" id="headerNavbar">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">
         <li class="nav-item active">
-          <a class="nav-link" href="#serviceBlock"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Услуги</a>
+          <a class="nav-link" href="#serviceBlock">Услуги</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#sectorBlock"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Секторы</a>
+          <a class="nav-link" href="#sectorBlock">Секторы</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#transactions"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Сделки</a>
+          <a class="nav-link" href="#transactions">Сделки</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#team"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Команда</a>
+          <a class="nav-link" href="#team">Команда</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contacts"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Контакты</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
         </li>
       </ul>
       <div class="header__services d-md-flex d-none align-items-center">
         <div class="header__services_lang d-flex">
-          <span class="header__services_lang_item active">Ru</span>
-          <span class="header__services_lang_item">En</span>
+          <button class="header__services_lang_item active">Ru</button>
+          <button class="header__services_lang_item" disabled>En</button>
         </div>
         <div class="header__services_btn">
           <a href="#formBlock"><button class="freedom__btn">Оставить заявку</button></a>

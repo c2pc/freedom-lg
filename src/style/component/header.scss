@@ -23,9 +23,14 @@
                     margin-left: 9px;
                 }
 
-                &.active, &:hover {
+                &.active, &:not(:disabled):hover {
                     background-color: $Secondary;
                     cursor: pointer;
+                }
+
+                &:disabled, &[disabled] {
+                    color: $DisabledColor;
+                    background-color: transparent;
                 }
             }
         }

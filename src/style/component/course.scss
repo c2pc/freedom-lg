@@ -1,12 +1,15 @@
 .course {
     $thisCourse: &;
 
-    height: 52px;
     background-color: $LightGreen;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    overflow: hidden;
+
+    &__items {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 52px;
+        justify-content: space-between;
+    }
 
     &__item {
         display: flex;

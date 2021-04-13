@@ -29,27 +29,27 @@
                 </button>
             
                 <div class="collapse navbar-collapse" id="headerNavbar">
-                  <ul class="navbar-nav mr-auto">
+                  <ul class="navbar-nav mr-auto" data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#serviceBlock"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Услуги</a>
+                      <a class="nav-link" href="#serviceBlock">Услуги</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#sectorBlock"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Секторы</a>
+                      <a class="nav-link" href="#sectorBlock">Секторы</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#transactions"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Сделки</a>
+                      <a class="nav-link" href="#transactions">Сделки</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#team"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Команда</a>
+                      <a class="nav-link" href="#team">Команда</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#contacts"  data-toggle="collapse" data-target="#headerNavbar" aria-controls="headerNavbar">Контакты</a>
+                      <a class="nav-link" href="#contacts">Контакты</a>
                     </li>
                   </ul>
                   <div class="header__services d-md-flex d-none align-items-center">
                     <div class="header__services_lang d-flex">
-                      <span class="header__services_lang_item active">Ru</span>
-                      <span class="header__services_lang_item">En</span>
+                      <button class="header__services_lang_item active">Ru</button>
+                      <button class="header__services_lang_item" disabled>En</button>
                     </div>
                     <div class="header__services_btn">
                       <a href="#formBlock"><button class="freedom__btn">Оставить заявку</button></a>
@@ -80,91 +80,73 @@
         </header>
         <main>
             <div class="course">
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__down">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">-0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__up">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__up">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__down">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__up">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__up">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__down">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__up">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__down">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div><div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__down">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__up">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
-                </div>
-              </div>
-              <div class="course__item">
-                <span class="course__item_title">FRHC</span>
-                <div class="course__item_group course__down">
-                  <span class="course__item_value">43,97</span>
-                  <span class="course__item_value course__difference">+0.94%</span>
+              <div class="f-container">
+                <div class="course__items">
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__down">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">-0.94%</span>
+                    </div>
+                  </div>
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__up">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">+0.94%</span>
+                    </div>
+                  </div>
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__up">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">+0.94%</span>
+                    </div>
+                  </div>
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__down">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">+0.94%</span>
+                    </div>
+                  </div>
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__up">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">+0.94%</span>
+                    </div>
+                  </div>
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__up">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">+0.94%</span>
+                    </div>
+                  </div>
+                  <div class="course__item">
+                    <span class="course__item_title">FRHC</span>
+                    <div class="course__item_group course__down">
+                      <span class="course__item_value">43,97</span>
+                      <span class="course__item_value course__difference">+0.94%</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="mainBanner">
+              <video
+                  class="mainBanner__video"
+                  id="mainBannerVideo"
+                  autoplay="autoplay"
+                  loop="true"
+                  muted="muted"
+                  width="100%"
+                  height="646px"
+              >
+                <source src="img/CIB_FF.webm" type="video/webm">
+                <source src="img/CIB_FF.mp4" type="video/mp4;">
+              </video>
               <div class="f-container">
                 <div class="mainBanner__wrapper">
                   <div class="mainBanner__inner">
@@ -177,731 +159,637 @@
                 </div>
               </div>
             </div>
-            <div class="aboutUs">
-              <div class="f-container">
-                <div class="row aboutUs__items">
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="aboutUs__item">
-                      <div class="aboutUs__item_title">
-                        <p>Nasdaq</p>
-                        <div class="aboutUs__course aboutUs__course_up d-none d-sm-block"> <!-- aboutUs__course_down если спад -->
-                          <span class="aboutUs__course_title">FRHC</span>
-                          <span class="aboutUs__course_value">43,97</span>
-                        </div>
-                      </div>
-                      <div class="aboutUs__item_desc">
-                        <p>Акции компании торгуются на крупнейшей бирже <strong>в Нью-Йорке</strong></p>
-                        <div class="aboutUs__course aboutUs__course_up d-inline-block d-sm-none"> <!-- aboutUs__course_down если спад -->
-                          <span class="aboutUs__course_title">FRHC</span>
-                          <span class="aboutUs__course_value">43,97</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="aboutUs__item">
-                      <div class="aboutUs__item_title">
-                        <p>Рейтинг S&P</p>
-                      </div>
-                      <div class="aboutUs__item_desc">
-                        <p>Рейтинг холдинга Freedom Holding Corp. от агенства <strong>S&P Global Ratings (B-/B),</strong> прогноз «позитивный»</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="aboutUs__item">
-                      <div class="aboutUs__item_title">
-                        <p>ruBB+</p>
-                      </div>
-                      <div class="aboutUs__item_desc">
-                        <p>Рейтинг кредитоспособности от <strong>«Эксперт РА»,</strong> прогноз «позитивный»</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="aboutUs__item">
-                      <div class="aboutUs__item_title">
-                        <p>$3 млрд</p>
-                      </div>
-                      <div class="aboutUs__item_desc">
-                        <p>Рыночная <strong>капитализация</strong> холдинга Freedom Holding Corp.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="aboutUs__item">
-                      <div class="aboutUs__item_title">
-                        <p>7 стран</p>
-                      </div>
-                      <div class="aboutUs__item_desc">
-                        <p>Холдинг ведет свою <strong>операционную</strong> деятельность</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-lg-4">
-                    <div class="aboutUs__item">
-                      <div class="aboutUs__item_title">
-                        <p>12 лет</p>
-                      </div>
-                      <div class="aboutUs__item_desc">
-                        <p>Работаем на <strong>международных</strong> финансовых рынках</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="serviceBlock"  id="serviceBlock">
-              <div class="f-container">
-                <div class="serviceBlock__desc">
-                  <div class="serviceBlock__title">
-                    <h2>Cтратегия кратного роста вашего бизнеса</h2>
-                  </div>
-                  <div class="serviceBlock__desc_vn d-none d-md-block">
-                    <p>
-                      Глобальная экспертиза и доступ к мировым рынкам капитала позволяет Инвестиционному Банку «Фридом Финанс»
-                      формировать согласованные решения для: Акционеров и собственников, Совета директоров и менеджмента,
-                      Взаимоотношений с инвесторами.
-                    </p>
-                  </div>
-                </div>
-                <div class="serviceBlock__items">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                      <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
-                        <div class="serviceBlock__item_group">
-                          <div class="serviceBlock__item_desc">
-                            <div class="serviceBlock__item_title">
-                              <p>Слияния и поглощения</p>
-                            </div>
-                            <div class="serviceBlock__item_desc_vn">
-                              <p>Консультирование проведения сделки M&A
-                                для корпоративных и институциональных клиентов</p>
-                            </div>
-                            <div class="serviceBlock__item_detail d-block d-sm-none">
-                              <button>Подробнее</button>
+            <div class="freedom__content">
+                <div class="aboutUs">
+                  <div class="f-container">
+                    <div class="row aboutUs__items">
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="aboutUs__item">
+                          <div class="aboutUs__item_title">
+                            <p>Nasdaq</p>
+                            <div class="aboutUs__course aboutUs__course_up d-none d-sm-block"> <!-- aboutUs__course_down если спад -->
+                              <span class="aboutUs__course_title">FRHC</span>
+                              <span class="aboutUs__course_value">43,97</span>
                             </div>
                           </div>
-                          <div class="serviceBlock__item_number">
-                            <span>01</span>
-                          </div>
-                        </div>
-                        <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock1.jpg')"></div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
-                        <div class="serviceBlock__item_group">
-                          <div class="serviceBlock__item_desc">
-                            <div class="serviceBlock__item_title">
-                              <p>Привлечение капитала</p>
-                            </div>
-                            <div class="serviceBlock__item_desc_vn">
-                              <p>Консультирование проведения сделки M&A
-                                для корпоративных и институциональных клиентов</p>
-                            </div>
-                            <div class="serviceBlock__item_detail d-block d-sm-none">
-                              <button>Подробнее</button>
+                          <div class="aboutUs__item_desc">
+                            <p>Акции компании торгуются на крупнейшей бирже <strong>в Нью-Йорке</strong></p>
+                            <div class="aboutUs__course aboutUs__course_up d-inline-block d-sm-none"> <!-- aboutUs__course_down если спад -->
+                              <span class="aboutUs__course_title">FRHC</span>
+                              <span class="aboutUs__course_value">43,97</span>
                             </div>
                           </div>
-                          <div class="serviceBlock__item_number">
-                            <span>02</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="aboutUs__item">
+                          <div class="aboutUs__item_title">
+                            <p>Рейтинг S&P</p>
                           </div>
-                        </div>
-                        <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock2.jpg')"></div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
-                        <div class="serviceBlock__item_group">
-                          <div class="serviceBlock__item_desc">
-                            <div class="serviceBlock__item_title">
-                              <p>Выпуск облигаций</p>
-                            </div>
-                            <div class="serviceBlock__item_desc_vn">
-                              <p>Консультирование проведения сделки M&A
-                                для корпоративных и институциональных клиентов</p>
-                            </div>
-                            <div class="serviceBlock__item_detail d-block d-sm-none">
-                              <button>Подробнее</button>
-                            </div>
-                          </div>
-                          <div class="serviceBlock__item_number">
-                            <span>03</span>
-                          </div>
-                        </div>
-                        <div class="serviceBlock__item_image zoom-in"  style="background-image: url('img/serviceBlock3.jpg')"></div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
-                        <div class="serviceBlock__item_group">
-                          <div class="serviceBlock__item_desc">
-                            <div class="serviceBlock__item_title">
-                              <p>IPO/SPO</p>
-                            </div>
-                            <div class="serviceBlock__item_desc_vn">
-                              <p>Консультирование проведения сделки M&A
-                                для корпоративных и институциональных клиентов</p>
-                            </div>
-                            <div class="serviceBlock__item_detail d-block d-sm-none">
-                              <button>Подробнее</button>
-                            </div>
-                          </div>
-                          <div class="serviceBlock__item_number">
-                            <span>04</span>
-                          </div>
-                        </div>
-                        <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock4.jpg')"></div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
-                        <div class="serviceBlock__item_group">
-                          <div class="serviceBlock__item_desc">
-                            <div class="serviceBlock__item_title">
-                              <p>Корпоративный брокер</p>
-                            </div>
-                            <div class="serviceBlock__item_desc_vn">
-                              <p>Консультирование проведения сделки M&A
-                                для корпоративных и институциональных клиентов</p>
-                            </div>
-                            <div class="serviceBlock__item_detail d-block d-sm-none">
-                              <button>Подробнее</button>
-                            </div>
-                          </div>
-                          <div class="serviceBlock__item_number">
-                            <span>05</span>
-                          </div>
-                        </div>
-                        <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock5.jpg')"></div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
-                        <div class="serviceBlock__item_group">
-                          <div class="serviceBlock__item_desc">
-                            <div class="serviceBlock__item_title">
-                              <p>Структурирование</p>
-                            </div>
-                            <div class="serviceBlock__item_desc_vn">
-                              <p>Консультирование проведения сделки M&A
-                                для корпоративных и институциональных клиентов</p>
-                            </div>
-                            <div class="serviceBlock__item_detail d-block d-sm-none">
-                              <button>Подробнее</button>
-                            </div>
-                          </div>
-                          <div class="serviceBlock__item_number">
-                            <span>06</span>
-                          </div>
-                        </div>
-                        <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock6.jpg')"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="sectorBlock" id="sectorBlock">
-              <div class="f-container">
-                <div class="sectorBlock__header">
-                  <div class="sectorBlock__title block-title">
-                    <h2>Приоритетеные сектора</h2>
-                  </div>
-                  <div class="sliderArrow__group d-none d-sm-flex">
-                    <button class="sliderArrow__btn sectorBlock__slider_prev">
-                      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="white"/>
-                      </svg>
-                    </button>
-                    <button class="sliderArrow__btn sectorBlock__slider_next" tabindex="0" role="button" aria-label="Previous slide">
-                      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="white"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="container-fluid sectorBlock__slider_wrapper slider-left-padding">
-                <div class="swiper-container sectorBlock__slider">
-                  <div class="swiper-wrapper">
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock1.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Информационные технологии, Телеком и Медиа</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock2.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Энергетика и инфрастуктура</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock3.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Нефть, газ, добыча полезных ископаемых</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock4.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Сельское хозяйство</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock5.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Недвижимость</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock6.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Транспорт и логистика</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock7.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Здравоохранение</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock8.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Инновационные разработки, материалы</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                      <div class="sectorBlock__item">
-                        <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock9.jpg')"></div>
-                        <div class="sectorBlock__item_desc">
-                          <p>Биотехнологии, фармацефтика, химия</p>
-                        </div>
-                      </div>
-                    </div>
-            
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="transactions mt160" id="transactions">
-              <div class="f-container">
-                <div class="transactions__slider_container">
-                  <div class="swiper-container transactions__slider">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide transactions__slide">
-                        <div class="transactions__slider_item">
-                          <div class="transactions__slider_desc">
-                            <span>Сделки</span>
-                            <div class="transactions__slider_title">
-                              <p>Агрофирма Рубеж</p>
-                            </div>
-                            <div class="transactions__slider_desc_vn">
-                              <p>Выпуск осуществлялся по со-андеррайтерской схеме</p>
-                            </div>
-                            <div class="transactions__items row">
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>250 млн ₽</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Сумма сделки</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>2020 год</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Дата сделки</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>Сельхоз деятельность</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Отрасль</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>Организатор</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Роль</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="transactions__slider_image" style="background-image: url('img/transactions1.jpg')"></div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide transactions__slide">
-                        <div class="transactions__slider_item">
-                          <div class="transactions__slider_desc">
-                            <span>Сделки</span>
-                            <div class="transactions__slider_title">
-                              <p>Коммерческая недвижимость Финансово-промышленной
-                                корпорации «Гарант-Инвест» </p>
-                            </div>
-                            <div class="transactions__slider_desc_vn">
-                              <p></p>
-                            </div>
-                            <div class="transactions__items row">
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>100 млн ₽</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Сумма сделки</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>2020 год</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Дата сделки</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>Финансовая деятельность</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Отрасль</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="transactions__slider_image" style="background-image: url('img/transactions2.jpg')"></div>
-                        </div>
-                      </div>
-                      <div class="swiper-slide transactions__slide">
-                        <div class="transactions__slider_item">
-                          <div class="transactions__slider_desc">
-                            <span>Сделки</span>
-                            <div class="transactions__slider_title">
-                              <p>АО «БАСТ»</p>
-                            </div>
-                            <div class="transactions__slider_desc_vn">
-                              <p></p>
-                            </div>
-                            <div class="transactions__items row">
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>112,1 млн ₽</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Сумма сделки</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>2020 год</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Дата сделки</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>Полезные ископаемые</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Отрасль</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="transactions__item col-md-6 col-lg-3">
-                                <div class="transactions__item_vn">
-                                  <div class="transactions__item_value">
-                                    <p>Организатор</p>
-                                  </div>
-                                  <div class="transactions__item_desc">
-                                    <p>Роль</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="transactions__slider_image" style="background-image: url('img/transactions3.jpg')"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            
-                  <div class="transactions__slider_services">
-                    <div class="transactions__pagination">
-                      <div class="activeslide transactions__pagination_value">1</div>
-                      <div class="transactions__pagination_bar swiper-container-horizontal">
-                        <div class="swiper-pagination swiper-pagination-progressbar transactions__slider_pagination"></div>
-                      </div>
-                      <div class="totalslide transactions__pagination_value">3</div>
-                    </div>
-                    <div class="sliderArrow__group transactions__arrow">
-                      <button class="sliderArrow__btn transactions__slider_prev">
-                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="#242624"/>
-                        </svg>
-                      </button>
-                      <button class="sliderArrow__btn transactions__slider_next" tabindex="0" role="button" aria-label="Previous slide">
-                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="#242624"/>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="analytics sectorBlock">
-              <div class="f-container">
-                <div class="sectorBlock__header">
-                  <div class="sectorBlock__title block-title">
-                    <h2>Аналитика</h2>
-                  </div>
-                  <div class="sliderArrow__group d-none d-sm-flex">
-                    <button class="sliderArrow__btn analytics__slider_prev">
-                      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="white"/>
-                      </svg>
-                    </button>
-                    <button class="sliderArrow__btn analytics__slider_next" tabindex="0" role="button" aria-label="Previous slide">
-                      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="white"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="container-fluid sectorBlock__slider_wrapper slider-left-padding">
-                <div class="swiper-container analytics__slider">
-                  <div class="swiper-wrapper">
-            
-                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
-                      <div class="analytics__item analytics__images"> <!-- Если у новости есть картинка, то добавить класс "analytics__images"-->
-                        <div class="analytics__desc">
-                          <div class="analytics__desc_name">
-                            <p>Название сектора</p>
-                          </div>
-                          <div class="analytics__desc_title">
-                            <p>Обзор российского фондового рынка</p>
-                          </div>
-                          <div class="analytics__desc_date">
-                            <p>26 января</p>
-                          </div>
-                        </div>
-                        <div class="analytics__item_image" style="background-image: url('img/analytics1.jpg')"></div>
-                      </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
-                      <div class="analytics__item">
-                        <div class="analytics__desc">
-                          <div class="analytics__desc_name">
-                            <p>Название сектора</p>
-                          </div>
-                          <div class="analytics__desc_title">
-                            <p>Рынок США: обзор и прогноз на 25 января.
-                              В фокусе отчетность технологических гигантов</p>
-                          </div>
-                          <div class="analytics__desc_date">
-                            <p>26 января</p>
+                          <div class="aboutUs__item_desc">
+                            <p>Рейтинг холдинга Freedom Holding Corp. от агенства <strong>S&P Global Ratings (B-/B),</strong> прогноз «позитивный»</p>
                           </div>
                         </div>
                       </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
-                      <div class="analytics__item">
-                        <div class="analytics__desc">
-                          <div class="analytics__desc_name">
-                            <p>Название сектора</p>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="aboutUs__item">
+                          <div class="aboutUs__item_title">
+                            <p>ruBB+</p>
                           </div>
-                          <div class="analytics__desc_title">
-                            <p>Рынок США: обзор и прогноз на 20 января. Инвесторы приветствуют
-                              Джо Байдена</p>
-                          </div>
-                          <div class="analytics__desc_date">
-                            <p>26 января</p>
+                          <div class="aboutUs__item_desc">
+                            <p>Рейтинг кредитоспособности от <strong>«Эксперт РА»,</strong> прогноз «позитивный»</p>
                           </div>
                         </div>
                       </div>
-                    </div>
-            
-                    <div class="swiper-slide" data-sidemodal="analyticsSideModal">
-                      <div class="analytics__item">
-                        <div class="analytics__desc">
-                          <div class="analytics__desc_name">
-                            <p>Название сектора</p>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="aboutUs__item">
+                          <div class="aboutUs__item_title">
+                            <p>$3 млрд</p>
                           </div>
-                          <div class="analytics__desc_title">
-                            <p>Обзор российского рынка на 27 января: ОПЕК предрекает успешный год</p>
-                          </div>
-                          <div class="analytics__desc_date">
-                            <p>26 января</p>
+                          <div class="aboutUs__item_desc">
+                            <p>Рыночная <strong>капитализация</strong> холдинга Freedom Holding Corp.</p>
                           </div>
                         </div>
                       </div>
-                    </div>
-            
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="team mt160" id="team">
-              <div class="f-container">
-                <div class="team__title block-title">
-                  <h2>Команда</h2>
-                </div>
-                <div class="team__items row d-none d-sm-flex">
-                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team1.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Владимир Козлов</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="aboutUs__item">
+                          <div class="aboutUs__item_title">
+                            <p>7 стран</p>
+                          </div>
+                          <div class="aboutUs__item_desc">
+                            <p>Холдинг ведет свою <strong>операционную</strong> деятельность</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team2.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Георгий Волосников</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team3.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Игорь Клюшнев</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team4.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Сергей Носов</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team5.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Станислав Дрейлинг</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team6.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Тимур Турлов</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
+                      <div class="col-sm-6 col-lg-4">
+                        <div class="aboutUs__item">
+                          <div class="aboutUs__item_title">
+                            <p>12 лет</p>
+                          </div>
+                          <div class="aboutUs__item_desc">
+                            <p>Работаем на <strong>международных</strong> финансовых рынках</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-            
-                <div class="team__mob d-block d-sm-none">
-                  <div class="swiper-container team__mobile_slider">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                <div class="serviceBlock"  id="serviceBlock">
+                  <div class="f-container">
+                    <div class="serviceBlock__desc">
+                      <div class="serviceBlock__title">
+                        <h2>Cтратегия кратного роста вашего бизнеса</h2>
+                      </div>
+                      <div class="serviceBlock__desc_vn d-none d-md-block">
+                        <p>
+                          Глобальная экспертиза и доступ к мировым рынкам капитала позволяет Инвестиционному Банку «Фридом Финанс»
+                          формировать согласованные решения для: Акционеров и собственников, Совета директоров и менеджмента,
+                          Взаимоотношений с инвесторами.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="serviceBlock__items">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                          <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
+                            <div class="serviceBlock__item_group">
+                              <div class="serviceBlock__item_desc">
+                                <div class="serviceBlock__item_title">
+                                  <p>Слияния и поглощения</p>
+                                </div>
+                                <div class="serviceBlock__item_desc_vn">
+                                  <p>Консультирование проведения сделки M&A
+                                    для корпоративных и институциональных клиентов</p>
+                                </div>
+                                <div class="serviceBlock__item_detail d-block d-sm-none">
+                                  <button>Подробнее</button>
+                                </div>
+                              </div>
+                              <div class="serviceBlock__item_number">
+                                <span>01</span>
+                              </div>
+                            </div>
+                            <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock1.jpg')"></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
+                            <div class="serviceBlock__item_group">
+                              <div class="serviceBlock__item_desc">
+                                <div class="serviceBlock__item_title">
+                                  <p>Привлечение капитала</p>
+                                </div>
+                                <div class="serviceBlock__item_desc_vn">
+                                  <p>Консультирование проведения сделки M&A
+                                    для корпоративных и институциональных клиентов</p>
+                                </div>
+                                <div class="serviceBlock__item_detail d-block d-sm-none">
+                                  <button>Подробнее</button>
+                                </div>
+                              </div>
+                              <div class="serviceBlock__item_number">
+                                <span>02</span>
+                              </div>
+                            </div>
+                            <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock2.jpg')"></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
+                            <div class="serviceBlock__item_group">
+                              <div class="serviceBlock__item_desc">
+                                <div class="serviceBlock__item_title">
+                                  <p>Выпуск облигаций</p>
+                                </div>
+                                <div class="serviceBlock__item_desc_vn">
+                                  <p>Консультирование проведения сделки M&A
+                                    для корпоративных и институциональных клиентов</p>
+                                </div>
+                                <div class="serviceBlock__item_detail d-block d-sm-none">
+                                  <button>Подробнее</button>
+                                </div>
+                              </div>
+                              <div class="serviceBlock__item_number">
+                                <span>03</span>
+                              </div>
+                            </div>
+                            <div class="serviceBlock__item_image zoom-in"  style="background-image: url('img/serviceBlock3.jpg')"></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
+                            <div class="serviceBlock__item_group">
+                              <div class="serviceBlock__item_desc">
+                                <div class="serviceBlock__item_title">
+                                  <p>IPO/SPO</p>
+                                </div>
+                                <div class="serviceBlock__item_desc_vn">
+                                  <p>Консультирование проведения сделки M&A
+                                    для корпоративных и институциональных клиентов</p>
+                                </div>
+                                <div class="serviceBlock__item_detail d-block d-sm-none">
+                                  <button>Подробнее</button>
+                                </div>
+                              </div>
+                              <div class="serviceBlock__item_number">
+                                <span>04</span>
+                              </div>
+                            </div>
+                            <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock4.jpg')"></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
+                            <div class="serviceBlock__item_group">
+                              <div class="serviceBlock__item_desc">
+                                <div class="serviceBlock__item_title">
+                                  <p>Корпоративный брокер</p>
+                                </div>
+                                <div class="serviceBlock__item_desc_vn">
+                                  <p>Консультирование проведения сделки M&A
+                                    для корпоративных и институциональных клиентов</p>
+                                </div>
+                                <div class="serviceBlock__item_detail d-block d-sm-none">
+                                  <button>Подробнее</button>
+                                </div>
+                              </div>
+                              <div class="serviceBlock__item_number">
+                                <span>05</span>
+                              </div>
+                            </div>
+                            <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock5.jpg')"></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                          <div class="serviceBlock__item" data-sidemodal="serviceSideModal">
+                            <div class="serviceBlock__item_group">
+                              <div class="serviceBlock__item_desc">
+                                <div class="serviceBlock__item_title">
+                                  <p>Структурирование</p>
+                                </div>
+                                <div class="serviceBlock__item_desc_vn">
+                                  <p>Консультирование проведения сделки M&A
+                                    для корпоративных и институциональных клиентов</p>
+                                </div>
+                                <div class="serviceBlock__item_detail d-block d-sm-none">
+                                  <button>Подробнее</button>
+                                </div>
+                              </div>
+                              <div class="serviceBlock__item_number">
+                                <span>06</span>
+                              </div>
+                            </div>
+                            <div class="serviceBlock__item_image zoom-in" style="background-image: url('img/serviceBlock6.jpg')"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sectorBlock" id="sectorBlock">
+                  <div class="f-container">
+                    <div class="sectorBlock__header">
+                      <div class="sectorBlock__title block-title">
+                        <h2>Приоритетные секторы</h2>
+                      </div>
+                      <div class="sliderArrow__group d-none d-sm-flex">
+                        <button class="sliderArrow__btn sectorBlock__slider_prev">
+                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="white"/>
+                          </svg>
+                        </button>
+                        <button class="sliderArrow__btn sectorBlock__slider_next" tabindex="0" role="button" aria-label="Previous slide">
+                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="white"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="container-fluid sectorBlock__slider_wrapper slider-left-padding">
+                    <div class="swiper-container sectorBlock__slider">
+                      <div class="swiper-wrapper">
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock1.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Информационные технологии, Телеком и Медиа</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock2.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Энергетика и инфрастуктура</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock3.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Нефть, газ, добыча полезных ископаемых</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock4.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Сельское хозяйство</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock5.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Недвижимость</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock6.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Транспорт и логистика</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock7.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Здравоохранение</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock8.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Инновационные разработки, материалы</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                          <div class="sectorBlock__item">
+                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock9.jpg')"></div>
+                            <div class="sectorBlock__item_desc">
+                              <p>Биотехнологии, фармацефтика, химия</p>
+                            </div>
+                          </div>
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="transactions mt160" id="transactions">
+                  <div class="f-container">
+                    <div class="transactions__slider_container">
+                      <div class="swiper-container transactions__slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide transactions__slide">
+                            <div class="transactions__slider_item">
+                              <div class="transactions__slider_desc">
+                                <span>Сделки</span>
+                                <div class="transactions__slider_title">
+                                  <p>Агрофирма Рубеж</p>
+                                </div>
+                                <div class="transactions__slider_desc_vn">
+                                  <p>Выпуск осуществлялся по со-андеррайтерской схеме</p>
+                                </div>
+                                <div class="transactions__items row">
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>250 млн ₽</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Сумма сделки</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>2020 год</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Дата сделки</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>Сельхоз деятельность</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Отрасль</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>Организатор</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Роль</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="transactions__slider_image" style="background-image: url('img/transactions1.jpg')"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide transactions__slide">
+                            <div class="transactions__slider_item">
+                              <div class="transactions__slider_desc">
+                                <span>Сделки</span>
+                                <div class="transactions__slider_title">
+                                  <p>Коммерческая недвижимость Финансово-промышленной
+                                    корпорации «Гарант-Инвест» </p>
+                                </div>
+                                <div class="transactions__slider_desc_vn">
+                                  <p></p>
+                                </div>
+                                <div class="transactions__items row">
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>100 млн ₽</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Сумма сделки</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>2020 год</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Дата сделки</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>Финансовая деятельность</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Отрасль</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="transactions__slider_image" style="background-image: url('img/transactions2.jpg')"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide transactions__slide">
+                            <div class="transactions__slider_item">
+                              <div class="transactions__slider_desc">
+                                <span>Сделки</span>
+                                <div class="transactions__slider_title">
+                                  <p>АО «БАСТ»</p>
+                                </div>
+                                <div class="transactions__slider_desc_vn">
+                                  <p></p>
+                                </div>
+                                <div class="transactions__items row">
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>112,1 млн ₽</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Сумма сделки</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>2020 год</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Дата сделки</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>Полезные ископаемые</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Отрасль</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="transactions__item col-md-6 col-lg-3">
+                                    <div class="transactions__item_vn">
+                                      <div class="transactions__item_value">
+                                        <p>Организатор</p>
+                                      </div>
+                                      <div class="transactions__item_desc">
+                                        <p>Роль</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="transactions__slider_image" style="background-image: url('img/transactions3.jpg')"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                      <div class="transactions__slider_services">
+                        <div class="transactions__pagination">
+                          <div class="activeslide transactions__pagination_value">1</div>
+                          <div class="transactions__pagination_bar swiper-container-horizontal">
+                            <div class="swiper-pagination swiper-pagination-progressbar transactions__slider_pagination"></div>
+                          </div>
+                          <div class="totalslide transactions__pagination_value">3</div>
+                        </div>
+                        <div class="sliderArrow__group transactions__arrow">
+                          <button class="sliderArrow__btn transactions__slider_prev">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="#242624"/>
+                            </svg>
+                          </button>
+                          <button class="sliderArrow__btn transactions__slider_next" tabindex="0" role="button" aria-label="Previous slide">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="#242624"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="analytics sectorBlock">
+                  <div class="f-container">
+                    <div class="sectorBlock__header">
+                      <div class="sectorBlock__title block-title">
+                        <h2>Аналитика</h2>
+                      </div>
+                      <div class="sliderArrow__group d-none d-sm-flex">
+                        <button class="sliderArrow__btn analytics__slider_prev">
+                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="white"/>
+                          </svg>
+                        </button>
+                        <button class="sliderArrow__btn analytics__slider_next" tabindex="0" role="button" aria-label="Previous slide">
+                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="white"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="container-fluid sectorBlock__slider_wrapper slider-left-padding">
+                    <div class="swiper-container analytics__slider">
+                      <div class="swiper-wrapper">
+                
+                        <div class="swiper-slide" data-sidemodal="analyticsSideModal">
+                          <div class="analytics__item analytics__images"> <!-- Если у новости есть картинка, то добавить класс "analytics__images"-->
+                            <div class="analytics__desc">
+                              <div class="analytics__desc_name">
+                                <p>Название сектора</p>
+                              </div>
+                              <div class="analytics__desc_title">
+                                <p>Обзор российского фондового рынка</p>
+                              </div>
+                              <div class="analytics__desc_date">
+                                <p>26 января</p>
+                              </div>
+                            </div>
+                            <div class="analytics__item_image" style="background-image: url('img/analytics1.jpg')"></div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="analyticsSideModal">
+                          <div class="analytics__item">
+                            <div class="analytics__desc">
+                              <div class="analytics__desc_name">
+                                <p>Название сектора</p>
+                              </div>
+                              <div class="analytics__desc_title">
+                                <p>Рынок США: обзор и прогноз на 25 января.
+                                  В фокусе отчетность технологических гигантов</p>
+                              </div>
+                              <div class="analytics__desc_date">
+                                <p>26 января</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="analyticsSideModal">
+                          <div class="analytics__item">
+                            <div class="analytics__desc">
+                              <div class="analytics__desc_name">
+                                <p>Название сектора</p>
+                              </div>
+                              <div class="analytics__desc_title">
+                                <p>Рынок США: обзор и прогноз на 20 января. Инвесторы приветствуют
+                                  Джо Байдена</p>
+                              </div>
+                              <div class="analytics__desc_date">
+                                <p>26 января</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="swiper-slide" data-sidemodal="analyticsSideModal">
+                          <div class="analytics__item">
+                            <div class="analytics__desc">
+                              <div class="analytics__desc_name">
+                                <p>Название сектора</p>
+                              </div>
+                              <div class="analytics__desc_title">
+                                <p>Обзор российского рынка на 27 января: ОПЕК предрекает успешный год</p>
+                              </div>
+                              <div class="analytics__desc_date">
+                                <p>26 января</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="team mt160" id="team">
+                  <div class="f-container">
+                    <div class="team__title block-title">
+                      <h2>Команда</h2>
+                    </div>
+                    <div class="team__items row d-none d-sm-flex">
+                      <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team1.jpg');"
@@ -916,7 +804,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                      <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team2.jpg');"
@@ -931,7 +819,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                      <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team3.jpg');"
@@ -946,7 +834,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                      <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team4.jpg');"
@@ -961,7 +849,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                      <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
                         <div
                             class="team__item_vn"
                             style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team5.jpg');"
@@ -976,337 +864,455 @@
                           </div>
                         </div>
                       </div>
-                      <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
-                    <div
-                        class="team__item_vn"
-                        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team6.jpg');"
-                    >
-                      <div class="team__group">
-                        <div class="team__item_name">
-                          <p>Тимур Турлов</p>
-                        </div>
-                        <div class="team__item_role">
-                          <p>Финансовый эксперт</p>
+                      <div class="team__item col-md-6 col-lg-4" data-sidemodal="teamSideModal">
+                        <div
+                            class="team__item_vn"
+                            style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team6.jpg');"
+                        >
+                          <div class="team__group">
+                            <div class="team__item_name">
+                              <p>Тимур Турлов</p>
+                            </div>
+                            <div class="team__item_role">
+                              <p>Финансовый эксперт</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                
+                    <div class="team__mob d-block d-sm-none">
+                      <div class="swiper-container team__mobile_slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                            <div
+                                class="team__item_vn"
+                                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team1.jpg');"
+                            >
+                              <div class="team__group">
+                                <div class="team__item_name">
+                                  <p>Владимир Козлов</p>
+                                </div>
+                                <div class="team__item_role">
+                                  <p>Финансовый эксперт</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                            <div
+                                class="team__item_vn"
+                                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team2.jpg');"
+                            >
+                              <div class="team__group">
+                                <div class="team__item_name">
+                                  <p>Георгий Волосников</p>
+                                </div>
+                                <div class="team__item_role">
+                                  <p>Финансовый эксперт</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                            <div
+                                class="team__item_vn"
+                                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team3.jpg');"
+                            >
+                              <div class="team__group">
+                                <div class="team__item_name">
+                                  <p>Игорь Клюшнев</p>
+                                </div>
+                                <div class="team__item_role">
+                                  <p>Финансовый эксперт</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                            <div
+                                class="team__item_vn"
+                                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team4.jpg');"
+                            >
+                              <div class="team__group">
+                                <div class="team__item_name">
+                                  <p>Сергей Носов</p>
+                                </div>
+                                <div class="team__item_role">
+                                  <p>Финансовый эксперт</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                            <div
+                                class="team__item_vn"
+                                style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team5.jpg');"
+                            >
+                              <div class="team__group">
+                                <div class="team__item_name">
+                                  <p>Станислав Дрейлинг</p>
+                                </div>
+                                <div class="team__item_role">
+                                  <p>Финансовый эксперт</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide team__item" data-sidemodal="teamSideModal">
+                        <div
+                            class="team__item_vn"
+                            style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.25%, #000000 100%), url('img/team6.jpg');"
+                        >
+                          <div class="team__group">
+                            <div class="team__item_name">
+                              <p>Тимур Турлов</p>
+                            </div>
+                            <div class="team__item_role">
+                              <p>Финансовый эксперт</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="formBlock mt160" id="formBlock">
-              <div class="f-container">
-                <div class="formBlock_wrapper row">
-                  <div class="col-lg-6">
-                    <div class="formBlock__desc">
-                      <div class="formBlock__title block-title">
-                        <h2>Свяжитесь с нами</h2>
-                      </div>
-                      <div class="formBlock__subtitle">
-                        <p>Чтобы воспользоваться нашими рекомендациями станьте клиентом «Фридом Финанс»</p>
-                      </div>
-                      <div class="formBlock__desc_items">
-                        <div class="formBlock__desc_item">
-                          <span>За 5 минут</span>
-                          <p>Бесплатное открытие за 5 минут</p>
-                        </div>
-                        <div class="formBlock__desc_item">
-                          <span>2000 инструментов</span>
-                          <p>Более 2000 инструментов для торговли</p>
-                        </div>
-                        <div class="formBlock__desc_item">
-                          <span>Паспорт</span>
-                          <p>Более 2000 инструментов для торговли</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 d-sm-flex justify-content-sm-center">
-                    <div class="formBlock__form" id="submitApplication">
-                      <form action="/">
-                        <div class="formBlock__form_group">
-                          <div class="formBlock__field_group">
-                            <div class="formBlock__field formBlock__field_error"> <!-- Чтобы вывести сообщение об ошибке, необходимо добавить класс "formBlock__field_error"-->
-                              <input
-                                  type="text"
-                                  placeholder="Имя *"
-                                  name="firstname"
-                                  autocomplete="off"
-                              >
-                            </div>
-                            <span class="formBlock__field_error_message">Некорректно введённые данные</span>
+                <div class="formBlock mt160" id="formBlock">
+                  <div class="f-container">
+                    <div class="formBlock_wrapper row">
+                      <div class="col-lg-6">
+                        <div class="formBlock__desc">
+                          <div class="formBlock__title block-title">
+                            <h2>Свяжитесь с нами</h2>
                           </div>
-                          <div class="formBlock__field_group">
+                          <div class="formBlock__subtitle">
+                            <p>Чтобы воспользоваться нашими рекомендациями станьте клиентом «Фридом Финанс»</p>
+                          </div>
+                          <div class="formBlock__desc_items">
+                            <div class="formBlock__desc_item">
+                              <span>За 5 минут</span>
+                              <p>Бесплатное открытие за 5 минут</p>
+                            </div>
+                            <div class="formBlock__desc_item">
+                              <span>2000 инструментов</span>
+                              <p>Более 2000 инструментов для торговли</p>
+                            </div>
+                            <div class="formBlock__desc_item">
+                              <span>Паспорт</span>
+                              <p>Более 2000 инструментов для торговли</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 d-sm-flex justify-content-sm-center">
+                        <div class="formBlock__form" id="submitApplication">
+                          <form action="/">
+                            <div class="formBlock__form_group">
+                              <div class="formBlock__field_group">
+                                <div class="formBlock__field formBlock__field_error"> <!-- Чтобы вывести сообщение об ошибке, необходимо добавить класс "formBlock__field_error"-->
+                                  <input
+                                      type="text"
+                                      placeholder="Имя *"
+                                      name="firstname"
+                                      autocomplete="off"
+                                  >
+                                </div>
+                                <span class="formBlock__field_error_message">Некорректно введённые данные</span>
+                              </div>
+                              <div class="formBlock__field_group">
+                                <div class="formBlock__field">
+                                  <input
+                                      type="text"
+                                      placeholder="Фамилия"
+                                      name="lastname"
+                                      autocomplete="off"
+                                  >
+                                </div>
+                              </div>
+                            </div>
                             <div class="formBlock__field">
                               <input
-                                  type="text"
-                                  placeholder="Фамилия"
-                                  name="lastname"
+                                  type="tel"
+                                  placeholder="Телефон *"
+                                  name="phone"
                                   autocomplete="off"
                               >
                             </div>
-                          </div>
+                            <div class="formBlock__field">
+                              <input
+                                  type="email"
+                                  placeholder="E-mail"
+                                  name="E-mail"
+                                  autocomplete="off"
+                              >
+                            </div>
+                            <div class="formBlock__label_group">
+                              <div class="checkbox">
+                                <input
+                                    class="custom-checkbox"
+                                    type="checkbox"
+                                    id="privacy-policy"
+                                    name="privacy-policy"
+                                    value="privacyPolicy"
+                                    checked="checked"
+                                >
+                                <label for="privacy-policy">Я согласен с условиями передачи информации</label>
+                              </div>
+                
+                              <div class="checkbox">
+                                <input
+                                    class="custom-checkbox"
+                                    type="checkbox"
+                                    id="subscribe-news"
+                                    name="subscribe-news"
+                                    value="subscribeNews"
+                                >
+                                <label for="subscribe-news">Подтверждаю своё согласие на получение информации о продуктах и услугах компании по sms и email</label>
+                              </div>
+                            </div>
+                            <button class="freedom__btn" id="formSubmitBtn" type="submit">Отправить</button>
+                          </form>
                         </div>
-                        <div class="formBlock__field">
-                          <input
-                              type="tel"
-                              placeholder="Телефон *"
-                              name="phone"
-                              autocomplete="off"
-                          >
-                        </div>
-                        <div class="formBlock__field">
-                          <input
-                              type="email"
-                              placeholder="E-mail"
-                              name="E-mail"
-                              autocomplete="off"
-                          >
-                        </div>
-                        <div class="formBlock__label_group">
-                          <div class="checkbox">
-                            <input class="custom-checkbox" type="checkbox" id="privacy-policy" name="privacy-policy" value="privacyPolicy">
-                            <label for="privacy-policy">Я согласен с условиями передачи информации</label>
-                          </div>
-            
-                          <div class="checkbox">
-                            <input class="custom-checkbox" type="checkbox" id="subscribe-news" name="subscribe-news" value="subscribeNews">
-                            <label for="subscribe-news">Подпишитесь, чтобы быть в курсе последних новостей отрасли, продуктов и разработчиков</label>
-                          </div>
-                        </div>
-                        <button class="freedom__btn" type="submit">Отправить</button>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="contacts" id="contacts">
-              <div class="f-container">
-                <div class="contacts__wrapper row">
-                  <div class="col-lg-6">
-                    <div class="contacts__desc">
-                      <div class="contacts__title block-title">
-                        <h2>Контакты</h2>
+                <div class="contacts" id="contacts">
+                  <div class="f-container">
+                    <div class="contacts__wrapper row">
+                      <div class="col-lg-6">
+                        <div class="contacts__desc">
+                          <div class="contacts__title block-title">
+                            <h2>Контакты</h2>
+                          </div>
+                          <div class="contacts__phone">
+                            <a href="tel:+74952491162" class="text">+7 (495) 249-11-62</a>
+                          </div>
+                          <div class="contacts__address">
+                            <p>123112, г. Москва, 1-й Красногвардейский проезд, д. 15, МФК «Башня Меркурий Сити», 18 этаж</p>
+                          </div>
+                          <div class="contacts__eamil">
+                            Общие вопросы: <a href="mailto:info@bankffin.ru" class="text">info@bankffin.ru</a>
+                          </div>
+                          <div class="contacts__social">
+                            <a href="/" target="_blank">
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.8218 1.49988L35.8226 1.49988C36.1741 1.49931 36.5223 1.56807 36.8472 1.70224C37.1721 1.8364 37.4674 2.03333 37.7161 2.28175C37.9648 2.53018 38.162 2.82521 38.2965 3.14997C38.431 3.47472 38.5002 3.82282 38.5 4.17434V4.17461L38.5 35.8217V35.8222C38.5004 36.1739 38.4314 36.5221 38.2971 36.847C38.1628 37.172 37.9657 37.4673 37.7171 37.716C37.4685 37.9647 37.1734 38.1619 36.8485 38.2964C36.5236 38.4309 36.1754 38.5001 35.8238 38.4999H35.8235L4.17473 38.4999C3.82335 38.4999 3.47542 38.4306 3.15082 38.2961C2.82621 38.1616 2.53129 37.9645 2.2829 37.716L1.92925 38.0694L2.28289 37.716C2.03451 37.4674 1.83752 37.1724 1.70318 36.8477C1.56885 36.523 1.49981 36.1751 1.5 35.8237V35.8234L1.5 4.17461C1.5 3.46523 1.7818 2.7849 2.28341 2.28329C2.78502 1.78168 3.46535 1.49988 4.17473 1.49988L35.8218 1.49988ZM16.0411 14.9882H15.5411V15.4882L15.5411 33.6937V34.1937H16.0411H21.5822H22.0822V33.6937V24.8742C22.0822 23.4438 22.348 22.3563 22.8604 21.6382C23.3516 20.9498 24.1145 20.5379 25.2872 20.5379C25.6789 20.5379 25.9831 20.6274 26.2264 20.7813C26.4711 20.9361 26.6853 21.1759 26.864 21.5246C27.23 22.2391 27.4161 23.3504 27.4161 24.8742V33.6937V34.1937H27.9161L33.4555 34.1937H33.9555V33.6937L33.9555 23.6375C33.9555 20.9118 33.6364 18.6739 32.5301 17.1181C31.392 15.5176 29.5096 14.7499 26.6845 14.7499C24.4855 14.7499 22.7763 15.5051 21.6866 16.5679V15.4882V14.9882H21.1866H16.0411ZM6.04109 33.4571V33.9571H6.54109H12.0822H12.5822V33.4571L12.5822 15.2499V14.7499H12.0822L6.54109 14.7499H6.04109V15.2499L6.04109 33.4553V33.4571ZM13.0917 10.8827C13.2905 10.3795 13.3868 9.84152 13.3749 9.30051C13.3515 8.23859 12.9132 7.22804 12.1539 6.48528C11.3946 5.74252 10.3747 5.3266 9.3125 5.3266C8.25032 5.3266 7.23037 5.74252 6.47107 6.48528C5.71177 7.22804 5.27351 8.23859 5.25012 9.30051C5.23821 9.84152 5.33448 10.3795 5.53328 10.8827C5.73208 11.386 6.02941 11.8446 6.40781 12.2314C6.78622 12.6182 7.23808 12.9256 7.73688 13.1354C8.23568 13.3452 8.77136 13.4533 9.3125 13.4533C9.85364 13.4533 10.3893 13.3452 10.8881 13.1354C11.3869 12.9256 11.8388 12.6182 12.2172 12.2314C12.5956 11.8446 12.8929 11.386 13.0917 10.8827Z" fill="white" stroke="white"/>
+                              </svg>
+                            </a>
+                            <a href="/" target="_blank">
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.8218 1.49988L35.8226 1.49988C36.1741 1.49931 36.5223 1.56807 36.8472 1.70224C37.1721 1.8364 37.4674 2.03333 37.7161 2.28175L38.0694 1.92801L37.7161 2.28176C37.9648 2.53018 38.162 2.82521 38.2965 3.14997L38.7585 2.95863L38.2965 3.14997C38.431 3.47472 38.5002 3.82282 38.5 4.17434V4.17461L38.5 35.8217V35.8222C38.5004 36.1739 38.4314 36.5221 38.2971 36.847C38.1628 37.172 37.9657 37.4673 37.7171 37.716C37.4685 37.9647 37.1734 38.1619 36.8485 38.2964C36.5236 38.4309 36.1754 38.5001 35.8238 38.4999H35.8235L4.17473 38.4999C3.82335 38.4999 3.47542 38.4306 3.15082 38.2961C2.82621 38.1616 2.53128 37.9645 2.28289 37.716C2.03451 37.4674 1.83752 37.1724 1.70318 36.8477C1.56885 36.523 1.49981 36.1751 1.5 35.8237V35.8234L1.5 4.17461C1.5 3.46523 1.7818 2.7849 2.28341 2.28329C2.78502 1.78168 3.46535 1.49988 4.17473 1.49988L35.8218 1.49988Z" fill="white" stroke="white"/>
+                                <path d="M5 32H35V8H5V32ZM5 8L20 20L35 8" fill="#3D3D3D"/>
+                                <path d="M5 8L20 20L35 8M5 32H35V8H5V32Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div class="contacts__phone">
-                        <a href="tel:+74952491162" class="text">+7 (495) 249-11-62</a>
+                      <div class="col-lg-6">
+                        <div class="contacts__map">
+                          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adc365a74c6437e63c1f6ef4fdcf1d40f6aae446557b036ff1c0f4b9ff3a17453&amp;source=constructor" width="616" height="616" frameborder="0"></iframe>
+                        </div>
                       </div>
-                      <div class="contacts__address">
-                        <p>123112, г. Москва, 1-й Красногвардейский проезд, д. 15, МФК «Башня Меркурий Сити», 18 этаж</p>
-                      </div>
-                      <div class="contacts__eamil">
-                        Общие вопросы: <a href="mailto:info@bankffin.ru" class="text">info@bankffin.ru</a>
-                      </div>
-                      <div class="contacts__social">
-                        <a href="/" target="_blank">
-                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M35.8218 1.49988L35.8226 1.49988C36.1741 1.49931 36.5223 1.56807 36.8472 1.70224C37.1721 1.8364 37.4674 2.03333 37.7161 2.28175C37.9648 2.53018 38.162 2.82521 38.2965 3.14997C38.431 3.47472 38.5002 3.82282 38.5 4.17434V4.17461L38.5 35.8217V35.8222C38.5004 36.1739 38.4314 36.5221 38.2971 36.847C38.1628 37.172 37.9657 37.4673 37.7171 37.716C37.4685 37.9647 37.1734 38.1619 36.8485 38.2964C36.5236 38.4309 36.1754 38.5001 35.8238 38.4999H35.8235L4.17473 38.4999C3.82335 38.4999 3.47542 38.4306 3.15082 38.2961C2.82621 38.1616 2.53129 37.9645 2.2829 37.716L1.92925 38.0694L2.28289 37.716C2.03451 37.4674 1.83752 37.1724 1.70318 36.8477C1.56885 36.523 1.49981 36.1751 1.5 35.8237V35.8234L1.5 4.17461C1.5 3.46523 1.7818 2.7849 2.28341 2.28329C2.78502 1.78168 3.46535 1.49988 4.17473 1.49988L35.8218 1.49988ZM16.0411 14.9882H15.5411V15.4882L15.5411 33.6937V34.1937H16.0411H21.5822H22.0822V33.6937V24.8742C22.0822 23.4438 22.348 22.3563 22.8604 21.6382C23.3516 20.9498 24.1145 20.5379 25.2872 20.5379C25.6789 20.5379 25.9831 20.6274 26.2264 20.7813C26.4711 20.9361 26.6853 21.1759 26.864 21.5246C27.23 22.2391 27.4161 23.3504 27.4161 24.8742V33.6937V34.1937H27.9161L33.4555 34.1937H33.9555V33.6937L33.9555 23.6375C33.9555 20.9118 33.6364 18.6739 32.5301 17.1181C31.392 15.5176 29.5096 14.7499 26.6845 14.7499C24.4855 14.7499 22.7763 15.5051 21.6866 16.5679V15.4882V14.9882H21.1866H16.0411ZM6.04109 33.4571V33.9571H6.54109H12.0822H12.5822V33.4571L12.5822 15.2499V14.7499H12.0822L6.54109 14.7499H6.04109V15.2499L6.04109 33.4553V33.4571ZM13.0917 10.8827C13.2905 10.3795 13.3868 9.84152 13.3749 9.30051C13.3515 8.23859 12.9132 7.22804 12.1539 6.48528C11.3946 5.74252 10.3747 5.3266 9.3125 5.3266C8.25032 5.3266 7.23037 5.74252 6.47107 6.48528C5.71177 7.22804 5.27351 8.23859 5.25012 9.30051C5.23821 9.84152 5.33448 10.3795 5.53328 10.8827C5.73208 11.386 6.02941 11.8446 6.40781 12.2314C6.78622 12.6182 7.23808 12.9256 7.73688 13.1354C8.23568 13.3452 8.77136 13.4533 9.3125 13.4533C9.85364 13.4533 10.3893 13.3452 10.8881 13.1354C11.3869 12.9256 11.8388 12.6182 12.2172 12.2314C12.5956 11.8446 12.8929 11.386 13.0917 10.8827Z" fill="white" stroke="white"/>
-                          </svg>
-                        </a>
-                        <a href="/" target="_blank">
-                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M35.8218 1.49988L35.8226 1.49988C36.1741 1.49931 36.5223 1.56807 36.8472 1.70224C37.1721 1.8364 37.4674 2.03333 37.7161 2.28175L38.0694 1.92801L37.7161 2.28176C37.9648 2.53018 38.162 2.82521 38.2965 3.14997L38.7585 2.95863L38.2965 3.14997C38.431 3.47472 38.5002 3.82282 38.5 4.17434V4.17461L38.5 35.8217V35.8222C38.5004 36.1739 38.4314 36.5221 38.2971 36.847C38.1628 37.172 37.9657 37.4673 37.7171 37.716C37.4685 37.9647 37.1734 38.1619 36.8485 38.2964C36.5236 38.4309 36.1754 38.5001 35.8238 38.4999H35.8235L4.17473 38.4999C3.82335 38.4999 3.47542 38.4306 3.15082 38.2961C2.82621 38.1616 2.53128 37.9645 2.28289 37.716C2.03451 37.4674 1.83752 37.1724 1.70318 36.8477C1.56885 36.523 1.49981 36.1751 1.5 35.8237V35.8234L1.5 4.17461C1.5 3.46523 1.7818 2.7849 2.28341 2.28329C2.78502 1.78168 3.46535 1.49988 4.17473 1.49988L35.8218 1.49988Z" fill="white" stroke="white"/>
-                            <path d="M5 32H35V8H5V32ZM5 8L20 20L35 8" fill="#3D3D3D"/>
-                            <path d="M5 8L20 20L35 8M5 32H35V8H5V32Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="contacts__map">
-                      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adc365a74c6437e63c1f6ef4fdcf1d40f6aae446557b036ff1c0f4b9ff3a17453&amp;source=constructor" width="616" height="616" frameborder="0"></iframe>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="emailSentModal">
-              <div class="modal fade" id="emailSentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="emailSentModal">
+                  <div class="modal fade" id="emailSentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="emailSentModal__content">
+                          <div class="emailSentModal__header">
+                            <a class="navbar-brand emailSentModal__header_logo" href="/">
+                              <img src="img/logo/logo.svg" alt="logotip">
+                            </a>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
+                                <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="emailSentModal__body">
+                            <div class="emailSentModal__title">
+                              <p>Спасибо, мы получили вашу заявку</p>
+                            </div>
+                            <div class="emailSentModal__phone">
+                              <p>
+                                Мы свяжемся с вами в ближайщее время по номеру
+                                <a href="tel:+79811231223" class="text">+7 981 123-12-23</a>
+                                и подробно расскажем об интересующих услугах
+                              </p>
+                            </div>
+                            <div class="emailSentModal_btn">
+                              <button type="button" class="freedom__btn" data-dismiss="modal">Понятно</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="emailSentModal__contact">
+                          <div class="emailSentModal__desc">
+                            <p>
+                              Если у вас есть остались вопросы, звоните по номеру
+                              <a href="tel:+74957839173" class="text">+7 (495) 783-91-73</a>, доб. 90999
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sideModal sideModal__wrap" id="serviceSideModal">
+                  <div class="sideModal__title-wrap">
+                    <div class="sideModal__mob_logo">
+                      <img src="img/logo/logo.svg" alt="logotip">
+                    </div>
+                    <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
+                      <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
                         <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
                       </svg>
                     </button>
-                    <div class="emailSentModal__body">
-                      <div class="emailSentModal__title">
-                        <p>Спасибо, мы получили вашу заявку</p>
+                    <div class="sideModal__type">
+                      <span>Услуги </span>
+                    </div>
+                  </div>
+                  <div class="sideModal__content">
+                    <div class="sideModal__title">
+                      <h3>Слияния и поглощения</h3>
+                    </div>
+                    <div class="sideModal__image" style="background-image: url('img/service-detail1.jpg')"></div>
+                    <p>Мы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятий</p>
+                    <div class="specializations">
+                      <div class="specializations__item">
+                        <img src="img/icons/search.svg" alt="search">
+                        <p>Специализация</p>
                       </div>
-                      <div class="emailSentModal__phone">
-                        <p>
-                          Мы свяжемся с вами в ближайщее время по номеру
-                          <a href="tel:+79811231223" class="text">+7 981 123-12-23</a>
-                          и подробно расскажем об интересующих услугах
-                        </p>
+                      <div class="specializations__item">
+                        <img src="img/icons/global-icon.png" alt="global">
+                        <p>Специализация</p>
                       </div>
-                      <div class="emailSentModal_btn">
-                        <button type="button" class="freedom__btn" data-dismiss="modal">Понятно</button>
+                      <div class="specializations__item">
+                        <img src="img/icons/global-icon.png" alt="global">
+                        <p>Специализация</p>
                       </div>
-                      <div class="emailSentModal__desc">
-                        <p>
-                          Если у вас есть остались вопросы, звоните по номеру
-                          <a href="tel:+74957839173" class="text">+7 (495) 783-91-73</a>, доб. 90999
-                        </p>
+                      <div class="specializations__item">
+                        <img src="img/icons/global-icon.png" alt="global">
+                        <p>Специализация</p>
                       </div>
+                    </div>
+                    <h4>Максимальная выгода для клиента достигается за счёт индивидуального сочетания таких факторов как:</h4>
+                    <ul>
+                      <li>Глубокая отраслевая экспертиза в ключевых секторах (ссылка на сектора)</li>
+                      <li>Отличное знание особенностей бизнеса и местной специфики во всех регионахприсутствия; за счёт глобального присутствия</li>
+                      <li>Консультирование акционеров и менеджмента по стратегии выбора целей, текущей ибудущей оценке, тактике ведения переговоров</li>
+                      <li>Покрытие дисбаланса в расчётах за счёт комплексного финансирования по 3-м типамкапитала</li>
+                      <li>Проведение сделок с отложенным cash-out и расчётами share’to’share, выкупа в интересахменеджмента (MBO) или с   привлечением заёмного финансирования (LBO) длямаксимизации синергии, при оптимальной юридической структуре</li>
+                      <li>Возможность привлечения экспертов по продуктам во всем   спектре   компетенцийинвестиционного   банка   (трейдинг,   деривативы,   андеррайтинг,   money-management,услуги по депонированию и т.д.)</li>
+                    </ul>
+                    <div class="excerption">
+                      <p>Покрытие дисбаланса в расчётах за счёт комплексного финансирования по 3-м типамкапитала</p>
+                    </div>
+                    <p>Мы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных   клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятийМы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных   клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятий</p>
+                  </div>
+                </div>
+                <div class="sideModal sideModal__wrap" id="sectorSideModal">
+                  <div class="sideModal__title-wrap">
+                    <div class="sideModal__mob_logo">
+                      <img src="img/logo/logo.svg" alt="logotip">
+                    </div>
+                    <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
+                      <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
+                        <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
+                      </svg>
+                    </button>
+                    <div class="sideModal__type">
+                      <span>Приоритетеные сектора</span>
+                    </div>
+                  </div>
+                  <div class="sideModal__content">
+                    <div class="sideModal__title">
+                      <h3>Информационные технологии, Телеком и Медиа</h3>
+                    </div>
+                    <div class="sideModal__image" style="background-image: url('img/sectorDetail1.jpg')"></div>
+                    <p>Глобальная (нестабильность экономических отношений США и Китая, санкции против России) и региональная (напряженная  обстановка  в  странах  арабского  мира)  политическая  и  экономическая  нестабильность  вносят  неопределённость  для  потенциальных  инвесторов  в  сектор,
+                      ранее  инвестирующих  в  отдельные  компании  отдельных сегментов – выращивание, переработка и  т.д. В краткосрочной и долгосрочной перспективе стоит ожидать ужесточения регуляций, связанных с экологично-стью компаний в секторе. Для компаний, ориентированных на глобальные рынки необходимо учитывать этот долгосрочный фактор.
+                      </p>
+                    <p>Есть основания ожидать притока капитала в сектор. Среди таких факторов - высокий темп развития технологий, способных значительно повысить эффективность сельского хозяйства (дроны, искусственный интеллект, биоло-гическая инженерия и прочие), частично решает проблему вклада сектора в усугубление экологических проблем.
+                      В число факторов, указывающих на рост - меньшая коррекция активов в данном секторе при более длительном инвестиционном  горизонте.  Стабильность  сектора  также  обеспечена  высоким  темпом  урбанизации  и  роста  населения в Азиатских странах, к тому же открывающих свои рынки новым видам продуктов. Наконец, доступ-ность финансирования
+                      и падающие ставки кредитования поддержат развитие сектора.
+                      Анализ активности сделок M&A в данном секторе показал, что в период 2013-2019гг. четыре ведущих игрока на рынке  выступили  покупателями  в  более  чем  60  сделках,  общая  раскрытая  стоимость  сделок  составила  $8,6  млрд (без учета сделок с не раскрываемыми результатами).</p>
+                  </div>
+                </div>
+                <div class="sideModal sideModal__wrap" id="teamSideModal">
+                  <div class="sideModal__title-wrap">
+                    <div class="sideModal__mob_logo">
+                      <img src="img/logo/logo.svg" alt="logotip">
+                    </div>
+                    <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
+                      <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
+                        <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
+                      </svg>
+                    </button>
+                    <div class="sideModal__type">
+                      <span>Команда</span>
+                    </div>
+                  </div>
+                  <div class="sideModal__content">
+                    <div class="sideModal__title teamDetail__title">
+                      <h3>Тимур Турлов</h3>
+                      <a href="/" target="_blank">
+                        <img src="img/icons/mail.svg" alt="mail">
+                      </a>
+                    </div>
+                    <div class="sideModal__image" style="background-image: url('img/team_detail.jpg')"></div>
+                    <h4>Генеральный директор, глава инвестиционного комитета компании</h4>
+                    <p>Основатель компании. Более 14 лет работает в сфере международных инвестиций, эксперт по фондовому рынку США. Специализируется в сферах портфельного управления активами и разработки опционных стратегий с ограниченным риском, ведет авторские семинары по актуальным инвестиционным идеям. </p>
+                    <div class="teamDetail__link_group">
+                      <a href="/">Статьи</a>
+                      <a href="/">Публикации</a>
+                      <a href="/">Выступления</a>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="sideModal sideModal__wrap" id="serviceSideModal">
-              <div class="sideModal__title-wrap">
-                <div class="sideModal__mob_logo">
-                  <img src="img/logo/logo.svg" alt="logotip">
-                </div>
-                <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
-                  <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
-                    <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
-                  </svg>
-                </button>
-                <div class="sideModal__type">
-                  <span>Услуги </span>
-                </div>
-              </div>
-              <div class="sideModal__content">
-                <div class="sideModal__title">
-                  <h3>Слияние и поглощение</h3>
-                </div>
-                <div class="sideModal__image" style="background-image: url('img/service-detail1.jpg')"></div>
-                <p>Мы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятий</p>
-                <div class="specializations">
-                  <div class="specializations__item">
-                    <img src="img/icons/search.svg" alt="search">
-                    <p>Специализация</p>
+                <div class="sideModal sideModal__wrap" id="analyticsSideModal">
+                  <div class="sideModal__title-wrap">
+                    <div class="sideModal__mob_logo">
+                      <img src="img/logo/logo.svg" alt="logotip">
+                    </div>
+                    <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
+                      <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
+                        <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
+                      </svg>
+                    </button>
+                    <div class="sideModal__type">
+                      <span>Аналитика</span>
+                    </div>
                   </div>
-                  <div class="specializations__item">
-                    <img src="img/icons/global-icon.png" alt="global">
-                    <p>Специализация</p>
-                  </div>
-                  <div class="specializations__item">
-                    <img src="img/icons/global-icon.png" alt="global">
-                    <p>Специализация</p>
-                  </div>
-                  <div class="specializations__item">
-                    <img src="img/icons/global-icon.png" alt="global">
-                    <p>Специализация</p>
+                  <div class="sideModal__content">
+                    <div class="sideModal__title">
+                      <h3>Рынок США: Обзор и прогноз на 20 января. Инвесторы приветствуют Джо Байдена</h3>
+                    </div>
+                    <div class="analyticsDetail">
+                      <div class="analyticsDetail__sector">
+                        <p>Название сектора</p>
+                      </div>
+                      <div class="analyticsDetail__date">
+                        <p>26 января</p>
+                      </div>
+                    </div>
+                    <p>Глобальная (нестабильность экономических отношений США и Китая, санкции против России) и региональная (напряженная  обстановка  в  странах  арабского  мира)  политическая  и  экономическая  нестабильность  вносят  неопределённость  для  потенциальных  инвесторов  в  сектор,  ранее  инвестирующих  в  отдельные  компании  отдельных сегментов – выращивание, переработка и  т.д.</p>
+                    <p>В краткосрочной и долгосрочной перспективе стоит ожидать ужесточения регуляций, связанных с экологично-стью компаний в секторе. Для компаний, ориентированных на глобальные рынки необходимо учитывать этот долгосрочный фактор.</p>
+                    <div class="teamDetail__link_group">
+                      <a href="/">Скачать PDF</a>
+                    </div>
                   </div>
                 </div>
-                <h4>Максимальная выгода для клиента достигается за счёт индивидуального сочетания таких факторов как:</h4>
-                <ul>
-                  <li>Глубокая отраслевая экспертиза в ключевых секторах (ссылка на сектора)</li>
-                  <li>Отличное знание особенностей бизнеса и местной специфики во всех регионахприсутствия; за счёт глобального присутствия</li>
-                  <li>Консультирование акционеров и менеджмента по стратегии выбора целей, текущей ибудущей оценке, тактике ведения переговоров</li>
-                  <li>Покрытие дисбаланса в расчётах за счёт комплексного финансирования по 3-м типамкапитала</li>
-                  <li>Проведение сделок с отложенным cash-out и расчётами share’to’share, выкупа в интересахменеджмента (MBO) или с   привлечением заёмного финансирования (LBO) длямаксимизации синергии, при оптимальной юридической структуре</li>
-                  <li>Возможность привлечения экспертов по продуктам во всем   спектре   компетенцийинвестиционного   банка   (трейдинг,   деривативы,   андеррайтинг,   money-management,услуги по депонированию и т.д.)</li>
-                </ul>
-                <div class="excerption">
-                  <p>Покрытие дисбаланса в расчётах за счёт комплексного финансирования по 3-м типамкапитала</p>
-                </div>
-                <p>Мы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных   клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятийМы специализируемся на организации и проведении локальных и транс-граничных сделок длякорпоративных и институциональных   клиентов в рамках. В качестве стратегического M&Aконсультанта, мы проводим сделки по всему спектру транзакций, включая слияния, поглощения,выделение, покупку и создание совместных предприятий</p>
-              </div>
-            </div>
-            <div class="sideModal sideModal__wrap" id="sectorSideModal">
-              <div class="sideModal__title-wrap">
-                <div class="sideModal__mob_logo">
-                  <img src="img/logo/logo.svg" alt="logotip">
-                </div>
-                <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
-                  <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
-                    <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
-                  </svg>
-                </button>
-                <div class="sideModal__type">
-                  <span>Приоритетеные сектора</span>
-                </div>
-              </div>
-              <div class="sideModal__content">
-                <div class="sideModal__title">
-                  <h3>Информационные технологии, Телеком и Медиа</h3>
-                </div>
-                <div class="sideModal__image" style="background-image: url('img/sectorDetail1.jpg')"></div>
-                <p>Глобальная (нестабильность экономических отношений США и Китая, санкции против России) и региональная (напряженная  обстановка  в  странах  арабского  мира)  политическая  и  экономическая  нестабильность  вносят  неопределённость  для  потенциальных  инвесторов  в  сектор,
-                  ранее  инвестирующих  в  отдельные  компании  отдельных сегментов – выращивание, переработка и  т.д. В краткосрочной и долгосрочной перспективе стоит ожидать ужесточения регуляций, связанных с экологично-стью компаний в секторе. Для компаний, ориентированных на глобальные рынки необходимо учитывать этот долгосрочный фактор.
-                  </p>
-                <p>Есть основания ожидать притока капитала в сектор. Среди таких факторов - высокий темп развития технологий, способных значительно повысить эффективность сельского хозяйства (дроны, искусственный интеллект, биоло-гическая инженерия и прочие), частично решает проблему вклада сектора в усугубление экологических проблем.
-                  В число факторов, указывающих на рост - меньшая коррекция активов в данном секторе при более длительном инвестиционном  горизонте.  Стабильность  сектора  также  обеспечена  высоким  темпом  урбанизации  и  роста  населения в Азиатских странах, к тому же открывающих свои рынки новым видам продуктов. Наконец, доступ-ность финансирования
-                  и падающие ставки кредитования поддержат развитие сектора.
-                  Анализ активности сделок M&A в данном секторе показал, что в период 2013-2019гг. четыре ведущих игрока на рынке  выступили  покупателями  в  более  чем  60  сделках,  общая  раскрытая  стоимость  сделок  составила  $8,6  млрд (без учета сделок с не раскрываемыми результатами).</p>
-              </div>
-            </div>
-            <div class="sideModal sideModal__wrap" id="teamSideModal">
-              <div class="sideModal__title-wrap">
-                <div class="sideModal__mob_logo">
-                  <img src="img/logo/logo.svg" alt="logotip">
-                </div>
-                <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
-                  <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
-                    <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
-                  </svg>
-                </button>
-                <div class="sideModal__type">
-                  <span>Команда</span>
-                </div>
-              </div>
-              <div class="sideModal__content">
-                <div class="sideModal__title teamDetail__title">
-                  <h3>Тимур Турлов</h3>
-                  <a href="/" target="_blank">
-                    <img src="img/icons/mail.svg" alt="mail">
-                  </a>
-                </div>
-                <div class="sideModal__image" style="background-image: url('img/team_detail.jpg')"></div>
-                <h4>Генеральный директор, глава инвестиционного комитета компании</h4>
-                <p>Основатель компании. Более 14 лет работает в сфере международных инвестиций, эксперт по фондовому рынку США. Специализируется в сферах портфельного управления активами и разработки опционных стратегий с ограниченным риском, ведет авторские семинары по актуальным инвестиционным идеям. </p>
-                <div class="teamDetail__link_group">
-                  <a href="/">Статьи</a>
-                  <a href="/">Публикации</a>
-                  <a href="/">Выступления</a>
-                </div>
-              </div>
-            </div>
-            <div class="sideModal sideModal__wrap" id="analyticsSideModal">
-              <div class="sideModal__title-wrap">
-                <div class="sideModal__mob_logo">
-                  <img src="img/logo/logo.svg" alt="logotip">
-                </div>
-                <button class="sideModal__close-btn" id="sideModalCloseBtn" type="button">
-                  <svg width="12" height="12" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.16873 0.168792C0.393704 -0.0556129 0.758459 -0.0556128 0.983433 0.168792L7.77262 6.9408C7.99759 7.16521 7.99759 7.52904 7.77262 7.75344C7.54765 7.97785 7.18289 7.97785 6.95792 7.75344L0.168731 0.981433C-0.0562434 0.757028 -0.0562436 0.393196 0.16873 0.168792Z" fill="white"/>
-                    <path d="M0.216176 7.83184C-0.00912224 7.60776 -0.00912231 7.24445 0.216176 7.02037L7.01515 0.258142C7.24045 0.0340617 7.60573 0.0340619 7.83103 0.258142C8.05632 0.482223 8.05632 0.84553 7.83103 1.06961L1.03205 7.83184C0.806754 8.05592 0.441474 8.05592 0.216176 7.83184Z" fill="white"/>
-                  </svg>
-                </button>
-                <div class="sideModal__type">
-                  <span>Аналитика</span>
-                </div>
-              </div>
-              <div class="sideModal__content">
-                <div class="sideModal__title">
-                  <h3>Рынок США: Обзор и пррогноз Рынок США: обзор и прогноз на 20 января. Инвесторы приветствуют Джо Байдена</h3>
-                </div>
-                <div class="analyticsDetail">
-                  <div class="analyticsDetail__sector">
-                    <p>Название сектора</p>
-                  </div>
-                  <div class="analyticsDetail__date">
-                    <p>26 января</p>
-                  </div>
-                </div>
-                <p>Глобальная (нестабильность экономических отношений США и Китая, санкции против России) и региональная (напряженная  обстановка  в  странах  арабского  мира)  политическая  и  экономическая  нестабильность  вносят  неопределённость  для  потенциальных  инвесторов  в  сектор,  ранее  инвестирующих  в  отдельные  компании  отдельных сегментов – выращивание, переработка и  т.д.</p>
-                <p>В краткосрочной и долгосрочной перспективе стоит ожидать ужесточения регуляций, связанных с экологично-стью компаний в секторе. Для компаний, ориентированных на глобальные рынки необходимо учитывать этот долгосрочный фактор.</p>
-                <div class="teamDetail__link_group">
-                  <a href="/">Скачать PDF</a>
-                </div>
-              </div>
             </div>
             <button class="topbar__back" id="topbarBack" type="button"></button>
             <button class="sideModal__md_close" id="sideModalMdClose" type="button">
@@ -1337,14 +1343,8 @@
                     </div>
                   </div>
                   <div class="col-md-5">
-                    <div class="footer__info">
-                      <div class="footer__made_in d-flex">
-                        <img src="img/icons/made-in.svg" alt="red collar">
-                        <p>Сделано в <a href="/">Red Collar</a></p>
-                      </div>
-                      <div class="footer__copyright">
-                        <p>© 2011 – 2021 ООО ИК «Фридом Финанс»</p>
-                      </div>
+                    <div class="footer__copyright">
+                      <p>© 2011 – 2021 ООО ИК «Фридом Финанс»</p>
                     </div>
                   </div>
                 </div>

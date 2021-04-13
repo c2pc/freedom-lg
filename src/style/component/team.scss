@@ -40,8 +40,7 @@
             background-repeat: no-repeat!important;
             background-position: center!important;
             position: relative;
-            background-size: 100%!important;
-            transition: background-size 1s;
+            background-size: cover!important;
 
             &::before {
                 content: "";
@@ -60,10 +59,6 @@
             &:hover::before {
                 opacity: 1;
                 cursor: pointer;
-            }
-
-            &:hover {
-                background-size: 110%!important;
             }
         }
 
