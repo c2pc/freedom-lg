@@ -9861,19 +9861,21 @@ button[disabled] {
   .header .nav-item:not(:first-child) {
     margin-top: 16px; }
   .header .navbar-collapse {
-    padding-top: 54px; }
-  .header .navbar-collapse.show {
+    padding-top: 54px;
     height: calc(100vh - 51px);
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: start;
-        align-items: flex-start; }
+        align-items: flex-start;
+    position: relative; }
+  .header .navbar-collapse.show {
+    display: block; }
   .header__services_mobile {
-    padding: 25px 0; }
+    padding: 25px 0;
+    position: absolute;
+    bottom: 0; }
   .course {
     border-top: 1.5px solid rgba(224, 224, 224, 0.6); }
   .mainBanner__wrapper {

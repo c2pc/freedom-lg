@@ -316,18 +316,21 @@
 
         .navbar-collapse {
             padding-top: 54px;
-        }
-
-        .navbar-collapse.show {
             height: calc(100vh - 51px);
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
+            position: relative;
+        }
+
+        .navbar-collapse.show {
+            display: block;
         }
 
         &__services_mobile {
             padding: 25px 0;
+            position: absolute;
+            bottom: 0;
         }
 
     }

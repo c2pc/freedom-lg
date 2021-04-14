@@ -31,7 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
       500: {
         spaceBetween: 40,
       },
+      360: {
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+      },
       320: {
+        slidesPerView: 1,
         spaceBetween: 24,
       },
     }
@@ -53,8 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
       500: {
         spaceBetween: 30,
       },
-      320: {
+      360: {
+        spaceBetween: 24,
         slidesPerView: 'auto',
+      },
+      320: {
+        slidesPerView: 1,
         spaceBetween: 24,
       },
     }
@@ -81,7 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
       500: {
         spaceBetween: 40,
       },
+      360: {
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+      },
       320: {
+        slidesPerView: 1,
         spaceBetween: 24,
       },
     }
@@ -95,7 +109,12 @@ document.addEventListener("DOMContentLoaded", () => {
       500: {
         spaceBetween: 40,
       },
+      360: {
+        spaceBetween: 24,
+        slidesPerView: 'auto',
+      },
       320: {
+        slidesPerView: 1,
         spaceBetween: 24,
       },
     }
