@@ -9868,14 +9868,12 @@ button[disabled] {
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: start;
-        align-items: flex-start;
-    position: relative; }
+        align-items: flex-start; }
   .header .navbar-collapse.show {
-    display: block; }
+    display: -ms-flexbox;
+    display: flex; }
   .header__services_mobile {
-    padding: 25px 0;
-    position: absolute;
-    bottom: 0; }
+    padding: 25px 0; }
   .course {
     border-top: 1.5px solid rgba(224, 224, 224, 0.6); }
   .mainBanner__wrapper {

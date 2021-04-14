@@ -320,17 +320,14 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            position: relative;
         }
 
         .navbar-collapse.show {
-            display: block;
+            display: flex;
         }
 
         &__services_mobile {
             padding: 25px 0;
-            position: absolute;
-            bottom: 0;
         }
 
     }
