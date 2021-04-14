@@ -12187,7 +12187,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // слайдер - приоритетеные сектора 2
-  new Swiper('.sectorBlock__slider2', {
+  const sectorBlockSlider2 = new Swiper('.sectorBlock__slider2', {
     slidesPerView: 'auto',
     navigation: {
       nextEl: '.sectorBlock__slider_next2',
@@ -12202,10 +12202,21 @@ document.addEventListener("DOMContentLoaded", () => {
         spaceBetween: 30,
       },
       320: {
+        slidesPerView: 'auto',
         spaceBetween: 24,
       },
     }
   })
+
+  // Breakpoints
+  $(window).on('resize', function(){
+    const width = $(window).width();
+    if(width <= 500) {
+      console.log("update")
+      sectorBlockSlider2.update()
+      sectorBlockSlider2.updateSize()
+    }
+  }).resize();
 
   // слайдер - аналитики
   new Swiper('.analytics__slider', {
