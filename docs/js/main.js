@@ -12327,8 +12327,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // слайдер - сделки
 let scaleX = 0;
 let timerId = null;
-const delay = 4000; // Время активности одного слайда
+let sliderVisible = false;
 const swiperPaginationProgressbarFill = document.querySelector('.swiper-pagination-progressbar-fill');
+const delay = 4000; // Время активности одного слайда
 const transactionsSliderContainer = document.getElementById('transactionsSliderContainer');
 const transactions = document.getElementById('transactions');
 
@@ -12421,11 +12422,16 @@ var Visible = function (target) {
       targetPosition.right > windowPosition.left &&
       targetPosition.left < windowPosition.right) {
     // Если элемент полностью видно
-    scaleX = 0
-    transactionsSlider.autoplay.start()
+    if(!sliderVisible) {
+      scaleX = 0
+      transactionsSlider.autoplay.start()
+      sliderVisible = true
+    }
   } else {
+    if(sliderVisible) sliderVisible = false
     scaleX = 0
     transactionsSlider.autoplay.stop()
+    transactionsSlider.slideTo(0);
   }
 };
 
@@ -12433,6 +12439,3 @@ var Visible = function (target) {
 window.addEventListener('scroll', function() {
   Visible(transactions);
 });
-
-// А также запустим функцию сразу. А то вдруг, элемент изначально видно
-Visible(transactions);
