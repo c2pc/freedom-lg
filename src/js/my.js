@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // слайдер - приоритетеные сектора
   new Swiper('.sectorBlock__slider', {
     slidesPerView: 'auto',
-    loop: true,
     navigation: {
       nextEl: '.sectorBlock__slider_next',
       prevEl: '.sectorBlock__slider_prev',
@@ -38,30 +37,31 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  // слайдер - сделки
-  const transactionsSlider = new Swiper('.transactions__slider', {
-    speed: 500,
-    loop: true,
-    pagination: {
-      el: '.transactions__slider_pagination',
-      type: 'progressbar',
-    },
-    navigation: {
-      nextEl: '.transactions__slider_next',
-      prevEl: '.transactions__slider_prev',
-    },
-  })
 
-  // слайдер - сделки - номер активного слайда и общее кол-во
-  transactionsSlider.on('slideChange', function () {
-    $(".activeslide").html(transactionsSlider.realIndex + 1);
-    $(".totalslide").html(transactionsSlider.slides.length - 2);
-  });
+  // слайдер - приоритетеные сектора 2
+  new Swiper('.sectorBlock__slider2', {
+    slidesPerView: 'auto',
+    navigation: {
+      nextEl: '.sectorBlock__slider_next2',
+      prevEl: '.sectorBlock__slider_prev2',
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      500: {
+        spaceBetween: 30,
+      },
+      320: {
+        spaceBetween: 24,
+      },
+    }
+  })
 
   // слайдер - аналитики
   new Swiper('.analytics__slider', {
     slidesPerView: 'auto',
-    loop: true,
     navigation: {
       nextEl: '.analytics__slider_next',
       prevEl: '.analytics__slider_prev',
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if ($(hash).length) {
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 100
       }, 500);
     }
   });
@@ -157,6 +157,21 @@ document.addEventListener("DOMContentLoaded", () => {
     privacyPolicy.addEventListener('change', () => {
       formSubmitBtn.disabled = !privacyPolicy.checked // Если не выбран первый checkbox делаем кнопку не активной
     })
+  }
+
+
+  // Закрепленное меню
+  window.onscroll = function() {myFunction()};
+  const freedomHeader = document.getElementById("freedomHeader");
+  const sticky = freedomHeader.offsetTop;
+
+  // При прокрутке страницы добавить/удалить css класс к "freedomHeader"
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      freedomHeader.classList.add("header__sticky");
+    } else {
+      freedomHeader.classList.remove("header__sticky");
+    }
   }
 
 

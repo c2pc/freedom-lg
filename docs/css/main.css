@@ -8567,63 +8567,75 @@ b,
 strong {
   font-weight: 700; }
 
-.header__services_lang {
-  margin-right: 22px; }
-  .header__services_lang_item {
-    width: 40px;
-    height: 40px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%; }
+  .header + main {
+    padding-top: 74px; }
+  .header__sticky {
+    border-bottom: 2px solid rgba(224, 224, 224, 0.2); }
+  .header__services_lang {
+    margin-right: 22px; }
+    .header__services_lang_item {
+      width: 40px;
+      height: 40px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      transition: background-color .2s; }
+      .header__services_lang_item:not(:first-child) {
+        margin-left: 9px; }
+      .header__services_lang_item.active, .header__services_lang_item:not(:disabled):hover {
+        background-color: #F7F7F7;
+        cursor: pointer; }
+      .header__services_lang_item:disabled, .header__services_lang_item[disabled] {
+        color: #EFEFEF;
+        background-color: transparent; }
+  .header__services_btn button {
+    font-size: 14px;
+    line-height: 18px;
+    width: 160px;
+    height: 40px; }
+  @media screen and (max-width: 1309px) {
+    .header .navbar-brand {
+      margin-right: 30px; } }
+  @media screen and (min-width: 1310px) {
+    .header .navbar-brand {
+      margin-right: 178px; } }
+  .header .navbar-brand img {
+    width: 174px; }
+  .header .toggler-icon {
+    width: 32px;
+    height: 32px;
+    display: block;
     border-radius: 50%;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
+    border: 2px solid #242624;
     transition: background-color .2s; }
-    .header__services_lang_item:not(:first-child) {
-      margin-left: 9px; }
-    .header__services_lang_item.active, .header__services_lang_item:not(:disabled):hover {
-      background-color: #F7F7F7;
-      cursor: pointer; }
-    .header__services_lang_item:disabled, .header__services_lang_item[disabled] {
-      color: #EFEFEF;
-      background-color: transparent; }
-
-.header__services_btn button {
-  font-size: 14px;
-  line-height: 18px;
-  width: 160px;
-  height: 40px; }
-
-@media screen and (max-width: 1309px) {
-  .header .navbar-brand {
-    margin-right: 30px; } }
-
-@media screen and (min-width: 1310px) {
-  .header .navbar-brand {
-    margin-right: 178px; } }
-
-.header .navbar-brand img {
-  width: 174px; }
-
-.header .toggler-icon {
-  width: 32px;
-  height: 32px;
-  display: block;
-  border-radius: 50%;
-  border: 2px solid #242624;
-  transition: background-color .2s; }
-
-.header button[aria-expanded="true"] .toggler-icon {
-  background: #242624 url("../img/icons/close.svg") no-repeat center center/auto; }
-
-.header button[aria-expanded="false"] .toggler-icon {
-  background: url("../img/icons/toggler.svg") no-repeat center center/auto; }
+  .header button[aria-expanded="true"] .toggler-icon {
+    background: #242624 url("../img/icons/close.svg") no-repeat center center/auto; }
+  .header button[aria-expanded="false"] .toggler-icon {
+    background: url("../img/icons/toggler.svg") no-repeat center center/auto; }
+  .header .nav-link {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.4rem;
+    transition: border-bottom-color .2s; }
+    .header .nav-link:hover {
+      border-color: #2D7D2F; }
 
 .course {
   background-color: #f5f7f5; }
@@ -9701,7 +9713,10 @@ button[disabled] {
 
 @media screen and (min-width: 768px) {
   .header .nav-item:not(:first-child) {
-    margin-left: 24px; } }
+    margin-left: 24px; }
+  .header .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0; } }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .header .navbar-brand {
@@ -9997,6 +10012,12 @@ button[disabled] {
 @media screen and (max-width: 440px) {
   .header .navbar-brand img {
     width: 133px; }
+  .header + main {
+    padding-top: 67px; }
+  .header .nav-link {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0; }
   .course__item:not(:first-child) {
     margin-left: 24px; }
   .mainBanner {

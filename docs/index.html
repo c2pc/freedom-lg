@@ -11,14 +11,14 @@
   <meta name="google" content="notranslate">
   <meta name="format-detection" content="telephone=no">
   <title>Инвестиционный Банкинг</title>
-  <link href="css/main.css?v=f51500ad63617d4197e4eec1d7fa21b7" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?v=f51500ad63617d4197e4eec1d7fa21b7">
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js?v=f51500ad63617d4197e4eec1d7fa21b7"></script>
+  <link href="css/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <div class="freedom">
-        <header class="header freedom__header">
+        <header class="header freedom__header" id="freedomHeader">
             <div class="f-container">
               <nav class="navbar navbar-expand-md p-0">
                 <a class="navbar-brand" href="/">
@@ -405,100 +405,210 @@
                         </button>
                       </div>
                     </div>
+                
+                    <div class="sectorBlock__slider_wrapper">
+                      <div class="swiper-container sectorBlock__slider">
+                        <div class="swiper-wrapper">
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock1.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Информационные технологии, Телеком и Медиа</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock2.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Энергетика и инфрастуктура</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock3.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Нефть, газ, добыча полезных ископаемых</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock4.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Сельское хозяйство</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock5.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Недвижимость</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock6.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Транспорт и логистика</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock7.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Здравоохранение</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock8.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Инновационные разработки, материалы</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock9.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Биотехнологии, фармацефтика, химия</p>
+                              </div>
+                            </div>
+                          </div>
+                
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="sectorBlock" id="sectorBlock2">
+                  <div class="f-container">
+                    <div class="sectorBlock__header">
+                      <div class="sectorBlock__title block-title">
+                        <h2>Приоритетные секторы</h2>
+                      </div>
+                      <div class="sliderArrow__group d-none d-sm-flex">
+                        <button class="sliderArrow__btn sectorBlock__slider_prev2">
+                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.48535 0.337065C8.1033 0.840254 8.17487 1.72407 7.64519 2.31112L3.41463 7L7.64519 11.6889C8.17487 12.2759 8.1033 13.1597 7.48535 13.6629C6.8674 14.1661 5.93706 14.0981 5.40739 13.5111L0.354777 7.9111C-0.11826 7.38682 -0.11826 6.61318 0.354777 6.08889L5.40739 0.488915C5.93707 -0.0981387 6.8674 -0.166124 7.48535 0.337065Z" fill="white"/>
+                          </svg>
+                        </button>
+                        <button class="sliderArrow__btn sectorBlock__slider_next2" tabindex="0" role="button" aria-label="Previous slide">
+                          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.514648 0.337065C-0.103304 0.840254 -0.174867 1.72407 0.354806 2.31112L4.58537 7L0.354807 11.6889C-0.174866 12.2759 -0.103302 13.1597 0.51465 13.6629C1.1326 14.1661 2.06294 14.0981 2.59261 13.5111L7.64522 7.9111C8.11826 7.38682 8.11826 6.61318 7.64522 6.08889L2.59261 0.488915C2.06293 -0.0981387 1.1326 -0.166124 0.514648 0.337065Z" fill="white"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                 
-                  <div class="container-fluid sectorBlock__slider_wrapper slider-left-padding">
-                    <div class="swiper-container sectorBlock__slider">
-                      <div class="swiper-wrapper">
+                    <div class="sectorBlock__slider_wrapper">
+                      <div class="swiper-container sectorBlock__slider2">
+                        <div class="swiper-wrapper">
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock1.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Информационные технологии, Телеком и Медиа</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock1.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Информационные технологии, Телеком и Медиа</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock2.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Энергетика и инфрастуктура</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock2.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Энергетика и инфрастуктура</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock3.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Нефть, газ, добыча полезных ископаемых</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock3.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Нефть, газ, добыча полезных ископаемых</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock4.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Сельское хозяйство</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock4.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Сельское хозяйство</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock5.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Недвижимость</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock5.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Недвижимость</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock6.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Транспорт и логистика</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock6.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Транспорт и логистика</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock7.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Здравоохранение</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock7.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Здравоохранение</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock8.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Инновационные разработки, материалы</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock8.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Инновационные разработки, материалы</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
-                        <div class="swiper-slide" data-sidemodal="sectorSideModal">
-                          <div class="sectorBlock__item">
-                            <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock9.jpg')"></div>
-                            <div class="sectorBlock__item_desc">
-                              <p>Биотехнологии, фармацефтика, химия</p>
+                          <div class="swiper-slide" data-sidemodal="sectorSideModal">
+                            <div class="sectorBlock__item">
+                              <div class="sectorBlock__item_image" style="background-image: url('img/sectorBlock9.jpg')"></div>
+                              <div class="sectorBlock__item_desc">
+                                <p>Биотехнологии, фармацефтика, химия</p>
+                              </div>
                             </div>
                           </div>
-                        </div>
                 
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="transactions mt160" id="transactions">
                   <div class="f-container">
-                    <div class="transactions__slider_container">
+                    <div class="transactions__slider_container" id="transactionsSliderContainer">
                       <div class="swiper-container transactions__slider">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide transactions__slide">
@@ -667,7 +777,9 @@
                         <div class="transactions__pagination">
                           <div class="activeslide transactions__pagination_value">1</div>
                           <div class="transactions__pagination_bar swiper-container-horizontal">
-                            <div class="swiper-pagination swiper-pagination-progressbar transactions__slider_pagination"></div>
+                            <div class="swiper-pagination swiper-pagination-progressbar transactions__slider_pagination">
+                              <span class="swiper-pagination-progressbar-fill"></span>
+                            </div>
                           </div>
                           <div class="totalslide transactions__pagination_value">3</div>
                         </div>
@@ -1352,6 +1464,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/main.js?v=f51500ad63617d4197e4eec1d7fa21b7"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

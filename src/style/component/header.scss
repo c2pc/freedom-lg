@@ -1,4 +1,17 @@
 .header {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+
+    & + main {
+        padding-top: 74px;
+    }
+
+    &__sticky {
+        border-bottom: 2px solid rgba(224, 224, 224, .2);
+    }
 
     &__services {
 
@@ -81,6 +94,19 @@
     button[aria-expanded="false"] {
         .toggler-icon {
             background: url("../img/icons/toggler.svg") no-repeat center center / auto;
+        }
+    }
+
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        padding-bottom: 0;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.4rem;
+        transition: border-bottom-color .2s;
+
+        &:hover {
+            border-color: $Primary;
         }
     }
 }

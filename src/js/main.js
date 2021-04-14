@@ -5,3 +5,4 @@
 //= ../../node_modules/bootstrap/js/dist/modal.js
 
 //= ./my.js
+//= ./transactions-slider.js
