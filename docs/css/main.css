@@ -9407,9 +9407,9 @@ input, button, img {
   padding: 40px 80px 40px 40px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   position: fixed;
   top: 0;
   z-index: 102; }
@@ -9668,16 +9668,6 @@ button[disabled] {
 .sideModalActive {
   position: relative;
   overflow: hidden; }
-  .sideModalActive::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 101;
-    transition: opacity 0.15s linear; }
 
 .topbar__back {
   display: none;
@@ -9725,7 +9715,21 @@ button[disabled] {
   .sideModalActive {
     padding-right: 17px; }
     .sideModalActive .header {
-      padding-right: 17px; } }
+      padding-right: 17px; }
+  .sideModalActive::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 101;
+    transition: opacity 0.15s linear; }
+  .sideModal__wrap {
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s; } }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .header .navbar-brand {

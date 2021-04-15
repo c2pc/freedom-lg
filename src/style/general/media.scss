@@ -25,6 +25,25 @@
             padding-right: 17px;
         }
     }
+
+    .sideModalActive {
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: 101;
+            transition: opacity 0.15s linear;
+        }
+    }
+
+    .sideModal__wrap {
+        transition: transform 0.4s;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {

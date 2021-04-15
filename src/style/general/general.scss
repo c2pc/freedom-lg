@@ -138,18 +138,6 @@ button[disabled]{
 .sideModalActive {
     position: relative;
     overflow: hidden;
-
-    &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, .3);
-        z-index: 101;
-        transition: opacity 0.15s linear;
-    }
 }
 
 .topbar__back {
