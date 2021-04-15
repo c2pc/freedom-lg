@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: 'GTAmericaLCG', sans-serif!important;
     outline: none!important;
-    user-select: none!important;
 }
 
 body {
@@ -36,4 +35,8 @@ a {
 
 b, strong {
     font-weight: 700;
+}
+
+input, button, img {
+    user-select: none!important;
 }

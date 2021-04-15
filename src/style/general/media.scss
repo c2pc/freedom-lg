@@ -10,6 +10,20 @@
             padding-left: 0;
         }
 
+        .nav-link:hover {
+            border-color: $Primary;
+        }
+
+    }
+}
+
+@media screen and (min-width: 719px) {
+    .sideModalActive {
+        padding-right: 17px;
+
+        .header {
+            padding-right: 17px;
+        }
     }
 }
 
@@ -535,6 +549,14 @@
         &__course {
             margin-left: 0;
             margin-top: 8px;
+
+            &_value {
+                padding-left: 16px;
+
+                &::before {
+                    left: 3px;
+                }
+            }
         }
     }
 
@@ -634,7 +656,7 @@
 
         &__course {
             font-size: 12px;
-            padding: 2.5px 2px;
+            padding: 3px 4px;
         }
 
         &__items > div:nth-child(n+2) {

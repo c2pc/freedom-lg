@@ -42,43 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-
-  // слайдер - приоритетеные сектора 2
-  const sectorBlockSlider2 = new Swiper('.sectorBlock__slider2', {
-    slidesPerView: 'auto',
-    navigation: {
-      nextEl: '.sectorBlock__slider_next2',
-      prevEl: '.sectorBlock__slider_prev2',
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
-      500: {
-        spaceBetween: 30,
-      },
-      360: {
-        spaceBetween: 24,
-        slidesPerView: 'auto',
-      },
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 24,
-      },
-    }
-  })
-
-  // Breakpoints
-  $(window).on('resize', function(){
-    const width = $(window).width();
-    if(width <= 500) {
-      console.log("update")
-      sectorBlockSlider2.update()
-      sectorBlockSlider2.updateSize()
-    }
-  }).resize();
-
   // слайдер - аналитики
   new Swiper('.analytics__slider', {
     slidesPerView: 'auto',
@@ -204,5 +167,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+
+  // В моб верси добавить к меню дата атрибуты для закрытия окна меню при клике по ссылке
+  const headerNavbarList = document.getElementById('headerNavbarList');
+
+  function addDataMenu() {
+    if(!headerNavbarList.hasAttribute('data-toggle')) headerNavbarList.setAttribute('data-toggle', 'collapse');
+    if(!headerNavbarList.hasAttribute('data-target')) headerNavbarList.setAttribute('data-target', '#headerNavbar');
+  }
+
+  function removeDataMenu() {
+    if(headerNavbarList.hasAttribute('data-toggle')) headerNavbarList.removeAttribute('data-toggle');
+    if(headerNavbarList.hasAttribute('data-target')) headerNavbarList.removeAttribute('data-target');
+  }
+
+  // Добавить дата атрибуты при изменении размера, т.е. для моб версии
+  $(window).resize(function() {
+    if(headerNavbarList) {
+      if($(window).width() <= 768) {
+        addDataMenu()
+      } else {
+        removeDataMenu()
+      }
+    }
+  });
+
+  if(headerNavbarList) {
+    if((window.innerWidth || document.documentElement.clientWidth) <= 768) {
+      addDataMenu()
+    } else {
+      removeDataMenu()
+    }
+
+  }
 
 });

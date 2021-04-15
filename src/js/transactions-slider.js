@@ -27,7 +27,7 @@ function sliderTimerProgress() {
     if (scaleX >= 1) {
       clearInterval(timerId);
     } else {
-      const step = 1 / ((transactionsSlider.slides.length * delay) / 50)
+      const step = 1 / (((transactionsSlider.slides.length - 2) * delay) / 50)
       scaleX += step;
       swiperPaginationProgressbarFill.style.transform = `translate3d(0px, 0px, 0px) scaleX(${scaleX}) scaleY(1)`;
     }
@@ -38,6 +38,7 @@ function sliderTimerProgress() {
 const transactionsSlider = new Swiper('.transactions__slider', {
   speed: 500,
   effect: 'fade',
+  loop: true,
   fadeEffect: {
     crossFade: true
   },
@@ -52,26 +53,26 @@ const transactionsSlider = new Swiper('.transactions__slider', {
   },
   on: {
     afterInit: sliderTimerProgress,
-    slideChange: function ({previousIndex, realIndex}) {
-      const step = 1 / transactionsSlider.slides.length;
+    slideChange: function ({previousIndex, realIndex, slides}) {
+      const slidesLength = slides.length - 2;
+      const step = 1 / slidesLength;
 
       if(previousIndex < realIndex) {
-        if(scaleX < transactionsSlider.realIndex * step) {
-          scaleX = transactionsSlider.realIndex * step;
+        if(scaleX < realIndex * step) {
+          scaleX = realIndex * step;
         }
       } else {
-        scaleX = transactionsSlider.realIndex * step;
+        scaleX = realIndex * step;
       }
+
       sliderTimerProgress()
+
+      // выводим номер активного слайда и общее кол-во
+      $(".activeslide").html(realIndex + 1);
+      $(".totalslide").html(slidesLength);
     }
   }
 })
-
-// выводим номер активного слайда и общее кол-во
-transactionsSlider.on('slideChange', function () {
-  $(".activeslide").html(transactionsSlider.realIndex + 1);
-  $(".totalslide").html(transactionsSlider.slides.length);
-});
 
 
 // отследить появление элемента в области видимости браузера
@@ -105,7 +106,7 @@ var Visible = function (target) {
     if(sliderVisible) sliderVisible = false
     scaleX = 0
     transactionsSlider.autoplay.stop()
-    transactionsSlider.slideTo(0);
+    transactionsSlider.slideToLoop(0);
   }
 };
 

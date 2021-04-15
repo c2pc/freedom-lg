@@ -92,7 +92,7 @@
     box-shadow: none;
     padding: 40px 80px 40px 40px;
     transform: translateX(100%);
-    transition: transform 0.3s;
+    transition: transform 0.4s;
     position: fixed;
     top: 0;
     z-index: 102;
@@ -243,7 +243,7 @@
 
 .sideModalActive .sideModal__md_close {
     right: 734px;
-    transition: right .2s ease-out;
+    transition: right .28s ease-out;
 }
 
 .sideModal__mob_logo img {

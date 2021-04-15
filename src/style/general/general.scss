@@ -148,6 +148,7 @@ button[disabled]{
         left: 0;
         background-color: rgba(0, 0, 0, .3);
         z-index: 101;
+        transition: opacity 0.15s linear;
     }
 }
 
@@ -189,4 +190,5 @@ button[disabled]{
     background: #ffffff;
     position: relative;
 }
+
 

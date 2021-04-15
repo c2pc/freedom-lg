@@ -8535,10 +8535,7 @@ a.text-dark:hover, a.text-dark:focus {
 * {
   box-sizing: border-box;
   font-family: "GTAmericaLCG", sans-serif !important;
-  outline: none !important;
-  -webkit-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important; }
+  outline: none !important; }
 
 body {
   margin: 0;
@@ -8566,6 +8563,11 @@ a {
 b,
 strong {
   font-weight: 700; }
+
+input, button, img {
+  -webkit-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important; }
 
 .header {
   background-color: #ffffff;
@@ -8634,8 +8636,6 @@ strong {
     margin-right: 0.5rem;
     margin-bottom: 0.4rem;
     transition: border-bottom-color .2s; }
-    .header .nav-link:hover {
-      border-color: #2D7D2F; }
 
 .course {
   background-color: #f5f7f5; }
@@ -8762,13 +8762,13 @@ strong {
     .aboutUs__course_value {
       font-weight: 500;
       position: relative;
-      padding-left: 16px; }
+      padding-left: 20px; }
       .aboutUs__course_value::before {
         content: url("../img/icons/polygon-green.svg");
         display: inline-block;
         position: absolute;
         width: 10px;
-        left: 3px;
+        left: 7px;
         top: -4px; }
   .aboutUs__course_up {
     background-color: #E1EDD8; }
@@ -9407,9 +9407,9 @@ strong {
   padding: 40px 80px 40px 40px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
   position: fixed;
   top: 0;
   z-index: 102; }
@@ -9530,7 +9530,7 @@ strong {
 
 .sideModalActive .sideModal__md_close {
   right: 734px;
-  transition: right .2s ease-out; }
+  transition: right .28s ease-out; }
 
 .sideModal__mob_logo img {
   display: none; }
@@ -9676,7 +9676,8 @@ button[disabled] {
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 101; }
+    z-index: 101;
+    transition: opacity 0.15s linear; }
 
 .topbar__back {
   display: none;
@@ -9716,7 +9717,15 @@ button[disabled] {
     margin-left: 24px; }
   .header .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .header .nav-link:hover {
+    border-color: #2D7D2F; } }
+
+@media screen and (min-width: 719px) {
+  .sideModalActive {
+    padding-right: 17px; }
+    .sideModalActive .header {
+      padding-right: 17px; } }
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
   .header .navbar-brand {
@@ -9995,6 +10004,10 @@ button[disabled] {
     .aboutUs__course {
       margin-left: 0;
       margin-top: 8px; }
+      .aboutUs__course_value {
+        padding-left: 16px; }
+        .aboutUs__course_value::before {
+          left: 3px; }
   .serviceBlock__item_detail {
     margin-top: 10px; }
     .serviceBlock__item_detail button {
@@ -10042,7 +10055,7 @@ button[disabled] {
         line-height: 24px; }
     .aboutUs__course {
       font-size: 12px;
-      padding: 2.5px 2px; }
+      padding: 3px 4px; }
     .aboutUs__items > div:nth-child(n+2) {
       margin-top: 24px; }
   .serviceBlock {
