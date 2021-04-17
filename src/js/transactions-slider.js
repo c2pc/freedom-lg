@@ -26,9 +26,11 @@ function sliderTimerProgress() {
   function frame() {
     if (scaleX >= 1) {
       clearInterval(timerId);
+      scaleX = 0
     } else {
-      const step = 1 / (((transactionsSlider.slides.length - 2) * delay) / 50)
+      const step = 1 / (((transactionsSlider.slides.length - 2) * delay) / 47)
       scaleX += step;
+      if(scaleX > 1) scaleX = 1;
       swiperPaginationProgressbarFill.style.transform = `translate3d(0px, 0px, 0px) scaleX(${scaleX}) scaleY(1)`;
     }
   }
@@ -39,6 +41,8 @@ const transactionsSlider = new Swiper('.transactions__slider', {
   speed: 500,
   effect: 'fade',
   loop: true,
+  simulateTouch: false,
+  allowTouchMove: false,
   fadeEffect: {
     crossFade: true
   },
@@ -53,25 +57,28 @@ const transactionsSlider = new Swiper('.transactions__slider', {
   },
   on: {
     afterInit: sliderTimerProgress,
-    slideChange: function ({previousIndex, realIndex, slides}) {
+    slideChange: function ({realIndex, slides}) {
       const slidesLength = slides.length - 2;
-      const step = 1 / slidesLength;
-
-      if(previousIndex < realIndex) {
-        if(scaleX < realIndex * step) {
-          scaleX = realIndex * step;
-        }
-      } else {
-        scaleX = realIndex * step;
-      }
-
       sliderTimerProgress()
-
       // выводим номер активного слайда и общее кол-во
       $(".activeslide").html(realIndex + 1);
       $(".totalslide").html(slidesLength);
-    }
+    },
   }
+})
+
+const progressBarChange = () => {
+  const slidesLength = transactionsSlider.slides.length - 2;
+  const step = 1 / slidesLength;
+  scaleX = transactionsSlider.realIndex * step;
+}
+
+$('.transactions__slider_next').on('click', () => {
+  progressBarChange()
+})
+
+$('.transactions__slider_prev').on('click', () => {
+  progressBarChange()
 })
 
 

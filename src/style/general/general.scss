@@ -172,6 +172,9 @@ button[disabled]{
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background: $Primary!important;
     border-radius: 20px!important;
+    box-shadow: none;
+    height: 4px!important;
+    outline: none!important;
 }
 
 .freedom__content {

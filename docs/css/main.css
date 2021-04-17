@@ -9696,7 +9696,10 @@ button[disabled] {
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #2D7D2F !important;
-  border-radius: 20px !important; }
+  border-radius: 20px !important;
+  box-shadow: none;
+  height: 4px !important;
+  outline: none !important; }
 
 .freedom__content {
   background: #ffffff;
