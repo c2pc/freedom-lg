@@ -12390,7 +12390,7 @@ const transactionsSlider = new Swiper('.transactions__slider', {
 
             scaleXFromC2 = realIndex / slidesLength
             scaleXToC2 = (realIndex + 1) / slidesLength
-            xC2 = (scaleXToC2 - scaleXFromC2) / (DELAY / timeoutC2)
+            xC2 = (scaleXToC2 - scaleXFromC2) / ((DELAY + 500) / timeoutC2)
             InterC2()
         },
     }
@@ -12402,20 +12402,22 @@ function InterC2() {
         scaleXFromC2 += xC2
         if (scaleXFromC2 < scaleXToC2)
             $(".swiper-pagination-progressbar-fill-mine").css('transform', `translate3d(0px, 0px, 0px) scaleX(${scaleXFromC2}) scaleY(1)`)
-        else
+        else{
             clearInterval(interC2)
+            transactionsSlider.slideNext();
+        }
     }, timeoutC2)
 }
 
 // При наведении мыши остановить autoplay
 $(".transactions__slider").mouseenter(function () {
-    transactionsSlider.autoplay.stop();
+    transactionsSlider.autoplay.pause();
     clearInterval(interC2)
 });
 
 // Запустить autoplay
 $(".transactions__slider").mouseleave(function () {
-    transactionsSlider.autoplay.start();
+    transactionsSlider.autoplay.run();
     InterC2()
 });
 
@@ -12443,13 +12445,16 @@ var Visible = function (target) {
         targetPosition.left < windowPosition.right) {
         // Если элемент полностью виден
         if (!sliderVisible) {
+            transactionsSlider.slideTo(1)
             transactionsSlider.autoplay.start()
+            InterC2()
             sliderVisible = true
         }
     } else {
         if (sliderVisible) sliderVisible = false
         transactionsSlider.autoplay.stop()
-        transactionsSlider.slideToLoop(0);
+        clearInterval(interC2)
+        transactionsSlider.slideToLoop(1);
     }
 };
 
