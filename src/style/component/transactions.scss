@@ -137,6 +137,20 @@
     right: 0;
 }
 
+.swiper-pagination-progressbar-fill-mine{
+    background: #2D7D2F !important;
+    //border-radius: 20px !important;
+    box-shadow: none;
+    height: 4px !important;
+    outline: none !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transform-origin: left top;
+    transform: translate3d(0px, 0px, 0px) scaleX(0) scaleY(1);
+}
+
 .swiper-progress-bar {
     position: relative;
     width: 100%;
